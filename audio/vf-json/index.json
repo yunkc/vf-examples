@@ -1,0 +1,227 @@
+{
+  "assets": {
+    "1": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/dino.png",
+      "name": "1"
+    },
+    "3": {
+      "type": "sound",
+      "url": "./assets/sound1.mp3",
+      "name": "3"
+    },
+    "4": {
+      "type": "sound",
+      "url": "./assets/sound2.mp3",
+      "name": "4"
+    },
+    "5": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_up.png",
+      "name": "5"
+    },
+    "6": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_down.png",
+      "name": "6"
+    },
+    "7": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_move.png",
+      "name": "7"
+    }
+  },
+  "global": {},
+  "scenes": [
+    {
+      "id": 0,
+      "libId": "0"
+    }
+  ],
+  "components": {
+    "0": {
+      "type": "custom",
+      "interactabled": false,
+      "children": [
+        {
+          "id": 1,
+          "libId": 1
+        },
+        {
+          "id": 2,
+          "libId": 2,
+          "text": "声音接口示例",
+          "y": 298,
+          "x": 395
+        },
+        {
+          "id": "play1",
+          "libId": 8,
+          "text": "播放声音1",
+          "y": 338,
+          "x": 395
+        },
+        {
+          "id": "play2",
+          "libId": 8,
+          "text": "播放声音2",
+          "y": 380,
+          "x": 395
+        },
+        {
+          "id": "pause1",
+          "libId": 8,
+          "text": "暂停声音1",
+          "y": 420,
+          "x": 395
+        },
+        {
+          "id": "resume1",
+          "libId": 8,
+          "text": "恢复声音1",
+          "y": 460,
+          "x": 395
+        }
+      ],
+      "actionList": [
+        {
+          "type": 13,
+          "event": "Add",
+          "target": [
+            11,
+            []
+          ],
+          "execute": [
+            {
+              "type": 13,
+              "event": "click",
+              "target": [
+                11,
+                [
+                  "play1"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 16,
+                  "value": [
+                    0,
+                    {
+                      "assetId": 3,
+                      "trackId": 1,
+                      "mode": "sound"
+                    }
+                  ],
+                  "trackId": "-1"
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "click",
+              "target": [
+                11,
+                [
+                  "play2"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 16,
+                  "value": [
+                    0,
+                    {
+                      "assetId": 4,
+                      "trackId": 2,
+                      "mode": "sound"
+                    }
+                  ],
+                  "trackId": "-1"
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "click",
+              "target": [
+                11,
+                [
+                  "pause1"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 33,
+                  "value": [
+                    0,
+                    {
+                      "assetId": 4,
+                      "trackId": 1,
+                      "mode": "sound"
+                    }
+                  ],
+                  "trackId": "-1"
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "click",
+              "target": [
+                11,
+                [
+                  "resume1"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 34,
+                  "value": [
+                    0,
+                    {
+                      "assetId": 4,
+                      "trackId": 1,
+                      "mode": "sound"
+                    }
+                  ],
+                  "trackId": "-1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "1": {
+      "type": "Image",
+      "y": 140,
+      "width": 83,
+      "height": 138,
+      "src": 1,
+      "x": 403.5
+    },
+    "2": {
+      "type": "Label",
+      "width": 100,
+      "style": {
+        "color": "#000"
+      }
+    },
+    "8": {
+      "type": "Button",
+      "width": 100,
+      "height": 30,
+      "up": 5,
+      "down": 6,
+      "move": 7
+    }
+  },
+  "name": "VFT2J",
+  "width": 890,
+  "height": 500,
+  "version": "0.0.1",
+  "baseUrl": "",
+  "loadMode": "all",
+  "conversion": "",
+  "scaleMode": "showAll"
+}
