@@ -1,0 +1,352 @@
+{
+  "assets": {
+    "1": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/dino.png",
+      "name": "1"
+    }
+  },
+  "global": {},
+  "scenes": [
+    {
+      "id": 0,
+      "libId": "0"
+    }
+  ],
+  "components": {
+    "0": {
+      "type": "custom",
+      "interactabled": false,
+      "children": [
+        {
+          "id": 1,
+          "libId": 1,
+          "style": {
+            "top": 0
+          }
+        },
+        {
+          "id": 2,
+          "libId": 2,
+          "text": "连线接口示例",
+          "style": {
+            "top": 160
+          }
+        },
+        {
+          "id": 4,
+          "libId": 3,
+          "sourcePostion": [
+            15,
+            210
+          ],
+          "targetPostion": [
+            150,
+            210
+          ],
+          "autoPlay": true,
+          "style": {
+            "top": 210
+          }
+        },
+        {
+          "id": 5,
+          "libId": 3,
+          "sourcePostion": [
+            15,
+            230
+          ],
+          "targetPostion": [
+            150,
+            230
+          ],
+          "autoPlay": false,
+          "lineColor": 16763904,
+          "style": {
+            "top": 230
+          }
+        },
+        {
+          "id": 7,
+          "libId": 6,
+          "style": {
+            "top": 250,
+            "left": 200
+          }
+        },
+        {
+          "id": 8,
+          "libId": 6,
+          "style": {
+            "top": 290,
+            "right": 200
+          }
+        },
+        {
+          "id": 9,
+          "libId": 3,
+          "sourcePostion": "center",
+          "targetPostion": "center",
+          "isAnimation": true,
+          "autoPlay": false,
+          "style": {
+            "top": 300,
+            "justifyContent": ""
+          }
+        }
+      ],
+      "actionList": [
+        {
+          "type": 13,
+          "event": "Added",
+          "target": [
+            11,
+            []
+          ],
+          "execute": [
+            {
+              "type": 41,
+              "value": [
+                0,
+                3000
+              ],
+              "execute": [
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "5"
+                      ],
+                      "play"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      2
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "9"
+                  ],
+                  "source"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  0,
+                  "this#7"
+                ]
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "9"
+                  ],
+                  "target"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  0,
+                  "this#8"
+                ]
+              ]
+            },
+            {
+              "type": 13,
+              "event": "click",
+              "target": [
+                11,
+                [
+                  "7"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 0,
+                  "value": [
+                    0,
+                    "rect1"
+                  ]
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "9"
+                      ],
+                      "isClear"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      true
+                    ]
+                  ]
+                },
+                {
+                  "type": 35,
+                  "value": "// 清除画线"
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "9"
+                      ],
+                      "play"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      2
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "click",
+              "target": [
+                11,
+                [
+                  "8"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 0,
+                  "value": [
+                    0,
+                    "rect2"
+                  ]
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "9"
+                      ],
+                      "isClear"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      true
+                    ]
+                  ]
+                },
+                {
+                  "type": 35,
+                  "value": "// 清除画线"
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "9"
+                      ],
+                      "play"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "1": {
+      "type": "Image",
+      "src": 1,
+      "style": {
+        "width": 83,
+        "height": 138,
+        "justifyContent": "center"
+      }
+    },
+    "2": {
+      "type": "Label",
+      "style": {
+        "width": 100,
+        "justifyContent": "center"
+      }
+    },
+    "3": {
+      "type": "ConnectLine",
+      "isAnimation": true,
+      "lineColor": 16777215,
+      "lineWidth": 2,
+      "style": {
+        "justifyContent": "center"
+      }
+    },
+    "6": {
+      "type": "Rect",
+      "lineColor": 16711884,
+      "lineWidth": 1,
+      "radius": 5,
+      "color": 16777215,
+      "interactabled": true,
+      "style": {
+        "width": 30,
+        "height": 30
+      }
+    }
+  },
+  "name": "VFT2J",
+  "width": 890,
+  "height": 500,
+  "version": "0.0.1",
+  "baseUrl": "",
+  "loadMode": "all",
+  "conversion": "",
+  "scaleMode": "showAll"
+}

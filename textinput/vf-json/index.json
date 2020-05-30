@@ -1,0 +1,132 @@
+{
+  "assets": {
+    "1": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/dino.png",
+      "name": "1"
+    },
+    "3": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/TextInput/up.png",
+      "name": "3"
+    },
+    "4": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/TextInput/move.png",
+      "name": "4"
+    },
+    "5": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/TextInput/down.png",
+      "name": "5"
+    }
+  },
+  "global": {},
+  "scenes": [
+    {
+      "id": 0,
+      "libId": "0"
+    }
+  ],
+  "components": {
+    "0": {
+      "type": "custom",
+      "interactabled": false,
+      "children": [
+        {
+          "id": 1,
+          "libId": 1,
+          "style": {
+            "top": 0
+          }
+        },
+        {
+          "id": 2,
+          "libId": 2,
+          "text": "文本接口示例",
+          "style": {
+            "top": 160
+          }
+        },
+        {
+          "id": 6,
+          "libId": 6,
+          "style": {
+            "top": 250
+          }
+        }
+      ],
+      "actionList": [
+        {
+          "type": 13,
+          "event": "Added",
+          "target": [
+            11,
+            []
+          ],
+          "execute": [
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [],
+                  "vfStage",
+                  "originalEventPreventDefault"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  0,
+                  true
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "1": {
+      "type": "Image",
+      "src": 1,
+      "style": {
+        "width": 83,
+        "height": 138,
+        "justifyContent": "center"
+      }
+    },
+    "2": {
+      "type": "Label",
+      "style": {
+        "width": 100,
+        "justifyContent": "center"
+      }
+    },
+    "6": {
+      "type": "TextInput",
+      "placeholder": "单行输入文本...",
+      "maxLength": 15,
+      "up": 3,
+      "down": 5,
+      "move": 4,
+      "style": {
+        "width": 300,
+        "height": 30,
+        "fontSize": 24,
+        "color": 16777215,
+        "fontFamily": "微软雅黑",
+        "justifyContent": "center"
+      }
+    }
+  },
+  "name": "VFT2J",
+  "width": 890,
+  "height": 500,
+  "version": "0.0.1",
+  "baseUrl": "",
+  "loadMode": "all",
+  "conversion": "",
+  "scaleMode": "showAll"
+}

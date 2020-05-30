@@ -1,0 +1,438 @@
+{
+  "assets": {
+    "1": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/dino.png",
+      "name": "1"
+    },
+    "5": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_up.png",
+      "name": "5"
+    },
+    "6": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_down.png",
+      "name": "6"
+    },
+    "7": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_move.png",
+      "name": "7"
+    }
+  },
+  "global": {},
+  "scenes": [
+    {
+      "id": 0,
+      "libId": "0"
+    }
+  ],
+  "components": {
+    "0": {
+      "type": "custom",
+      "interactabled": false,
+      "children": [
+        {
+          "id": 1,
+          "libId": 1,
+          "style": {
+            "top": 0
+          }
+        },
+        {
+          "id": 2,
+          "libId": 2,
+          "text": "按钮接口示例",
+          "style": {
+            "top": 160
+          }
+        },
+        {
+          "id": "clickButton",
+          "libId": 8,
+          "text": "点击按钮",
+          "style": {
+            "top": 220
+          }
+        },
+        {
+          "id": "colorButton",
+          "libId": 8,
+          "text": "划过按钮",
+          "style": {
+            "top": 260
+          }
+        },
+        {
+          "id": "imgButton",
+          "libId": 8,
+          "text": "点击弹起",
+          "style": {
+            "height": 60,
+            "top": 300
+          }
+        }
+      ],
+      "actionList": [
+        {
+          "type": 13,
+          "event": "Add",
+          "target": [
+            11,
+            []
+          ],
+          "execute": [
+            {
+              "type": 35,
+              "value": "// 注册点击事件"
+            },
+            {
+              "type": 13,
+              "event": "click",
+              "target": [
+                11,
+                [
+                  "clickButton"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 37,
+                  "variableType": "object",
+                  "value": "",
+                  "varId": "scaleX"
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      1,
+                      [],
+                      "scaleX"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      4,
+                      [
+                        "1"
+                      ],
+                      "scaleX"
+                    ],
+                    [
+                      5,
+                      "*"
+                    ],
+                    [
+                      0,
+                      -1
+                    ]
+                  ]
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "1"
+                      ],
+                      "scaleX"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      5,
+                      "("
+                    ],
+                    [
+                      1,
+                      [],
+                      "scaleX"
+                    ],
+                    [
+                      5,
+                      ")"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 35,
+              "value": "// 注册带有回调参数的移入移出事件"
+            },
+            {
+              "type": 29,
+              "event": "hover",
+              "target": [
+                11,
+                [
+                  "colorButton"
+                ]
+              ],
+              "funName": "onColorButtonHover"
+            },
+            {
+              "type": 11,
+              "name": "onColorButtonHover",
+              "execute": [
+                {
+                  "type": 7,
+                  "execute": [
+                    {
+                      "type": 8,
+                      "condition": [
+                        [
+                          9,
+                          2,
+                          "isHover"
+                        ]
+                      ],
+                      "execute": [
+                        {
+                          "type": 6,
+                          "express": [
+                            [
+                              4,
+                              [
+                                "colorButton"
+                              ],
+                              "label",
+                              "style",
+                              "color"
+                            ],
+                            [
+                              5,
+                              "="
+                            ],
+                            [
+                              0,
+                              [
+                                "0x00ffff",
+                                "0xff00cc"
+                              ]
+                            ]
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": 10,
+                      "execute": [
+                        {
+                          "type": 6,
+                          "express": [
+                            [
+                              4,
+                              [
+                                "colorButton"
+                              ],
+                              "label",
+                              "style",
+                              "color"
+                            ],
+                            [
+                              5,
+                              "="
+                            ],
+                            [
+                              0,
+                              [
+                                "0xffffff"
+                              ]
+                            ]
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 35,
+              "value": "// 注释鼠标按下或弹起事件"
+            },
+            {
+              "type": 29,
+              "event": "press",
+              "target": [
+                11,
+                [
+                  "imgButton"
+                ]
+              ],
+              "funName": "onImgButtonPress"
+            },
+            {
+              "type": 11,
+              "name": "onImgButtonPress",
+              "execute": [
+                {
+                  "type": 0,
+                  "value": [
+                    9,
+                    2,
+                    "isPress"
+                  ]
+                },
+                {
+                  "type": 7,
+                  "execute": [
+                    {
+                      "type": 8,
+                      "condition": [
+                        [
+                          9,
+                          2,
+                          "isPress"
+                        ]
+                      ],
+                      "execute": [
+                        {
+                          "type": 6,
+                          "express": [
+                            [
+                              4,
+                              [
+                                "imgButton"
+                              ],
+                              "img",
+                              "fillMode"
+                            ],
+                            [
+                              5,
+                              "="
+                            ],
+                            [
+                              0,
+                              "repeat"
+                            ]
+                          ]
+                        },
+                        {
+                          "type": 6,
+                          "express": [
+                            [
+                              4,
+                              [
+                                "imgButton"
+                              ],
+                              "img",
+                              "scale9Grid"
+                            ],
+                            [
+                              5,
+                              "="
+                            ],
+                            [
+                              0,
+                              [
+                                1,
+                                1,
+                                0,
+                                0
+                              ]
+                            ]
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": 10,
+                      "execute": [
+                        {
+                          "type": 6,
+                          "express": [
+                            [
+                              4,
+                              [
+                                "imgButton"
+                              ],
+                              "img",
+                              "fillMode"
+                            ],
+                            [
+                              5,
+                              "="
+                            ],
+                            [
+                              0,
+                              "no-repeat"
+                            ]
+                          ]
+                        },
+                        {
+                          "type": 6,
+                          "express": [
+                            [
+                              4,
+                              [
+                                "imgButton"
+                              ],
+                              "img",
+                              "scale9Grid"
+                            ],
+                            [
+                              5,
+                              "="
+                            ],
+                            [
+                              0,
+                              []
+                            ]
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "1": {
+      "type": "Image",
+      "width": 83,
+      "height": 138,
+      "src": 1,
+      "style": {
+        "justifyContent": "center"
+      }
+    },
+    "2": {
+      "type": "Label",
+      "width": 100,
+      "style": {
+        "justifyContent": "center"
+      }
+    },
+    "8": {
+      "type": "Button",
+      "width": 100,
+      "height": 30,
+      "up": 5,
+      "down": 6,
+      "move": 7,
+      "style": {
+        "justifyContent": "center"
+      }
+    }
+  },
+  "name": "VFT2J",
+  "width": 890,
+  "height": 500,
+  "version": "0.0.1",
+  "baseUrl": "",
+  "loadMode": "all",
+  "conversion": "",
+  "scaleMode": "showAll"
+}

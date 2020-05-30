@@ -1,0 +1,162 @@
+{
+  "assets": {
+    "1": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/dino.png",
+      "name": "1"
+    }
+  },
+  "global": {},
+  "scenes": [
+    {
+      "id": 0,
+      "libId": "0"
+    }
+  ],
+  "components": {
+    "0": {
+      "type": "custom",
+      "interactabled": false,
+      "style": {
+        "height": 50
+      },
+      "children": [
+        {
+          "id": 1,
+          "libId": 1,
+          "style": {
+            "top": 0
+          }
+        },
+        {
+          "id": 2,
+          "libId": 2,
+          "text": "滚动条接口示例",
+          "style": {
+            "top": 160
+          }
+        },
+        {
+          "id": "bottom0",
+          "libId": 1,
+          "style": {
+            "top": 280
+          }
+        },
+        {
+          "id": "bottom1",
+          "libId": 1,
+          "style": {
+            "top": 480
+          }
+        },
+        {
+          "id": "bottom2",
+          "libId": 1,
+          "style": {
+            "top": 650
+          }
+        },
+        {
+          "id": 3,
+          "libId": 3,
+          "text": "滑动条接口示例",
+          "style": {
+            "top": 0,
+            "right": 0,
+            "width": 1
+          }
+        }
+      ],
+      "actionList": [
+        {
+          "type": 13,
+          "event": "Added",
+          "target": [
+            11,
+            []
+          ],
+          "execute": [
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "3"
+                  ],
+                  "source"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  0,
+                  "this"
+                ]
+              ]
+            },
+            {
+              "type": 35,
+              "value": "//被绑定对象需要添加舞台后进行操作"
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "3"
+                  ],
+                  "height"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  4,
+                  [],
+                  "height"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "1": {
+      "type": "Image",
+      "src": 1,
+      "style": {
+        "width": 83,
+        "height": 138,
+        "justifyContent": "center"
+      }
+    },
+    "2": {
+      "type": "Label",
+      "style": {
+        "width": 100,
+        "justifyContent": "center"
+      }
+    },
+    "3": {
+      "type": "ScrollBar",
+      "thumb": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAIAAABvrngfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1NEJCQkM0RjAxRjIxMUU1OUIxODkzNzZCOTg5NDdBQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1NEJCQkM1MDAxRjIxMUU1OUIxODkzNzZCOTg5NDdBQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkYxOUJGMjdFMDFGMDExRTU5QjE4OTM3NkI5ODk0N0FDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU0QkJCQzRFMDFGMjExRTU5QjE4OTM3NkI5ODk0N0FDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+m4wp+wAAABdJREFUeNpi0Wm5xoAKmBgwADWFAAIMAK5qAZXBXGqKAAAAAElFTkSuQmCC",
+      "track": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAIAAABvrngfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQ0JERjUzNDAxRUUxMUU1OUIxODkzNzZCOTg5NDdBQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyQUExMDQ2QzAxRUYxMUU1OUIxODkzNzZCOTg5NDdBQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNDQkRGNTMyMDFFRTExRTU5QjE4OTM3NkI5ODk0N0FDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNDQkRGNTMzMDFFRTExRTU5QjE4OTM3NkI5ODk0N0FDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+KKOhfwAAABdJREFUeNpiefHiBQMqYGLAANQUAggwADUDAscAbnM3AAAAAElFTkSuQmCC",
+      "vertical": true,
+      "autohide": true,
+      "value": 0
+    }
+  },
+  "name": "VFT2J",
+  "width": 890,
+  "height": 500,
+  "version": "0.0.1",
+  "baseUrl": "",
+  "loadMode": "all",
+  "conversion": "",
+  "scaleMode": "showAll"
+}

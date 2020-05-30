@@ -1,0 +1,378 @@
+{
+  "assets": {
+    "1": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/dino.png",
+      "name": "1"
+    },
+    "4": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/CheckBox/unselect.png",
+      "name": "4"
+    },
+    "5": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/CheckBox/select_up.png",
+      "name": "5"
+    },
+    "6": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/CheckBox/select_down.png",
+      "name": "6"
+    },
+    "7": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/CheckBox/select_disabled.png",
+      "name": "7"
+    },
+    "9": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Radio/unselect.png",
+      "name": "9"
+    },
+    "10": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Radio/select_up.png",
+      "name": "10"
+    },
+    "11": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Radio/select_down.png",
+      "name": "11"
+    },
+    "12": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Radio/select_disabled.png",
+      "name": "12"
+    }
+  },
+  "global": {},
+  "scenes": [
+    {
+      "id": 0,
+      "libId": "0"
+    }
+  ],
+  "components": {
+    "0": {
+      "type": "custom",
+      "interactabled": false,
+      "children": [
+        {
+          "id": 1,
+          "libId": 1,
+          "style": {
+            "top": 0
+          }
+        },
+        {
+          "id": 2,
+          "libId": 2,
+          "text": "单选与复选框接口示例",
+          "style": {
+            "top": 160
+          }
+        },
+        {
+          "id": "checkbox1",
+          "libId": 3,
+          "x": 400,
+          "y": 220,
+          "value": "checkbox1"
+        },
+        {
+          "id": "checkbox2",
+          "libId": 3,
+          "x": 440,
+          "y": 220,
+          "value": "checkbox2"
+        },
+        {
+          "id": "checkbox3",
+          "libId": 3,
+          "x": 480,
+          "y": 220,
+          "value": "checkbox3"
+        },
+        {
+          "id": "radio1",
+          "libId": 8,
+          "x": 400,
+          "y": 280,
+          "value": "radio1",
+          "checkGroup": "radioGroup1"
+        },
+        {
+          "id": "radio2",
+          "libId": 8,
+          "x": 440,
+          "y": 280,
+          "value": "radio2",
+          "checkGroup": "radioGroup1"
+        },
+        {
+          "id": "radio3",
+          "libId": 8,
+          "x": 480,
+          "y": 280,
+          "value": "radio3",
+          "checkGroup": "radioGroup1"
+        }
+      ],
+      "actionList": [
+        {
+          "type": 13,
+          "event": "Add",
+          "target": [
+            11,
+            []
+          ],
+          "execute": [
+            {
+              "type": 13,
+              "event": "CHANGE",
+              "target": [
+                11,
+                [
+                  "checkbox1"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 0,
+                  "value": [
+                    4,
+                    [
+                      "checkbox1"
+                    ],
+                    "value"
+                  ]
+                },
+                {
+                  "type": 0,
+                  "value": [
+                    4,
+                    [
+                      "checkbox1"
+                    ],
+                    "checked"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "CHANGE",
+              "target": [
+                11,
+                [
+                  "checkbox2"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 0,
+                  "value": [
+                    4,
+                    [
+                      "checkbox2"
+                    ],
+                    "value"
+                  ]
+                },
+                {
+                  "type": 0,
+                  "value": [
+                    4,
+                    [
+                      "checkbox2"
+                    ],
+                    "checked"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "CHANGE",
+              "target": [
+                11,
+                [
+                  "checkbox3"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 0,
+                  "value": [
+                    4,
+                    [
+                      "checkbox3"
+                    ],
+                    "value"
+                  ]
+                },
+                {
+                  "type": 0,
+                  "value": [
+                    4,
+                    [
+                      "checkbox3"
+                    ],
+                    "checked"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "CHANGE",
+              "target": [
+                11,
+                [
+                  "radio1"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 0,
+                  "value": [
+                    4,
+                    [
+                      "radio1"
+                    ],
+                    "value"
+                  ]
+                },
+                {
+                  "type": 0,
+                  "value": [
+                    4,
+                    [
+                      "radio1"
+                    ],
+                    "checked"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "CHANGE",
+              "target": [
+                11,
+                [
+                  "radio2"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 0,
+                  "value": [
+                    4,
+                    [
+                      "radio2"
+                    ],
+                    "value"
+                  ]
+                },
+                {
+                  "type": 0,
+                  "value": [
+                    4,
+                    [
+                      "radio2"
+                    ],
+                    "checked"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "CHANGE",
+              "target": [
+                11,
+                [
+                  "radio3"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 0,
+                  "value": [
+                    4,
+                    [
+                      "radio3"
+                    ],
+                    "value"
+                  ]
+                },
+                {
+                  "type": 0,
+                  "value": [
+                    4,
+                    [
+                      "radio3"
+                    ],
+                    "checked"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "1": {
+      "type": "Image",
+      "width": 83,
+      "height": 138,
+      "src": 1,
+      "style": {
+        "justifyContent": "center"
+      }
+    },
+    "2": {
+      "type": "Label",
+      "width": 100,
+      "style": {
+        "justifyContent": "center"
+      }
+    },
+    "3": {
+      "type": "CheckBox",
+      "width": 23,
+      "height": 23,
+      "up": "4",
+      "down": "4",
+      "move": "4",
+      "disabled": "4",
+      "upAndSelected": "5",
+      "downAndSelected": "6",
+      "moveAndSelected": "6",
+      "disabledAndSelected": "7"
+    },
+    "8": {
+      "type": "CheckBox",
+      "width": 23,
+      "height": 23,
+      "up": "9",
+      "down": "9",
+      "move": "9",
+      "disabled": "9",
+      "upAndSelected": "10",
+      "downAndSelected": "11",
+      "moveAndSelected": "11",
+      "disabledAndSelected": "12"
+    }
+  },
+  "name": "VFT2J",
+  "width": 890,
+  "height": 500,
+  "version": "0.0.1",
+  "baseUrl": "",
+  "loadMode": "all",
+  "conversion": "",
+  "scaleMode": "showAll"
+}
