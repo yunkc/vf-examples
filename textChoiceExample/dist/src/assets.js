@@ -5,7 +5,7 @@ const IVFTemplate_1 = require("../types/IVFTemplate");
 const assets = {
     [store_1.Ids.textChoice]: {
         type: IVFTemplate_1.AssetType.js,
-        url: "//s.vipkidstatic.com/vf/plugin/TextChoice/0.0.2.js",
+        url: "//s.vipkidstatic.com/vf/plugin/TextChoice/0.0.6.js",
         name: "TextChoice",
     },
     [store_1.Ids.up]: {

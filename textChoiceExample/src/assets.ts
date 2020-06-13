@@ -4,7 +4,7 @@ import {Assets, AssetType} from '../types/IVFTemplate'
 const assets: Assets = {
     [Ids.textChoice]:{
         type: AssetType.js,
-        url: "//s.vipkidstatic.com/vf/plugin/TextChoice/0.0.2.js",
+        url: "//s.vipkidstatic.com/vf/plugin/TextChoice/0.0.6.js",
         name: "TextChoice",
     },
     [Ids.up]: {
