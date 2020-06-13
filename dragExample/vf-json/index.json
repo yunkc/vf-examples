@@ -1,0 +1,1072 @@
+{
+  "assets": {
+    "1": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/dino.png",
+      "name": "1"
+    },
+    "3": {
+      "type": "image",
+      "url": "./assets/mouse.png",
+      "name": "1"
+    }
+  },
+  "global": {},
+  "scenes": [
+    {
+      "id": 0,
+      "libId": "0"
+    }
+  ],
+  "components": {
+    "0": {
+      "type": "custom",
+      "interactabled": true,
+      "children": [
+        {
+          "id": "rectLine",
+          "libId": 4,
+          "lineColor": 5658240,
+          "lineWidth": 5,
+          "color": 5658197,
+          "width": 890,
+          "height": 500,
+          "style": {
+            "justifyContent": "center"
+          }
+        },
+        {
+          "id": "1",
+          "libId": 5,
+          "x": 15,
+          "y": 15,
+          "dragOption": {
+            "draggable": true,
+            "dragContainer": "this"
+          }
+        },
+        {
+          "id": "2",
+          "libId": 5,
+          "x": 150,
+          "y": 15,
+          "dragOption": {
+            "draggable": true,
+            "dragRestrictAxis": "x"
+          }
+        },
+        {
+          "id": "3",
+          "libId": 5,
+          "x": 15,
+          "y": 130,
+          "dragOption": {
+            "draggable": true,
+            "dragRestrictAxis": "y"
+          }
+        },
+        {
+          "id": "4",
+          "libId": 5,
+          "x": 150,
+          "y": 130,
+          "dragOption": {
+            "draggable": true,
+            "dragBoundary": true
+          }
+        },
+        {
+          "id": "5",
+          "libId": 5,
+          "x": 15,
+          "y": 250,
+          "dragOption": {
+            "draggable": true,
+            "dragBounces": true
+          }
+        },
+        {
+          "id": "6",
+          "libId": 5,
+          "x": 150,
+          "y": 250
+        },
+        {
+          "id": "7",
+          "libId": 5,
+          "x": 280,
+          "y": 15,
+          "width": 300,
+          "height": 300,
+          "style": {
+            "display": "grid",
+            "gridTemplateColumns": [
+              "repeat",
+              3,
+              30
+            ],
+            "gridTemplateRows": [
+              "repeat",
+              3,
+              30
+            ],
+            "gridColumnGap": 10,
+            "gridRowGap": 10
+          },
+          "dragOption": {
+            "draggable": true,
+            "droppable": true,
+            "dropGroup": "group1"
+          }
+        },
+        {
+          "id": "rect0",
+          "libId": 4,
+          "x": 150,
+          "y": 250,
+          "dragOption": {
+            "draggable": true,
+            "dragBounces": true,
+            "dragGroup": "group1"
+          }
+        },
+        {
+          "id": "rect1",
+          "libId": 4,
+          "color": 65382,
+          "x": 185,
+          "y": 250,
+          "dragOption": {
+            "draggable": true,
+            "dragBounces": true,
+            "dragGroup": "group1"
+          }
+        },
+        {
+          "id": "rect2",
+          "libId": 4,
+          "color": 6750156,
+          "x": 220,
+          "y": 250,
+          "dragOption": {
+            "draggable": true,
+            "dragBounces": true,
+            "dragGroup": "group1"
+          }
+        }
+      ],
+      "actionList": [
+        {
+          "type": 13,
+          "event": "Added",
+          "target": [
+            11,
+            []
+          ],
+          "execute": [
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "1",
+                    "title"
+                  ],
+                  "text"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  0,
+                  "自由拖动"
+                ]
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "2",
+                    "title"
+                  ],
+                  "text"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  0,
+                  "限定X轴移动"
+                ]
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "3",
+                    "title"
+                  ],
+                  "text"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  0,
+                  "限定Y轴移动"
+                ]
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "4",
+                    "title"
+                  ],
+                  "text"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  0,
+                  "限定边界"
+                ]
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "5",
+                    "title"
+                  ],
+                  "text"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  0,
+                  "拖动回弹"
+                ]
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "6",
+                    "title"
+                  ],
+                  "text"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  0,
+                  "拖动到\r接收容器"
+                ]
+              ]
+            },
+            {
+              "type": 13,
+              "event": "DRAG_START",
+              "target": [
+                11,
+                [
+                  "rect0"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect0"
+                      ],
+                      "scaleX"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect0"
+                      ],
+                      "scaleY"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "DRAG_END",
+              "target": [
+                11,
+                [
+                  "rect0"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect0"
+                      ],
+                      "scaleX"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect0"
+                      ],
+                      "scaleY"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "DRAG_TARGET",
+              "target": [
+                11,
+                [
+                  "rect0"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect0"
+                      ],
+                      "scaleX"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect0"
+                      ],
+                      "scaleY"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect0"
+                      ],
+                      "dragOption",
+                      "draggable"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      false
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "rect1"
+                  ],
+                  "visible"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  0,
+                  true
+                ]
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "rect1"
+                  ],
+                  "dragOption",
+                  "draggable"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  0,
+                  true
+                ]
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "rect1"
+                  ],
+                  "dragOption",
+                  "dragBounces"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  0,
+                  true
+                ]
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "rect1"
+                  ],
+                  "dragOption",
+                  "dragGroup"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  0,
+                  "group1"
+                ]
+              ]
+            },
+            {
+              "type": 13,
+              "event": "DRAG_START",
+              "target": [
+                11,
+                [
+                  "rect1"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect1"
+                      ],
+                      "scaleX"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect1"
+                      ],
+                      "scaleY"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "DRAG_END",
+              "target": [
+                11,
+                [
+                  "rect1"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect1"
+                      ],
+                      "scaleX"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect1"
+                      ],
+                      "scaleY"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "DRAG_TARGET",
+              "target": [
+                11,
+                [
+                  "rect1"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect1"
+                      ],
+                      "scaleX"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect1"
+                      ],
+                      "scaleY"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect1"
+                      ],
+                      "dragOption",
+                      "draggable"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      false
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "rect2"
+                  ],
+                  "visible"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  0,
+                  true
+                ]
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "rect2"
+                  ],
+                  "dragOption",
+                  "draggable"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  0,
+                  true
+                ]
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "rect2"
+                  ],
+                  "dragOption",
+                  "dragBounces"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  0,
+                  true
+                ]
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "rect2"
+                  ],
+                  "dragOption",
+                  "dragGroup"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  0,
+                  "group1"
+                ]
+              ]
+            },
+            {
+              "type": 13,
+              "event": "DRAG_START",
+              "target": [
+                11,
+                [
+                  "rect2"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect2"
+                      ],
+                      "scaleX"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect2"
+                      ],
+                      "scaleY"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "DRAG_END",
+              "target": [
+                11,
+                [
+                  "rect2"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect2"
+                      ],
+                      "scaleX"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect2"
+                      ],
+                      "scaleY"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "DRAG_TARGET",
+              "target": [
+                11,
+                [
+                  "rect2"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect2"
+                      ],
+                      "scaleX"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect2"
+                      ],
+                      "scaleY"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "rect2"
+                      ],
+                      "dragOption",
+                      "draggable"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      false
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "7",
+                    "title"
+                  ],
+                  "text"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  0,
+                  "接收容器"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "1": {
+      "type": "Image",
+      "width": 83,
+      "height": 138,
+      "src": 1,
+      "style": {
+        "justifyContent": "center"
+      }
+    },
+    "2": {
+      "type": "Label",
+      "width": 100,
+      "style": {
+        "justifyContent": "center",
+        "alignContent": "center",
+        "color": 0,
+        "fontSize": 24,
+        "wordWrap": true,
+        "wordWrapWidth": 100
+      }
+    },
+    "4": {
+      "type": "Rect",
+      "style": {
+        "width": 30,
+        "height": 30
+      },
+      "color": 16764006
+    },
+    "5": {
+      "type": "custom",
+      "interactabled": true,
+      "style": {
+        "backgroundColor": 16777215,
+        "width": 100,
+        "height": 100
+      },
+      "children": [
+        {
+          "id": "title",
+          "libId": 2,
+          "style": {
+            "top": 0
+          }
+        }
+      ]
+    }
+  },
+  "name": "VFT2J",
+  "width": 890,
+  "height": 500,
+  "version": "0.0.1",
+  "baseUrl": "",
+  "loadMode": "all",
+  "conversion": "",
+  "scaleMode": "showAll",
+  "launcherVersion": "0.5.7"
+}
