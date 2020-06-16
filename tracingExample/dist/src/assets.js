@@ -5,27 +5,27 @@ const IVFTemplate_1 = require("../types/IVFTemplate");
 const assets = {
     [store_1.AssetId.fan]: {
         type: IVFTemplate_1.AssetType.image,
-        url: 'assets/tracing/fan.png',
+        url: 'https://vipkid-edu.github.io/vf-gui/play/assets/tracing/fan.png',
         name: store_1.AssetId.fan.toString()
     },
     [store_1.AssetId.maskBg]: {
         type: IVFTemplate_1.AssetType.image,
-        url: 'assets/tracing/maskBg.png',
+        url: 'https://vipkid-edu.github.io/vf-gui/play/assets/tracing/maskBg.png',
         name: store_1.AssetId.maskBg.toString()
     },
     [store_1.AssetId.unselect]: {
         type: IVFTemplate_1.AssetType.image,
-        url: 'assets/Radio/unselect.png',
+        url: 'https://vipkid-edu.github.io/vf-gui/play/assets/skin/Radio/unselect.png',
         name: store_1.AssetId.unselect.toString()
     },
     [store_1.AssetId.select_up]: {
         type: IVFTemplate_1.AssetType.image,
-        url: 'assets/Radio/select_up.png',
+        url: 'https://vipkid-edu.github.io/vf-gui/play/assets/skin/Radio/select_up.png',
         name: store_1.AssetId.select_up.toString()
     },
     [store_1.AssetId.select_down]: {
         type: IVFTemplate_1.AssetType.image,
-        url: 'assets/Radio/select_down.png',
+        url: 'https://vipkid-edu.github.io/vf-gui/play/assets/skin/Radio/select_down.png',
         name: store_1.AssetId.select_down.toString()
     },
     [store_1.AssetId.up]: {

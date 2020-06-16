@@ -25,12 +25,12 @@ const assets = {
     },
     [store_1.Ids.sound1]: {
         type: IVFTemplate_1.AssetType.SOUND,
-        url: './assets/sound1.mp3',
+        url: 'https://s.vipkidstatic.com/vf/IC019/C019_selete1_sound.mp3',
         name: store_1.Ids.sound1.toString()
     },
     [store_1.Ids.sound2]: {
         type: IVFTemplate_1.AssetType.SOUND,
-        url: './assets/sound2.mp3',
+        url: 'https://s.vipkidstatic.com/vf/IC019/c019_turn.mp3',
         name: store_1.Ids.sound2.toString()
     },
 };

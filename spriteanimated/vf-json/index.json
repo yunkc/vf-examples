@@ -226,10 +226,6 @@
                     0,
                     "COMPLETE"
                   ]
-                },
-                {
-                  "type": 35,
-                  "value": "// loop = false 时，触发"
                 }
               ]
             }

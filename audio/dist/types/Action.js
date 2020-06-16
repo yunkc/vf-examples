@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Express = exports.ActionType = void 0;
 var ActionType;
 (function (ActionType) {
     ActionType[ActionType["Print"] = 0] = "Print";

@@ -16,7 +16,6 @@ const title = {
     type: Component_1.guiType.TEXT,
     width: 100,
     style: {
-        color: "#000",
         justifyContent: "center"
     }
 };

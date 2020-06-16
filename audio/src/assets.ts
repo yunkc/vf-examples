@@ -24,12 +24,12 @@ const assets: Assets = {
     },
     [Ids.sound1]: {
         type: AssetType.SOUND,
-        url: './assets/sound1.mp3',
+        url: 'https://s.vipkidstatic.com/vf/IC019/C019_selete1_sound.mp3',
         name: Ids.sound1.toString()
     },
     [Ids.sound2]: {
         type: AssetType.SOUND,
-        url: './assets/sound2.mp3',
+        url: 'https://s.vipkidstatic.com/vf/IC019/c019_turn.mp3',
         name: Ids.sound2.toString()
     },
 }

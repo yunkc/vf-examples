@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.App = exports.Ids = void 0;
 var Ids;
 (function (Ids) {
     Ids[Ids["root"] = 0] = "root";

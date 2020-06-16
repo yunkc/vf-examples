@@ -209,7 +209,6 @@
       "type": "Label",
       "width": 100,
       "style": {
-        "color": "#000",
         "justifyContent": "center"
       }
     },

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.AssetType = exports.LoadMode = exports.ScaleMode = void 0;
 var ScaleMode;
 (function (ScaleMode) {
     ScaleMode["SHOW_ALL"] = "showAll";

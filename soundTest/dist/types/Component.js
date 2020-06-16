@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.guiType = void 0;
 var guiType;
 (function (guiType) {
     guiType["CONTAINER"] = "container";

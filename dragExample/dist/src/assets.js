@@ -10,7 +10,7 @@ const assets = {
     },
     [store_1.Ids.drag]: {
         type: IVFTemplate_1.AssetType.image,
-        url: './assets/mouse.png',
+        url: 'https://vipkid-edu.github.io/vf-gui/play/assets/mouse.png',
         name: store_1.Ids.dinoImage.toString()
     },
 };
