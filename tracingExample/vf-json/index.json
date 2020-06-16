@@ -1,0 +1,1392 @@
+{
+  "assets": {
+    "0": {
+      "type": "image",
+      "url": "assets/tracing/fan.png",
+      "name": "0"
+    },
+    "1": {
+      "type": "image",
+      "url": "assets/tracing/maskBg.png",
+      "name": "1"
+    },
+    "2": {
+      "type": "image",
+      "url": "assets/Radio/unselect.png",
+      "name": "2"
+    },
+    "3": {
+      "type": "image",
+      "url": "assets/Radio/select_up.png",
+      "name": "3"
+    },
+    "4": {
+      "type": "image",
+      "url": "assets/Radio/select_down.png",
+      "name": "4"
+    },
+    "5": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_up.png",
+      "name": "5"
+    },
+    "6": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_move.png",
+      "name": "6"
+    },
+    "7": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_down.png",
+      "name": "7"
+    }
+  },
+  "global": {},
+  "scenes": [
+    {
+      "id": 0,
+      "libId": "0"
+    }
+  ],
+  "components": {
+    "0": {
+      "type": "custom",
+      "interactabled": false,
+      "children": [
+        {
+          "id": "tracing1",
+          "libId": 1,
+          "x": 0,
+          "y": 100,
+          "width": 400,
+          "height": 400
+        },
+        {
+          "id": "tracing2",
+          "libId": 1,
+          "x": 400,
+          "y": 100,
+          "width": 400,
+          "height": 400
+        },
+        {
+          "id": "label1",
+          "libId": 3,
+          "text": "未完成",
+          "style": {
+            "left": 130,
+            "top": 70
+          }
+        },
+        {
+          "id": "label2",
+          "libId": 3,
+          "text": "未完成",
+          "style": {
+            "left": 530,
+            "top": 70
+          }
+        },
+        {
+          "id": "radio0",
+          "libId": 2,
+          "checked": true,
+          "checkGroup": "groupRadio",
+          "style": {
+            "left": 0
+          }
+        },
+        {
+          "id": "radio1",
+          "libId": 2,
+          "checkGroup": "groupRadio",
+          "style": {
+            "left": 200
+          }
+        },
+        {
+          "id": "radio2",
+          "libId": 2,
+          "checkGroup": "groupRadio",
+          "style": {
+            "left": 400
+          }
+        },
+        {
+          "id": "radioText0",
+          "libId": 3,
+          "text": "笔画检测",
+          "style": {
+            "left": 30
+          }
+        },
+        {
+          "id": "radioText1",
+          "libId": 3,
+          "text": "教学模式",
+          "style": {
+            "left": 230
+          }
+        },
+        {
+          "id": "radioText2",
+          "libId": 3,
+          "text": "自动书写",
+          "style": {
+            "left": 430
+          }
+        },
+        {
+          "id": "clearBtn",
+          "libId": 4,
+          "text": "清除",
+          "style": {
+            "top": 70,
+            "left": 0
+          }
+        }
+      ],
+      "actionList": [
+        {
+          "type": 13,
+          "event": "Added",
+          "target": [
+            11,
+            []
+          ],
+          "execute": [
+            {
+              "type": 12,
+              "target": [
+                11,
+                [
+                  "tracing1"
+                ]
+              ],
+              "name": "clear"
+            },
+            {
+              "type": 12,
+              "target": [
+                11,
+                [
+                  "tracing2"
+                ]
+              ],
+              "name": "clear"
+            },
+            {
+              "type": 29,
+              "event": "CHANGE",
+              "target": [
+                11,
+                [
+                  "tracing1"
+                ]
+              ],
+              "funName": "tracChange1"
+            },
+            {
+              "type": 29,
+              "event": "CHANGE",
+              "target": [
+                11,
+                [
+                  "tracing2"
+                ]
+              ],
+              "funName": "tracChange2"
+            },
+            {
+              "type": 29,
+              "event": "COMPLETE",
+              "target": [
+                11,
+                [
+                  "tracing1"
+                ]
+              ],
+              "funName": "tracBack1"
+            },
+            {
+              "type": 29,
+              "event": "COMPLETE",
+              "target": [
+                11,
+                [
+                  "tracing2"
+                ]
+              ],
+              "funName": "tracBack2"
+            },
+            {
+              "type": 13,
+              "event": "CHANGE",
+              "target": [
+                11,
+                [
+                  "radio0"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 37,
+                  "variableType": "object",
+                  "value": "",
+                  "varId": "checked"
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      1,
+                      [],
+                      "checked"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      4,
+                      [
+                        "radio0"
+                      ],
+                      "checked"
+                    ]
+                  ]
+                },
+                {
+                  "type": 12,
+                  "target": [
+                    11,
+                    []
+                  ],
+                  "name": "change",
+                  "params": [
+                    [
+                      1,
+                      [],
+                      "checked"
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "CHANGE",
+              "target": [
+                11,
+                [
+                  "radio1"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 37,
+                  "variableType": "object",
+                  "value": "",
+                  "varId": "checked"
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      1,
+                      [],
+                      "checked"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      4,
+                      [
+                        "radio1"
+                      ],
+                      "checked"
+                    ]
+                  ]
+                },
+                {
+                  "type": 12,
+                  "target": [
+                    11,
+                    []
+                  ],
+                  "name": "change",
+                  "params": [
+                    [
+                      1,
+                      [],
+                      "checked"
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "CHANGE",
+              "target": [
+                11,
+                [
+                  "radio2"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 37,
+                  "variableType": "object",
+                  "value": "",
+                  "varId": "checked"
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      1,
+                      [],
+                      "checked"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      4,
+                      [
+                        "radio2"
+                      ],
+                      "checked"
+                    ]
+                  ]
+                },
+                {
+                  "type": 12,
+                  "target": [
+                    11,
+                    []
+                  ],
+                  "name": "change",
+                  "params": [
+                    [
+                      1,
+                      [],
+                      "checked"
+                    ],
+                    [
+                      0,
+                      2
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "click",
+              "target": [
+                11,
+                [
+                  "clearBtn"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 12,
+                  "target": [
+                    11,
+                    [
+                      "tracing1"
+                    ]
+                  ],
+                  "name": "clear"
+                },
+                {
+                  "type": 12,
+                  "target": [
+                    11,
+                    [
+                      "tracing2"
+                    ]
+                  ],
+                  "name": "clear"
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "label1"
+                      ],
+                      "text"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      "未完成"
+                    ]
+                  ]
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "label2"
+                      ],
+                      "text"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      "未完成"
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": 11,
+          "name": "tracChange1",
+          "execute": [
+            {
+              "type": 12,
+              "target": [
+                11,
+                [
+                  "tracing2"
+                ]
+              ],
+              "name": "setData",
+              "params": [
+                [
+                  9,
+                  1,
+                  "data"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": 11,
+          "name": "tracChange2",
+          "execute": [
+            {
+              "type": 12,
+              "target": [
+                11,
+                [
+                  "tracing1"
+                ]
+              ],
+              "name": "setData",
+              "params": [
+                [
+                  9,
+                  1,
+                  "data"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": 11,
+          "name": "tracBack1",
+          "execute": [
+            {
+              "type": 7,
+              "execute": [
+                {
+                  "type": 8,
+                  "condition": [
+                    [
+                      9,
+                      1,
+                      "curValue",
+                      "mode"
+                    ],
+                    [
+                      5,
+                      "=="
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "execute": [
+                    {
+                      "type": 7,
+                      "execute": [
+                        {
+                          "type": 8,
+                          "condition": [
+                            [
+                              9,
+                              1,
+                              "curValue",
+                              "value"
+                            ],
+                            [
+                              5,
+                              "=="
+                            ],
+                            [
+                              0,
+                              0
+                            ]
+                          ],
+                          "execute": [
+                            {
+                              "type": 6,
+                              "express": [
+                                [
+                                  4,
+                                  [
+                                    "label1"
+                                  ],
+                                  "text"
+                                ],
+                                [
+                                  5,
+                                  "="
+                                ],
+                                [
+                                  0,
+                                  "未完成"
+                                ]
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 9,
+                          "condition": [
+                            [
+                              9,
+                              1,
+                              "curValue",
+                              "value"
+                            ],
+                            [
+                              5,
+                              "=="
+                            ],
+                            [
+                              0,
+                              1
+                            ]
+                          ],
+                          "execute": [
+                            {
+                              "type": 6,
+                              "express": [
+                                [
+                                  4,
+                                  [
+                                    "label1"
+                                  ],
+                                  "text"
+                                ],
+                                [
+                                  5,
+                                  "="
+                                ],
+                                [
+                                  0,
+                                  "笔画正确"
+                                ]
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 10,
+                          "execute": [
+                            {
+                              "type": 6,
+                              "express": [
+                                [
+                                  4,
+                                  [
+                                    "label1"
+                                  ],
+                                  "text"
+                                ],
+                                [
+                                  5,
+                                  "="
+                                ],
+                                [
+                                  0,
+                                  "笔画错误"
+                                ]
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": 9,
+                  "condition": [
+                    [
+                      9,
+                      1,
+                      "curValue",
+                      "mode"
+                    ],
+                    [
+                      5,
+                      "=="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "execute": [
+                    {
+                      "type": 6,
+                      "express": [
+                        [
+                          4,
+                          [
+                            "label1"
+                          ],
+                          "text"
+                        ],
+                        [
+                          5,
+                          "="
+                        ],
+                        [
+                          0,
+                          "教学完成"
+                        ]
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": 9,
+                  "condition": [
+                    [
+                      9,
+                      1,
+                      "curValue",
+                      "mode"
+                    ],
+                    [
+                      5,
+                      "=="
+                    ],
+                    [
+                      0,
+                      2
+                    ]
+                  ],
+                  "execute": [
+                    {
+                      "type": 6,
+                      "express": [
+                        [
+                          4,
+                          [
+                            "label1"
+                          ],
+                          "text"
+                        ],
+                        [
+                          5,
+                          "="
+                        ],
+                        [
+                          0,
+                          "自动书写完成"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": 11,
+          "name": "tracBack2",
+          "execute": [
+            {
+              "type": 7,
+              "execute": [
+                {
+                  "type": 8,
+                  "condition": [
+                    [
+                      9,
+                      1,
+                      "curValue",
+                      "mode"
+                    ],
+                    [
+                      5,
+                      "=="
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "execute": [
+                    {
+                      "type": 7,
+                      "execute": [
+                        {
+                          "type": 8,
+                          "condition": [
+                            [
+                              9,
+                              1,
+                              "curValue",
+                              "value"
+                            ],
+                            [
+                              5,
+                              "=="
+                            ],
+                            [
+                              0,
+                              0
+                            ]
+                          ],
+                          "execute": [
+                            {
+                              "type": 6,
+                              "express": [
+                                [
+                                  4,
+                                  [
+                                    "label2"
+                                  ],
+                                  "text"
+                                ],
+                                [
+                                  5,
+                                  "="
+                                ],
+                                [
+                                  0,
+                                  "未完成"
+                                ]
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 9,
+                          "condition": [
+                            [
+                              9,
+                              1,
+                              "curValue",
+                              "value"
+                            ],
+                            [
+                              5,
+                              "=="
+                            ],
+                            [
+                              0,
+                              1
+                            ]
+                          ],
+                          "execute": [
+                            {
+                              "type": 6,
+                              "express": [
+                                [
+                                  4,
+                                  [
+                                    "label2"
+                                  ],
+                                  "text"
+                                ],
+                                [
+                                  5,
+                                  "="
+                                ],
+                                [
+                                  0,
+                                  "笔画正确"
+                                ]
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 10,
+                          "execute": [
+                            {
+                              "type": 6,
+                              "express": [
+                                [
+                                  4,
+                                  [
+                                    "label2"
+                                  ],
+                                  "text"
+                                ],
+                                [
+                                  5,
+                                  "="
+                                ],
+                                [
+                                  0,
+                                  "笔画错误"
+                                ]
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": 9,
+                  "condition": [
+                    [
+                      9,
+                      1,
+                      "curValue",
+                      "mode"
+                    ],
+                    [
+                      5,
+                      "=="
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "execute": [
+                    {
+                      "type": 6,
+                      "express": [
+                        [
+                          4,
+                          [
+                            "label2"
+                          ],
+                          "text"
+                        ],
+                        [
+                          5,
+                          "="
+                        ],
+                        [
+                          0,
+                          "教学完成"
+                        ]
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": 9,
+                  "condition": [
+                    [
+                      9,
+                      1,
+                      "curValue",
+                      "mode"
+                    ],
+                    [
+                      5,
+                      "=="
+                    ],
+                    [
+                      0,
+                      2
+                    ]
+                  ],
+                  "execute": [
+                    {
+                      "type": 6,
+                      "express": [
+                        [
+                          4,
+                          [
+                            "label2"
+                          ],
+                          "text"
+                        ],
+                        [
+                          5,
+                          "="
+                        ],
+                        [
+                          0,
+                          "自动书写完成"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": 11,
+          "name": "change",
+          "execute": [
+            {
+              "type": 7,
+              "execute": [
+                {
+                  "type": 8,
+                  "condition": [
+                    [
+                      9,
+                      0,
+                      "checked"
+                    ]
+                  ],
+                  "execute": [
+                    {
+                      "type": 6,
+                      "express": [
+                        [
+                          4,
+                          [
+                            "tracing1"
+                          ],
+                          "mode"
+                        ],
+                        [
+                          5,
+                          "="
+                        ],
+                        [
+                          9,
+                          1,
+                          "value"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": 6,
+                      "express": [
+                        [
+                          4,
+                          [
+                            "tracing2"
+                          ],
+                          "mode"
+                        ],
+                        [
+                          5,
+                          "="
+                        ],
+                        [
+                          9,
+                          1,
+                          "value"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": 6,
+                      "express": [
+                        [
+                          4,
+                          [
+                            "label1"
+                          ],
+                          "text"
+                        ],
+                        [
+                          5,
+                          "="
+                        ],
+                        [
+                          0,
+                          "未完成"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": 6,
+                      "express": [
+                        [
+                          4,
+                          [
+                            "label2"
+                          ],
+                          "text"
+                        ],
+                        [
+                          5,
+                          "="
+                        ],
+                        [
+                          0,
+                          "未完成"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "1": {
+      "type": "Tracing",
+      "debug": true,
+      "traceSprite": 0,
+      "renderBgSprite": 1,
+      "tracePoints": [
+        [
+          {
+            "x": 108.5625,
+            "y": 67.0703125
+          },
+          {
+            "x": 92.30859375,
+            "y": 91.12109375
+          },
+          {
+            "x": 73.35546875,
+            "y": 111.6953125
+          }
+        ],
+        [
+          {
+            "x": 110.28125,
+            "y": 82.3515625
+          },
+          {
+            "x": 154.99609375,
+            "y": 81.78515625
+          },
+          {
+            "x": 200.60546875,
+            "y": 82.640625
+          }
+        ],
+        [
+          {
+            "x": 101.8828125,
+            "y": 111.359375
+          },
+          {
+            "x": 95.61328125,
+            "y": 147.6953125
+          },
+          {
+            "x": 92.2421875,
+            "y": 186.08984375
+          },
+          {
+            "x": 138.01171875,
+            "y": 188.6875
+          },
+          {
+            "x": 194.1171875,
+            "y": 188.6875
+          }
+        ],
+        [
+          {
+            "x": 108.015625,
+            "y": 109.6953125
+          },
+          {
+            "x": 145.16796875,
+            "y": 110.49609375
+          },
+          {
+            "x": 183.87109375,
+            "y": 111.18359375
+          },
+          {
+            "x": 180.90625,
+            "y": 148.82421875
+          },
+          {
+            "x": 176.85546875,
+            "y": 178.00390625
+          }
+        ],
+        [
+          {
+            "x": 70.1953125,
+            "y": 147.79296875
+          },
+          {
+            "x": 137.66015625,
+            "y": 147.83984375
+          },
+          {
+            "x": 206.5234375,
+            "y": 148.63671875
+          }
+        ],
+        [
+          {
+            "x": 134.48046875,
+            "y": 123.421875
+          },
+          {
+            "x": 149.24609375,
+            "y": 133.0859375
+          }
+        ],
+        [
+          {
+            "x": 130.77734375,
+            "y": 162.6171875
+          },
+          {
+            "x": 146.1640625,
+            "y": 172.87109375
+          }
+        ],
+        [
+          {
+            "x": 248.43359375,
+            "y": 67.94140625
+          },
+          {
+            "x": 231.6328125,
+            "y": 102.875
+          },
+          {
+            "x": 212.73046875,
+            "y": 126.8203125
+          }
+        ],
+        [
+          {
+            "x": 249.109375,
+            "y": 94.546875
+          },
+          {
+            "x": 283.87109375,
+            "y": 94.38671875
+          },
+          {
+            "x": 326.99609375,
+            "y": 94.6640625
+          }
+        ],
+        [
+          {
+            "x": 301.56640625,
+            "y": 105.62890625
+          },
+          {
+            "x": 270.37890625,
+            "y": 155.0625
+          },
+          {
+            "x": 215.25,
+            "y": 192.01953125
+          }
+        ],
+        [
+          {
+            "x": 238.65234375,
+            "y": 117.91015625
+          },
+          {
+            "x": 268.546875,
+            "y": 162.3203125
+          },
+          {
+            "x": 326.93359375,
+            "y": 196.53125
+          }
+        ],
+        [
+          {
+            "x": 175.21875,
+            "y": 201.94921875
+          },
+          {
+            "x": 148.23828125,
+            "y": 216.9921875
+          },
+          {
+            "x": 116.38671875,
+            "y": 231.87109375
+          },
+          {
+            "x": 155.96484375,
+            "y": 229.46875
+          },
+          {
+            "x": 181.94140625,
+            "y": 227.21484375
+          }
+        ],
+        [
+          {
+            "x": 243.20703125,
+            "y": 212.8203125
+          },
+          {
+            "x": 173.7578125,
+            "y": 242.53515625
+          },
+          {
+            "x": 93.0625,
+            "y": 271.87109375
+          },
+          {
+            "x": 200.01953125,
+            "y": 265.32421875
+          },
+          {
+            "x": 270.01953125,
+            "y": 261.09375
+          }
+        ],
+        [
+          {
+            "x": 259.90234375,
+            "y": 235.6796875
+          },
+          {
+            "x": 285.921875,
+            "y": 255.140625
+          },
+          {
+            "x": 311.0703125,
+            "y": 273.57421875
+          }
+        ],
+        [
+          {
+            "x": 204.34375,
+            "y": 277.12890625
+          },
+          {
+            "x": 202.53125,
+            "y": 301.94921875
+          },
+          {
+            "x": 199.0078125,
+            "y": 321.453125
+          },
+          {
+            "x": 160.7890625,
+            "y": 323.96484375
+          }
+        ],
+        [
+          {
+            "x": 142.52734375,
+            "y": 291.484375
+          },
+          {
+            "x": 111.8046875,
+            "y": 308.3515625
+          },
+          {
+            "x": 80.84375,
+            "y": 322.27734375
+          }
+        ],
+        [
+          {
+            "x": 250.578125,
+            "y": 292.7109375
+          },
+          {
+            "x": 285.68359375,
+            "y": 306.30859375
+          },
+          {
+            "x": 315.54296875,
+            "y": 319.05078125
+          }
+        ]
+      ],
+      "lineTexture": 1,
+      "mode": 0
+    },
+    "2": {
+      "type": "CheckBox",
+      "up": "2",
+      "down": "2",
+      "move": "2",
+      "disabled": "2",
+      "upAndSelected": "3",
+      "downAndSelected": "4",
+      "moveAndSelected": "4",
+      "disabledAndSelected": "2",
+      "width": 22,
+      "height": 22,
+      "style": {
+        "top": 30
+      }
+    },
+    "3": {
+      "type": "Label",
+      "style": {
+        "color": 16777215,
+        "top": 30
+      }
+    },
+    "4": {
+      "type": "Button",
+      "width": 100,
+      "height": 30,
+      "up": 5,
+      "down": 7,
+      "move": 6
+    }
+  },
+  "name": "VFT2J",
+  "width": 890,
+  "height": 500,
+  "version": "0.0.1",
+  "baseUrl": "",
+  "loadMode": "all",
+  "conversion": "",
+  "scaleMode": "showAll",
+  "launcherVersion": "0.5.7"
+}
