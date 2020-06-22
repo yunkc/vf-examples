@@ -108,13 +108,44 @@ const root = {
             }
         }
     ],
+    animations: [
+        {
+            name: "default",
+            duration: 60,
+            autoPlay: true,
+            loop: true,
+            children: {
+                centerImage: {
+                    duration: 60,
+                    loop: true,
+                    timelines: [
+                        {
+                            type: "rotation",
+                            loop: true,
+                            frames: [
+                                {
+                                    frame: 0,
+                                    curve: [1],
+                                    value: 0
+                                },
+                                {
+                                    frame: 60,
+                                    value: 360
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ],
     actionList: `
     @this = {
         this.on("Add", () => {
 
           var global$count = 0;
           var global$rotation = 0;
-          setInterval(1, 10000, ()=>{
+          setInterval(33, 10000, ()=>{
             if(global$rotation >= 360){
               global$rotation = 0;
             };
@@ -123,7 +154,6 @@ const root = {
             };
             var $maskSize = this#bg.style.maskSize;
             if($maskSize[0] < 1200){
-              trace(global$count);
               var $maskSizes = [];
               $maskSizes.pop();
               $maskSizes.pop();
@@ -133,8 +163,7 @@ const root = {
             };
             global$count = global$count + 1;
             global$rotation = global$rotation + 1;
-            this#centerImage.style.rotation = global$rotation;
-            this#leftImage.style.rotation = global$rotation;
+            this#leftImage.rotation = global$rotation;
           });
 
         });

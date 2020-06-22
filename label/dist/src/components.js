@@ -39,21 +39,11 @@ const root = {
             }
         },
         {
-            id: "label1",
-            libId: store_1.Ids.title,
-            text: "Basic text in vf-gui",
-            style: {
-                top: 200,
-                color: 0xffffff,
-                fontSize: 32
-            }
-        },
-        {
             id: "label2",
             libId: store_1.Ids.title,
             text: "手动换行，\n文本！",
             style: {
-                top: 260,
+                top: 200,
                 color: [0xffffff, 0xffcc00],
                 fontSize: 32
             }
@@ -61,9 +51,9 @@ const root = {
         {
             id: "label3",
             libId: store_1.Ids.title,
-            text: "自动换行文本，我可以通过设置 wordWrap = true , wordWrapWidth = width 开启自动换行。",
+            text: "自动换行文本设置 wordWrap = true , wordWrapWidth = width 开启自动换行。",
             style: {
-                top: 350,
+                top: 290,
                 color: [0xffffff, 0x00ff99],
                 fontSize: 32,
                 wordWrap: true,
@@ -75,9 +65,7 @@ const root = {
             libId: store_1.Ids.title,
             text: "我是有滤镜的文字",
             style: {
-                top: 470,
-                left: 80,
-                justifyContent: "",
+                top: 400,
                 color: [0xffffff, 0x00ff99],
                 stroke: 0x4a1850,
                 strokeThickness: 5,
@@ -91,13 +79,16 @@ const root = {
         {
             id: "label5",
             libId: store_1.Ids.title,
-            text: "我限定了宽度与位置",
+            text: "我设定了textAlign与verticalAlign",
             style: {
-                top: 470,
+                top: 440,
                 left: 80,
                 color: 0xffffff,
-                width: 400,
-                textAlign: "right"
+                width: 450,
+                height: 50,
+                verticalAlign: "middle",
+                textAlign: "center",
+                backgroundColor: 0xfff
             }
         }
     ]
@@ -105,6 +96,6 @@ const root = {
 const allComponents = {
     [store_1.Ids.root]: root,
     [store_1.Ids.title]: title,
-    [store_1.Ids.dinoImage]: dino,
+    [store_1.Ids.dinoImage]: dino
 };
 exports.default = allComponents;
