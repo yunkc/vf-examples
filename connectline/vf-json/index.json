@@ -37,12 +37,12 @@
           "id": 4,
           "libId": 3,
           "sourcePostion": [
-            15,
-            210
+            370,
+            200
           ],
           "targetPostion": [
-            150,
-            210
+            520,
+            200
           ],
           "autoPlay": true,
           "style": {
@@ -53,11 +53,11 @@
           "id": 5,
           "libId": 3,
           "sourcePostion": [
-            15,
+            370,
             230
           ],
           "targetPostion": [
-            150,
+            520,
             230
           ],
           "autoPlay": false,
@@ -323,10 +323,7 @@
       "type": "ConnectLine",
       "isAnimation": true,
       "lineColor": 16777215,
-      "lineWidth": 2,
-      "style": {
-        "justifyContent": "center"
-      }
+      "lineWidth": 2
     },
     "6": {
       "type": "Rect",

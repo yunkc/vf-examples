@@ -35,10 +35,7 @@ const connectLine = {
     type: Component_1.guiType.ConnectLine,
     isAnimation: true,
     lineColor: 0xffffff,
-    lineWidth: 2,
-    style: {
-        justifyContent: "center",
-    }
+    lineWidth: 2
 };
 const root = {
     type: Component_1.guiType.Custom,
@@ -62,8 +59,8 @@ const root = {
         {
             id: store_1.Ids.connectLine1,
             libId: store_1.Ids.connectLine,
-            sourcePostion: [15, 210],
-            targetPostion: [150, 210],
+            sourcePostion: [370, 200],
+            targetPostion: [520, 200],
             autoPlay: true,
             style: {
                 top: 210,
@@ -72,8 +69,8 @@ const root = {
         {
             id: store_1.Ids.connectLine2,
             libId: store_1.Ids.connectLine,
-            sourcePostion: [15, 230],
-            targetPostion: [150, 230],
+            sourcePostion: [370, 230],
+            targetPostion: [520, 230],
             autoPlay: false,
             lineColor: 0xffcc00,
             style: {
