@@ -29,8 +29,8 @@ const title: gui.Text = {
 
 const checkbox: gui.Checkbox = {
   type: guiType.CheckBox,
-  width: 23,
-  height: 23,
+  width: 80,
+  height: 80,
   up: Ids.checkboxUnselect.toString(),
   down: Ids.checkboxUnselect.toString(),
   move: Ids.checkboxUnselect.toString(),
@@ -43,8 +43,8 @@ const checkbox: gui.Checkbox = {
 
 const radio: gui.Checkbox = {
   type: guiType.CheckBox,
-  width: 23,
-  height: 23,
+  width: 80,
+  height: 80,
   up: Ids.radioUnselect.toString(),
   down: Ids.radioUnselect.toString(),
   move: Ids.radioUnselect.toString(),
@@ -63,7 +63,7 @@ const root: gui.Custom = {
       id: Ids.dinoImage,
       libId: Ids.dinoImage,
       style: {
-        top: 0
+        top: 20
       }
     },
     {
@@ -71,28 +71,34 @@ const root: gui.Custom = {
       libId: Ids.title,
       text: "单选与复选框接口示例",
       style: {
-        top: 160,
+        top: 180,
       }
     },
     {
       id: 'checkbox1',
       libId: Ids.checkbox,
-      x:400,
-      y:220,
+      style:{
+        left: 30,
+        top: 250
+      },
       value:"checkbox1",
     },
     {
       id: 'checkbox2',
       libId: Ids.checkbox,
-      x:440,
-      y:220,
+      style:{
+        left: 150,
+        top: 250
+      },
       value:"checkbox2",
     },
     {
       id: 'checkbox3',
       libId: Ids.checkbox,
-      x:480,
-      y:220,
+      style:{
+        left: 270,
+        top: 250
+      },
       value:"checkbox3",
     },
 
@@ -100,24 +106,30 @@ const root: gui.Custom = {
     {
       id: 'radio1',
       libId: Ids.radio,
-      x:400,
-      y:280,
+      style:{
+        left: 30,
+        top: 350
+      },
       value:"radio1",
       checkGroup:"radioGroup1" // checkbox与radio区别
     },
     {
       id: 'radio2',
       libId: Ids.radio,
-      x:440,
-      y:280,
+      style:{
+        left: 150,
+        top: 350
+      },
       value:"radio2",
       checkGroup:"radioGroup1" // checkbox与radio区别
     },
     {
       id: 'radio3',
       libId: Ids.radio,
-      x:480,
-      y:280,
+      style:{
+        left: 270,
+        top: 350
+      },
       value:"radio3",
       checkGroup:"radioGroup1" // checkbox与radio区别
     }
