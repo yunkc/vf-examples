@@ -53,7 +53,7 @@
               16777215,
               16763904
             ],
-            "fontSize": 32
+            "fontSize": 24
           }
         },
         {
@@ -66,9 +66,9 @@
               16777215,
               65433
             ],
-            "fontSize": 32,
+            "fontSize": 24,
             "wordWrap": true,
-            "wordWrapWidth": 500
+            "wordWrapWidth": 350
           }
         },
         {
@@ -76,7 +76,7 @@
           "libId": 2,
           "text": "我是有滤镜的文字",
           "style": {
-            "top": 470,
+            "top": 500,
             "left": 80,
             "justifyContent": "",
             "color": [
@@ -97,10 +97,10 @@
           "libId": 2,
           "text": "我限定了宽度与位置",
           "style": {
-            "top": 470,
+            "top": 570,
             "left": 80,
             "color": 16777215,
-            "width": 400,
+            "width": 300,
             "textAlign": "right"
           }
         }
@@ -124,8 +124,8 @@
     }
   },
   "name": "VFT2J",
-  "width": 890,
-  "height": 500,
+  "width": 405,
+  "height": 720,
   "version": "0.0.1",
   "baseUrl": "",
   "loadMode": "all",

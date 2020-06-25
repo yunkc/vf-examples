@@ -55,7 +55,7 @@ const root = {
             style: {
                 top: 260,
                 color: [0xffffff, 0xffcc00],
-                fontSize: 32
+                fontSize: 24
             }
         },
         {
@@ -65,9 +65,9 @@ const root = {
             style: {
                 top: 350,
                 color: [0xffffff, 0x00ff99],
-                fontSize: 32,
+                fontSize: 24,
                 wordWrap: true,
-                wordWrapWidth: 500
+                wordWrapWidth: 350
             }
         },
         {
@@ -75,7 +75,7 @@ const root = {
             libId: store_1.Ids.title,
             text: "我是有滤镜的文字",
             style: {
-                top: 470,
+                top: 500,
                 left: 80,
                 justifyContent: "",
                 color: [0xffffff, 0x00ff99],
@@ -93,10 +93,10 @@ const root = {
             libId: store_1.Ids.title,
             text: "我限定了宽度与位置",
             style: {
-                top: 470,
+                top: 570,
                 left: 80,
                 color: 0xffffff,
-                width: 400,
+                width: 300,
                 textAlign: "right"
             }
         }
