@@ -29,8 +29,8 @@ const title: gui.Text = {
 
 const btn: gui.Button = {
   type: guiType.BUTTON,
-  width: 100,
-  height: 30,
+  width: 150,
+  height: 50,
   up: Ids.up,
   down: Ids.down,
   move: Ids.move,
@@ -71,7 +71,7 @@ const root: gui.Custom = {
       libId: Ids.btn,
       text: "播放声音2",
       style: {
-        top: 260
+        top: 280
       }
     },
     {
@@ -79,7 +79,7 @@ const root: gui.Custom = {
       libId: Ids.btn,
       text: "暂停声音1",
       style: {
-        top: 300
+        top: 340
       }
     },
     {
@@ -87,7 +87,7 @@ const root: gui.Custom = {
       libId: Ids.btn,
       text: "恢复声音1",
       style: {
-        top: 340
+        top: 400
       }
     }
   ],

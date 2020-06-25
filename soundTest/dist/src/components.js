@@ -21,8 +21,8 @@ const title = {
 };
 const btn = {
     type: Component_1.guiType.BUTTON,
-    width: 100,
-    height: 30,
+    width: 150,
+    height: 50,
     up: store_1.Ids.up,
     down: store_1.Ids.down,
     move: store_1.Ids.move,
@@ -62,7 +62,7 @@ const root = {
             libId: store_1.Ids.btn,
             text: "播放声音2",
             style: {
-                top: 260
+                top: 280
             }
         },
         {
@@ -70,7 +70,7 @@ const root = {
             libId: store_1.Ids.btn,
             text: "暂停声音1",
             style: {
-                top: 300
+                top: 340
             }
         },
         {
@@ -78,7 +78,7 @@ const root = {
             libId: store_1.Ids.btn,
             text: "恢复声音1",
             style: {
-                top: 340
+                top: 400
             }
         }
     ],

@@ -29,8 +29,8 @@ const title: gui.Text = {
 
 const btn: gui.Button = {
   type: guiType.Button,
-  width: 100,
-  height: 30,
+  width: 150,
+  height: 50,
   up: Ids.up,
   down: Ids.down,
   move: Ids.move,
@@ -78,7 +78,7 @@ const root: gui.Custom = {
       libId: Ids.btn,
       text: "切换动画",
       style: {
-        top: 460
+        top: 500
       }
     },
   ],

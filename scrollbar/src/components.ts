@@ -87,8 +87,8 @@ const root: gui.Custom = {
       text: "滑动条接口示例",
       style: {
         top:0,
-        right: 0,
-        width:1
+        right: 10,
+        width:10
       }
     },
   ],

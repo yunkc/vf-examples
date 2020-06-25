@@ -71,7 +71,7 @@
           "libId": 8,
           "text": "播放声音2",
           "style": {
-            "top": 260
+            "top": 280
           }
         },
         {
@@ -79,7 +79,7 @@
           "libId": 8,
           "text": "暂停声音1",
           "style": {
-            "top": 300
+            "top": 340
           }
         },
         {
@@ -87,7 +87,7 @@
           "libId": 8,
           "text": "恢复声音1",
           "style": {
-            "top": 340
+            "top": 400
           }
         }
       ],
@@ -214,8 +214,8 @@
     },
     "8": {
       "type": "Button",
-      "width": 100,
-      "height": 30,
+      "width": 150,
+      "height": 50,
       "up": 5,
       "down": 6,
       "move": 7,
@@ -225,8 +225,8 @@
     }
   },
   "name": "VFT2J",
-  "width": 890,
-  "height": 500,
+  "width": 405,
+  "height": 720,
   "version": "0.0.1",
   "baseUrl": "",
   "loadMode": "all",

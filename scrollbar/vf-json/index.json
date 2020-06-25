@@ -63,8 +63,8 @@
           "text": "滑动条接口示例",
           "style": {
             "top": 0,
-            "right": 0,
-            "width": 1
+            "right": 10,
+            "width": 10
           }
         }
       ],
@@ -148,8 +148,8 @@
     }
   },
   "name": "VFT2J",
-  "width": 890,
-  "height": 500,
+  "width": 405,
+  "height": 720,
   "version": "0.0.1",
   "baseUrl": "",
   "loadMode": "all",
