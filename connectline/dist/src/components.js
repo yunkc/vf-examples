@@ -27,8 +27,8 @@ const rect = {
     color: 0xffffff,
     interactabled: true,
     style: {
-        width: 30,
-        height: 30
+        width: 50,
+        height: 50
     }
 };
 const connectLine = {
@@ -85,15 +85,15 @@ const root = {
             libId: store_1.Ids.rect,
             style: {
                 top: 250,
-                left: 200
+                left: 20
             }
         },
         {
             id: store_1.Ids.rect2,
             libId: store_1.Ids.rect,
             style: {
-                top: 290,
-                right: 200
+                top: 400,
+                right: 30
             }
         },
         {

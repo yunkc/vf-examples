@@ -29,8 +29,8 @@
           "lineColor": 5658240,
           "lineWidth": 5,
           "color": 5658197,
-          "width": 890,
-          "height": 500,
+          "width": 405,
+          "height": 720,
           "style": {
             "justifyContent": "center"
           }
@@ -58,8 +58,8 @@
         {
           "id": "3",
           "libId": 5,
-          "x": 15,
-          "y": 130,
+          "x": 285,
+          "y": 15,
           "dragOption": {
             "draggable": true,
             "dragRestrictAxis": "y"
@@ -68,7 +68,7 @@
         {
           "id": "4",
           "libId": 5,
-          "x": 150,
+          "x": 15,
           "y": 130,
           "dragOption": {
             "draggable": true,
@@ -78,8 +78,8 @@
         {
           "id": "5",
           "libId": 5,
-          "x": 15,
-          "y": 250,
+          "x": 150,
+          "y": 130,
           "dragOption": {
             "draggable": true,
             "dragBounces": true
@@ -88,16 +88,16 @@
         {
           "id": "6",
           "libId": 5,
-          "x": 150,
-          "y": 250
+          "x": 285,
+          "y": 130
         },
         {
           "id": "7",
           "libId": 5,
-          "x": 280,
-          "y": 15,
-          "width": 300,
-          "height": 300,
+          "x": 15,
+          "y": 350,
+          "width": 200,
+          "height": 200,
           "style": {
             "display": "grid",
             "gridTemplateColumns": [
@@ -122,8 +122,8 @@
         {
           "id": "rect0",
           "libId": 4,
-          "x": 150,
-          "y": 250,
+          "x": 285,
+          "y": 130,
           "dragOption": {
             "draggable": true,
             "dragBounces": true,
@@ -134,8 +134,8 @@
           "id": "rect1",
           "libId": 4,
           "color": 65382,
-          "x": 185,
-          "y": 250,
+          "x": 320,
+          "y": 130,
           "dragOption": {
             "draggable": true,
             "dragBounces": true,
@@ -146,8 +146,8 @@
           "id": "rect2",
           "libId": 4,
           "color": 6750156,
-          "x": 220,
-          "y": 250,
+          "x": 355,
+          "y": 130,
           "dragOption": {
             "draggable": true,
             "dragBounces": true,
@@ -1061,8 +1061,8 @@
     }
   },
   "name": "VFT2J",
-  "width": 890,
-  "height": 500,
+  "width": 405,
+  "height": 720,
   "version": "0.0.1",
   "baseUrl": "",
   "loadMode": "all",

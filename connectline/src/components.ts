@@ -35,8 +35,8 @@ const rect: gui.Rect = {
   color:0xffffff,
   interactabled: true, // 开启交互
   style: {
-    width: 30,
-    height: 30
+    width: 50,
+    height: 50
   }
 };
 
@@ -96,15 +96,15 @@ const root: gui.Custom = {
       libId: Ids.rect,
       style: {
         top: 250,
-        left: 200
+        left: 20
       }
     },
     {
       id: Ids.rect2,
       libId: Ids.rect,
       style: {
-        top: 290,
-        right: 200
+        top: 400,
+        right: 30
       }
     },
     {

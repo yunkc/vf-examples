@@ -71,15 +71,15 @@
           "libId": 6,
           "style": {
             "top": 250,
-            "left": 200
+            "left": 20
           }
         },
         {
           "id": 8,
           "libId": 6,
           "style": {
-            "top": 290,
-            "right": 200
+            "top": 400,
+            "right": 30
           }
         },
         {
@@ -328,14 +328,14 @@
       "color": 16777215,
       "interactabled": true,
       "style": {
-        "width": 30,
-        "height": 30
+        "width": 50,
+        "height": 50
       }
     }
   },
   "name": "VFT2J",
-  "width": 890,
-  "height": 500,
+  "width": 405,
+  "height": 720,
   "version": "0.0.1",
   "baseUrl": "",
   "loadMode": "all",
