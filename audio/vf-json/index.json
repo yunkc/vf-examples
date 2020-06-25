@@ -51,36 +51,36 @@
           "id": 2,
           "libId": 2,
           "text": "声音接口示例",
-          "y": 298,
-          "x": 395
+          "y": 208,
+          "x": 132.5
         },
         {
           "id": "play1",
           "libId": 8,
           "text": "播放声音1",
-          "y": 338,
-          "x": 395
+          "y": 248,
+          "x": 132.5
         },
         {
           "id": "play2",
           "libId": 8,
           "text": "播放声音2",
-          "y": 380,
-          "x": 395
+          "y": 320,
+          "x": 132.5
         },
         {
           "id": "pause1",
           "libId": 8,
           "text": "暂停声音1",
-          "y": 420,
-          "x": 395
+          "y": 390,
+          "x": 132.5
         },
         {
           "id": "resume1",
           "libId": 8,
           "text": "恢复声音1",
           "y": 460,
-          "x": 395
+          "x": 132.5
         }
       ],
       "actionList": [
@@ -194,31 +194,31 @@
     },
     "1": {
       "type": "Image",
-      "y": 140,
+      "y": 50,
       "width": 83,
       "height": 138,
       "src": 1,
-      "x": 403.5
+      "x": 161
     },
     "2": {
       "type": "Label",
-      "width": 100,
+      "width": 140,
       "style": {
         "color": "#000"
       }
     },
     "8": {
       "type": "Button",
-      "width": 100,
-      "height": 30,
+      "width": 150,
+      "height": 40,
       "up": 5,
       "down": 6,
       "move": 7
     }
   },
   "name": "VFT2J",
-  "width": 890,
-  "height": 500,
+  "width": 405,
+  "height": 720,
   "version": "0.0.1",
   "baseUrl": "",
   "loadMode": "all",

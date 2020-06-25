@@ -5,7 +5,7 @@ const Component_1 = require("../types/Component");
 const dinoWidth = 83;
 const dino = {
     type: Component_1.guiType.IMAGE,
-    y: 140,
+    y: 50,
     width: dinoWidth,
     height: 138,
     src: store_1.Ids.dinoImage,
@@ -13,15 +13,15 @@ const dino = {
 };
 const title = {
     type: Component_1.guiType.TEXT,
-    width: 100,
+    width: 140,
     style: {
         color: '#000'
     }
 };
 const btn = {
     type: Component_1.guiType.BUTTON,
-    width: 100,
-    height: 30,
+    width: 150,
+    height: 40,
     up: store_1.Ids.up,
     down: store_1.Ids.down,
     move: store_1.Ids.move,
@@ -52,21 +52,21 @@ const root = {
             id: 'play2',
             libId: store_1.Ids.btn,
             text: '播放声音2',
-            y: dino.y + 240,
+            y: dino.y + 270,
             x: store_1.App.width / 2 - title.width / 2
         },
         {
             id: 'pause1',
             libId: store_1.Ids.btn,
             text: '暂停声音1',
-            y: dino.y + 280,
+            y: dino.y + 340,
             x: store_1.App.width / 2 - title.width / 2
         },
         {
             id: 'resume1',
             libId: store_1.Ids.btn,
             text: '恢复声音1',
-            y: dino.y + 320,
+            y: dino.y + 410,
             x: store_1.App.width / 2 - title.width / 2
         }
     ],
