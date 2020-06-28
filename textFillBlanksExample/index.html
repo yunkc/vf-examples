@@ -25,12 +25,14 @@
     <div id="vf-container"></div>
     <script src="node_modules/@vf.js/launcher/dist/launcher.min.js"></script>
     <script>
+      var $player = null;
       const VF_CONFIG = {
         debug: true,
         container: document.querySelector('#vf-container')
       }
 
       createVF(VF_CONFIG, function (player) {
+        $player = player;
           player.onReady = function() {
             console.log("onReady"); //初始化完成
           }

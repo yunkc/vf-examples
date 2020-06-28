@@ -13,8 +13,8 @@ const rect: gui.Rect = {
     type: guiType.Rect,
     color : 0xffffff,
     style: {
-        width: 500,
-        height: 1000
+        width: 405,
+        height: 720
     }
 };
 const text: gui.Text = {
@@ -37,7 +37,7 @@ const textFillBlanks = {
     type: 'TextFillBlanks',
     name: 'textFillBlanks',
     config: {
-        containerWidth: 500,                 //组件容器宽度
+        containerWidth: 400,                 //组件容器宽度
         labelStyle: {
             lineHeight: 60,                       //行高
             fontSize: 30,                         //文本字号
@@ -67,7 +67,7 @@ const textFillBlanks = {
         selectOption: [
             {
                 text: "textFillBlanks",
-                key: "0"
+                key: "0",
             },
             {
                 text: "please",
@@ -104,7 +104,8 @@ const root: gui.Custom = {
                 width: 180,
                 height: 50,
                 left:0,
-                top:300
+                top:300,
+                textAlign:"left"
             }
         }
         ,
@@ -115,8 +116,9 @@ const root: gui.Custom = {
             style: {
                 width: 100,
                 height: 50,
-                left:200,
-                top:300
+                left:0,
+                top:350,
+                textAlign:"left"
             }
         }
         ,
@@ -127,8 +129,9 @@ const root: gui.Custom = {
             style: {
                 width: 100,
                 height: 50,
-                left:320,
-                top:300
+                left:0,
+                top:400,
+                textAlign:"left"
             }
         },
         {
@@ -136,9 +139,9 @@ const root: gui.Custom = {
             libId: Ids.button,
             text: "提交",
             style: {
-                width: 100,
+                width: 150,
                 height: 50,
-                left:120,
+                left:30,
                 bottom:30
             }
         }
@@ -148,7 +151,7 @@ const root: gui.Custom = {
             libId: Ids.button,
             text: "重置",
             style: {
-                width: 100,
+                width: 150,
                 height: 50,
                 left:220,
                 bottom:30
