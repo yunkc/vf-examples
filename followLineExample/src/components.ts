@@ -97,9 +97,10 @@ const root: gui.Custom = {
             this#followLineTop.reset();
         });
       });
+ 
+      var $messageList= [];
       this#slider.value = 0;
       this#slider.maxValue = $messageList.length;
-      var $messageList= [];
       var $d = "";
       var $v = 0;
       var $isErasing = true;

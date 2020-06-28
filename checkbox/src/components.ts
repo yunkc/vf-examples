@@ -29,8 +29,8 @@ const title: gui.Text = {
 
 const checkbox: gui.Checkbox = {
   type: guiType.CheckBox,
-  width: 80,
-  height: 80,
+  width: 23,
+  height: 23,
   up: Ids.checkboxUnselect.toString(),
   down: Ids.checkboxUnselect.toString(),
   move: Ids.checkboxUnselect.toString(),
@@ -43,8 +43,8 @@ const checkbox: gui.Checkbox = {
 
 const radio: gui.Checkbox = {
   type: guiType.CheckBox,
-  width: 80,
-  height: 80,
+  width: 23,
+  height: 23,
   up: Ids.radioUnselect.toString(),
   down: Ids.radioUnselect.toString(),
   move: Ids.radioUnselect.toString(),
@@ -78,7 +78,7 @@ const root: gui.Custom = {
       id: 'checkbox1',
       libId: Ids.checkbox,
       style:{
-        left: 30,
+        left: 60,
         top: 250
       },
       value:"checkbox1",
@@ -87,7 +87,7 @@ const root: gui.Custom = {
       id: 'checkbox2',
       libId: Ids.checkbox,
       style:{
-        left: 150,
+        left: 180,
         top: 250
       },
       value:"checkbox2",
@@ -96,7 +96,7 @@ const root: gui.Custom = {
       id: 'checkbox3',
       libId: Ids.checkbox,
       style:{
-        left: 270,
+        left: 300,
         top: 250
       },
       value:"checkbox3",
@@ -107,7 +107,7 @@ const root: gui.Custom = {
       id: 'radio1',
       libId: Ids.radio,
       style:{
-        left: 30,
+        left: 60,
         top: 350
       },
       value:"radio1",
@@ -117,7 +117,7 @@ const root: gui.Custom = {
       id: 'radio2',
       libId: Ids.radio,
       style:{
-        left: 150,
+        left: 180,
         top: 350
       },
       value:"radio2",
@@ -127,7 +127,7 @@ const root: gui.Custom = {
       id: 'radio3',
       libId: Ids.radio,
       style:{
-        left: 270,
+        left: 300,
         top: 350
       },
       value:"radio3",

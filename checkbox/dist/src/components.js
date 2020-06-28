@@ -21,8 +21,8 @@ const title = {
 };
 const checkbox = {
     type: Component_1.guiType.CheckBox,
-    width: 80,
-    height: 80,
+    width: 23,
+    height: 23,
     up: store_1.Ids.checkboxUnselect.toString(),
     down: store_1.Ids.checkboxUnselect.toString(),
     move: store_1.Ids.checkboxUnselect.toString(),
@@ -34,8 +34,8 @@ const checkbox = {
 };
 const radio = {
     type: Component_1.guiType.CheckBox,
-    width: 80,
-    height: 80,
+    width: 23,
+    height: 23,
     up: store_1.Ids.radioUnselect.toString(),
     down: store_1.Ids.radioUnselect.toString(),
     move: store_1.Ids.radioUnselect.toString(),
@@ -68,7 +68,7 @@ const root = {
             id: 'checkbox1',
             libId: store_1.Ids.checkbox,
             style: {
-                left: 30,
+                left: 60,
                 top: 250
             },
             value: "checkbox1",
@@ -77,7 +77,7 @@ const root = {
             id: 'checkbox2',
             libId: store_1.Ids.checkbox,
             style: {
-                left: 150,
+                left: 180,
                 top: 250
             },
             value: "checkbox2",
@@ -86,7 +86,7 @@ const root = {
             id: 'checkbox3',
             libId: store_1.Ids.checkbox,
             style: {
-                left: 270,
+                left: 300,
                 top: 250
             },
             value: "checkbox3",
@@ -95,7 +95,7 @@ const root = {
             id: 'radio1',
             libId: store_1.Ids.radio,
             style: {
-                left: 30,
+                left: 60,
                 top: 350
             },
             value: "radio1",
@@ -105,7 +105,7 @@ const root = {
             id: 'radio2',
             libId: store_1.Ids.radio,
             style: {
-                left: 150,
+                left: 180,
                 top: 350
             },
             value: "radio2",
@@ -115,7 +115,7 @@ const root = {
             id: 'radio3',
             libId: store_1.Ids.radio,
             style: {
-                left: 270,
+                left: 300,
                 top: 350
             },
             value: "radio3",

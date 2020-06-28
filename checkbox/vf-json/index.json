@@ -77,7 +77,7 @@
           "id": "checkbox1",
           "libId": 3,
           "style": {
-            "left": 30,
+            "left": 60,
             "top": 250
           },
           "value": "checkbox1"
@@ -86,7 +86,7 @@
           "id": "checkbox2",
           "libId": 3,
           "style": {
-            "left": 150,
+            "left": 180,
             "top": 250
           },
           "value": "checkbox2"
@@ -95,7 +95,7 @@
           "id": "checkbox3",
           "libId": 3,
           "style": {
-            "left": 270,
+            "left": 300,
             "top": 250
           },
           "value": "checkbox3"
@@ -104,7 +104,7 @@
           "id": "radio1",
           "libId": 8,
           "style": {
-            "left": 30,
+            "left": 60,
             "top": 350
           },
           "value": "radio1",
@@ -114,7 +114,7 @@
           "id": "radio2",
           "libId": 8,
           "style": {
-            "left": 150,
+            "left": 180,
             "top": 350
           },
           "value": "radio2",
@@ -124,7 +124,7 @@
           "id": "radio3",
           "libId": 8,
           "style": {
-            "left": 270,
+            "left": 300,
             "top": 350
           },
           "value": "radio3",
@@ -354,8 +354,8 @@
     },
     "3": {
       "type": "CheckBox",
-      "width": 80,
-      "height": 80,
+      "width": 23,
+      "height": 23,
       "up": "4",
       "down": "4",
       "move": "4",
@@ -367,8 +367,8 @@
     },
     "8": {
       "type": "CheckBox",
-      "width": 80,
-      "height": 80,
+      "width": 23,
+      "height": 23,
       "up": "9",
       "down": "9",
       "move": "9",

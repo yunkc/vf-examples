@@ -257,6 +257,12 @@
           ]
         },
         {
+          "type": 37,
+          "variableType": "array",
+          "value": [],
+          "varId": "messageList"
+        },
+        {
           "type": 6,
           "express": [
             [
@@ -296,12 +302,6 @@
               "messageList"
             ]
           ]
-        },
-        {
-          "type": 37,
-          "variableType": "array",
-          "value": [],
-          "varId": "messageList"
         },
         {
           "type": 37,

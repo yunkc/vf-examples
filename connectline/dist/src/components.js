@@ -27,8 +27,8 @@ const rect = {
     color: 0xffffff,
     interactabled: true,
     style: {
-        width: 50,
-        height: 50
+        width: 30,
+        height: 30
     }
 };
 const connectLine = {

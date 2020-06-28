@@ -328,8 +328,8 @@
       "color": 16777215,
       "interactabled": true,
       "style": {
-        "width": 50,
-        "height": 50
+        "width": 30,
+        "height": 30
       }
     }
   },

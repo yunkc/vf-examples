@@ -35,8 +35,8 @@ const rect: gui.Rect = {
   color:0xffffff,
   interactabled: true, // 开启交互
   style: {
-    width: 50,
-    height: 50
+    width: 30,
+    height: 30
   }
 };
 
