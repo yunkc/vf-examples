@@ -10,7 +10,7 @@ const tracing = {
     renderBgSprite: store_1.AssetId.maskBg,
     tracePoints: global_1.tracePoints,
     lineTexture: store_1.AssetId.maskBg,
-    mode: 0,
+    mode: 0
 };
 const button = {
     type: Component_1.guiType.Button,
@@ -18,7 +18,7 @@ const button = {
     height: 30,
     up: store_1.AssetId.up,
     down: store_1.AssetId.down,
-    move: store_1.AssetId.move,
+    move: store_1.AssetId.move
 };
 const radio = {
     type: Component_1.guiType.CheckBox,
@@ -40,7 +40,8 @@ const radioText = {
     type: Component_1.guiType.Text,
     style: {
         color: 0xffffff,
-        top: 30
+        top: 30,
+        fontSize: 22
     }
 };
 const root = {
@@ -52,24 +53,24 @@ const root = {
             libId: store_1.Ids.tracing,
             x: 0,
             y: 100,
-            width: 400,
-            height: 400,
+            width: 260,
+            height: 260,
         },
         {
             id: "tracing2",
             libId: store_1.Ids.tracing,
-            x: 400,
-            y: 100,
-            width: 400,
-            height: 400
+            x: 0,
+            y: 400,
+            width: 260,
+            height: 260
         },
         {
             id: "label1",
             libId: store_1.Ids.radioText,
             text: "未完成",
             style: {
-                left: 130,
-                top: 70,
+                left: 300,
+                top: 200
             }
         },
         {
@@ -77,8 +78,8 @@ const root = {
             libId: store_1.Ids.radioText,
             text: "未完成",
             style: {
-                left: 530,
-                top: 70,
+                left: 300,
+                top: 500
             }
         },
         {
@@ -87,7 +88,7 @@ const root = {
             checked: true,
             checkGroup: "groupRadio",
             style: {
-                left: 0,
+                left: 0
             }
         },
         {
@@ -95,7 +96,7 @@ const root = {
             libId: store_1.Ids.radio,
             checkGroup: "groupRadio",
             style: {
-                left: 200,
+                left: 130
             }
         },
         {
@@ -103,7 +104,7 @@ const root = {
             libId: store_1.Ids.radio,
             checkGroup: "groupRadio",
             style: {
-                left: 400,
+                left: 260
             }
         },
         {
@@ -111,7 +112,7 @@ const root = {
             libId: store_1.Ids.radioText,
             text: "笔画检测",
             style: {
-                left: 30,
+                left: 28
             }
         },
         {
@@ -119,7 +120,7 @@ const root = {
             libId: store_1.Ids.radioText,
             text: "教学模式",
             style: {
-                left: 230,
+                left: 158
             }
         },
         {
@@ -127,7 +128,7 @@ const root = {
             libId: store_1.Ids.radioText,
             text: "自动书写",
             style: {
-                left: 430,
+                left: 288
             }
         },
         {
@@ -138,7 +139,7 @@ const root = {
                 top: 70,
                 left: 0
             }
-        },
+        }
     ],
     actionList: `
   @this = {

@@ -12,7 +12,9 @@ const button = {
     type: Component_1.guiType.Button,
     up: store_1.AssetId.up,
     down: store_1.AssetId.down,
-    move: store_1.AssetId.move
+    move: store_1.AssetId.move,
+    width: 100,
+    height: 30
 };
 const slider = {
     type: Component_1.guiType.Slider,

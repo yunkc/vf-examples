@@ -73,8 +73,8 @@ const root: gui.Custom = {
     {
       id: Ids.connectLine1, //自动画线
       libId: Ids.connectLine,
-      sourcePostion: [15,210], // 设置源坐标
-      targetPostion: [150,210],// 设置目标坐标
+      sourcePostion: [130,210], // 设置源坐标
+      targetPostion: [250,210],// 设置目标坐标
       autoPlay: true, // 是否自动播放 ，默认自动播放true
       style: {
         top: 210,
@@ -83,8 +83,8 @@ const root: gui.Custom = {
     {
       id: Ids.connectLine2, //3秒后触发画线
       libId: Ids.connectLine,
-      sourcePostion: [15,230],
-      targetPostion: [150,230],
+      sourcePostion: [130,230],
+      targetPostion: [250,230],
       autoPlay: false, // 是否自动播放 ，默认自动播放
       lineColor: 0xffcc00,
       style: {

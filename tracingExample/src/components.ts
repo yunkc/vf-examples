@@ -4,22 +4,21 @@
  *   VFX 使用文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/aciton.md
  * */
 
-import { App, Ids ,AssetId} from "./store";
-import { gui, guiType,} from "../types/Component";
+import { App, Ids, AssetId } from "./store";
+import { gui, guiType } from "../types/Component";
 import { Components } from "../types/IVFTemplate";
 import { tracePoints } from "./global";
 import assets from "./assets";
 
-
 const tracing: gui.Tracing = {
   type: guiType.Tracing,
   debug: true,
-  traceSprite:AssetId.fan,
-  renderBgSprite:AssetId.maskBg,
-  tracePoints:tracePoints,
-  lineTexture:AssetId.maskBg,
-  mode:0,
-}
+  traceSprite: AssetId.fan,
+  renderBgSprite: AssetId.maskBg,
+  tracePoints: tracePoints,
+  lineTexture: AssetId.maskBg,
+  mode: 0
+};
 
 const button: gui.Button = {
   type: guiType.Button,
@@ -27,120 +26,120 @@ const button: gui.Button = {
   height: 30,
   up: AssetId.up,
   down: AssetId.down,
-  move: AssetId.move,
-}
+  move: AssetId.move
+};
 
-const radio:gui.Checkbox = {
+const radio: gui.Checkbox = {
   type: guiType.CheckBox,
-  up : AssetId.unselect.toString(),
-  down : AssetId.unselect.toString(),
-  move : AssetId.unselect.toString(),
+  up: AssetId.unselect.toString(),
+  down: AssetId.unselect.toString(),
+  move: AssetId.unselect.toString(),
   disabled: AssetId.unselect.toString(),
-  upAndSelected : AssetId.select_up.toString(),
-  downAndSelected : AssetId.select_down.toString(),
-  moveAndSelected : AssetId.select_down.toString(),
-  disabledAndSelected : AssetId.unselect.toString(),
-  width:22,
-  height:22,
-  style:{
-    top:30
+  upAndSelected: AssetId.select_up.toString(),
+  downAndSelected: AssetId.select_down.toString(),
+  moveAndSelected: AssetId.select_down.toString(),
+  disabledAndSelected: AssetId.unselect.toString(),
+  width: 22,
+  height: 22,
+  style: {
+    top: 30
   }
-}
+};
 
-const radioText:gui.Text = {
+const radioText: gui.Text = {
   type: guiType.Text,
-  style:{
-    color:0xffffff,
-    top:30
-  } 
-}
-
+  style: {
+    color: 0xffffff,
+    top: 30,
+    fontSize:22
+  }
+};
 
 const root: gui.Custom = {
   type: guiType.Custom,
-  interactabled:false,// 容器默认为false
-  children:[
+  interactabled: false, // 容器默认为false
+  children: [
     {
-      id:"tracing1",
-      libId:Ids.tracing,
-      x:0,
-      y:100,
-      width:400,
-      height:400,
+      id: "tracing1",
+      libId: Ids.tracing,
+      x: 0,
+      y: 100,
+      width: 260,
+      height: 260,
     },
     {
-      id:"tracing2",
-      libId:Ids.tracing,
-      x:400,
-      y:100,
-      width:400,
-      height:400
+      id: "tracing2",
+      libId: Ids.tracing,
+      x: 0,
+      y: 400,
+      width: 260,
+      height: 260
     },
     {
-      id:"label1",
+      id: "label1",
       libId: Ids.radioText,
-      text : "未完成",
+      text: "未完成",
       style: {
-          left:130,
-          top:70,
+        left: 300,
+        top: 200
       }
     },
     {
-      id:"label2",
+      id: "label2",
       libId: Ids.radioText,
-      text : "未完成",
+      text: "未完成",
       style: {
-          left:530,
-          top:70,
+        left: 300,
+        top: 500
       }
     },
     {
-      id:"radio0",
-      libId:Ids.radio,
-      checked:true,
-      checkGroup:"groupRadio",
-      style:{
-        left:0,
+      id: "radio0",
+      libId: Ids.radio,
+      checked: true,
+      checkGroup: "groupRadio",
+      style: {
+        left: 0
       }
     },
     {
-      id:"radio1",
-      libId:Ids.radio,
-      checkGroup:"groupRadio",
-      style:{
-        left:200,
+      id: "radio1",
+      libId: Ids.radio,
+      checkGroup: "groupRadio",
+      style: {
+        left: 130
       }
     },
     {
-      id:"radio2",
-      libId:Ids.radio,
-      checkGroup:"groupRadio",
-      style:{
-        left:400,
+      id: "radio2",
+      libId: Ids.radio,
+      checkGroup: "groupRadio",
+      style: {
+        left: 260
       }
     },
     {
-      id:"radioText0",
+      id: "radioText0",
       libId: Ids.radioText,
-      text : "笔画检测",
+      text: "笔画检测",
       style: {
-          left:30,
+        left: 28
       }
     },
     {
-      id:"radioText1",
+      id: "radioText1",
       libId: Ids.radioText,
-      text : "教学模式",
+      text: "教学模式",
       style: {
-          left:230,
+        left: 158
       }
     },
     {
-      id:"radioText2",
+      id: "radioText2",
       libId: Ids.radioText,
-      text : "自动书写",
+      text: "自动书写",
       style: {
-          left:430,
+        left: 288
       }
     },
     {
@@ -149,9 +148,9 @@ const root: gui.Custom = {
       text: "清除",
       style: {
         top: 70,
-        left : 0
+        left: 0
       }
-    },
+    }
   ],
   actionList: `
   @this = {
@@ -244,7 +243,7 @@ const root: gui.Custom = {
     
   }
 `
-}
+};
 
 const allComponents: Components = {
   [Ids.root]: root,

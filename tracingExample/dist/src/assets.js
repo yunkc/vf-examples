@@ -5,7 +5,7 @@ const IVFTemplate_1 = require("../types/IVFTemplate");
 const assets = {
     [store_1.AssetId.fan]: {
         type: IVFTemplate_1.AssetType.image,
-        url: 'https://vipkid-edu.github.io/vf-gui/play/assets/tracing/fan.png',
+        url: './assets/a260x260.png',
         name: store_1.AssetId.fan.toString()
     },
     [store_1.AssetId.maskBg]: {

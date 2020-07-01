@@ -62,8 +62,8 @@ const root = {
         {
             id: store_1.Ids.connectLine1,
             libId: store_1.Ids.connectLine,
-            sourcePostion: [15, 210],
-            targetPostion: [150, 210],
+            sourcePostion: [130, 210],
+            targetPostion: [250, 210],
             autoPlay: true,
             style: {
                 top: 210,
@@ -72,8 +72,8 @@ const root = {
         {
             id: store_1.Ids.connectLine2,
             libId: store_1.Ids.connectLine,
-            sourcePostion: [15, 230],
-            targetPostion: [150, 230],
+            sourcePostion: [130, 230],
+            targetPostion: [250, 230],
             autoPlay: false,
             lineColor: 0xffcc00,
             style: {

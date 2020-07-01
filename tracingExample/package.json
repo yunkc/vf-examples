@@ -10,7 +10,7 @@
     "build": "node build/h.js | tsc | node build/t2j.core.js"
   },
   "dependencies": {
-    "@vf.js/launcher": "^0.5.7",
+    "@vf.js/launcher": "^0.5.61",
     "@vf.js/vfx": "^1.0.7",
     "axios": "^0.19.2",
     "chokidar": "^3.3.0",

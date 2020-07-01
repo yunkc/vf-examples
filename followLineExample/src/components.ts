@@ -21,7 +21,9 @@ const button:gui.Button = {
   type: guiType.Button,
   up: AssetId.up,
   down: AssetId.down,
-  move : AssetId.move
+  move : AssetId.move,
+  width: 100,
+  height :30
 }
 
 const slider:gui.Slider = {

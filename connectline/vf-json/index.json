@@ -37,11 +37,11 @@
           "id": 4,
           "libId": 3,
           "sourcePostion": [
-            15,
+            130,
             210
           ],
           "targetPostion": [
-            150,
+            250,
             210
           ],
           "autoPlay": true,
@@ -53,11 +53,11 @@
           "id": 5,
           "libId": 3,
           "sourcePostion": [
-            15,
+            130,
             230
           ],
           "targetPostion": [
-            150,
+            250,
             230
           ],
           "autoPlay": false,

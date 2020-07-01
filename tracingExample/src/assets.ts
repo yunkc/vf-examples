@@ -4,7 +4,8 @@ import {Assets, AssetType} from '../types/IVFTemplate'
 const assets: Assets = {
     [AssetId.fan]: {
         type: AssetType.image,
-        url: 'https://vipkid-edu.github.io/vf-gui/play/assets/tracing/fan.png',
+        url: 'https://vipkid-edu.github.io/vf-gui/play/assets/tracing/a260x260.png',
+        // url:'./assets/a260x260.png',
         name: AssetId.fan.toString()
     },
     [AssetId.maskBg]: {

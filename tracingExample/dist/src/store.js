@@ -23,8 +23,8 @@ var AssetId;
 var App;
 (function (App) {
     App.name = 'VFT2J';
-    App.width = 890;
-    App.height = 500;
+    App.width = 405;
+    App.height = 720;
     App.baseUrl = '';
     App.conversion = '';
     App.version = '0.0.1';
