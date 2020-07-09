@@ -69,7 +69,7 @@ const root = {
             libId: store_1.Ids.radioText,
             text: "未完成",
             style: {
-                left: 300,
+                left: 270,
                 top: 200
             }
         },
@@ -78,7 +78,7 @@ const root = {
             libId: store_1.Ids.radioText,
             text: "未完成",
             style: {
-                left: 300,
+                left: 270,
                 top: 500
             }
         },

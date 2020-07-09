@@ -80,7 +80,7 @@ const root: gui.Custom = {
       libId: Ids.radioText,
       text: "未完成",
       style: {
-        left: 300,
+        left: 270,
         top: 200
       }
     },
@@ -89,7 +89,7 @@ const root: gui.Custom = {
       libId: Ids.radioText,
       text: "未完成",
       style: {
-        left: 300,
+        left: 270,
         top: 500
       }
     },

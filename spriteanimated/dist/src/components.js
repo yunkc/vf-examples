@@ -34,7 +34,7 @@ const spriteAnimated = {
     type: Component_1.guiType.SpriteAnimated,
     animationSpeed: 0.1,
     loop: true,
-    loopCount: 20,
+    loopCount: 0,
     src: store_1.Ids.sheet,
     anchorX: 0.2,
     anchorY: 1,

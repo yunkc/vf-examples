@@ -97,6 +97,7 @@
           "libId": 2,
           "text": "我限定了宽度与位置",
           "style": {
+            "backgroundColor": 5658112,
             "top": 570,
             "left": 80,
             "color": 16777215,

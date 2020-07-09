@@ -43,7 +43,7 @@ const spriteAnimated: gui.SpriteAnimated = {
   type: guiType.SpriteAnimated,
   animationSpeed: 0.1,
   loop: true,
-  loopCount:20,//设置循环次数，0为不限制
+  loopCount:0,//设置循环次数，0为不限制
   src:Ids.sheet, //方式1，有可使用位图数组填充
   anchorX:0.2, // 设置脚底为中心点
   anchorY:1,

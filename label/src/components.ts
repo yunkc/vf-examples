@@ -102,6 +102,7 @@ const root: gui.Custom = {
       libId: Ids.title,
       text: "我限定了宽度与位置",
       style: {
+        backgroundColor: 0x565600,
         top: 570,
         left: 80,
         color:0xffffff,

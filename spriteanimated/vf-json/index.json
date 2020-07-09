@@ -253,7 +253,7 @@
       "type": "SpriteAnimated",
       "animationSpeed": 0.1,
       "loop": true,
-      "loopCount": 20,
+      "loopCount": 0,
       "src": 4,
       "anchorX": 0.2,
       "anchorY": 1,
