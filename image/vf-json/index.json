@@ -126,6 +126,39 @@
           }
         }
       ],
+      "animations": [
+        {
+          "name": "default",
+          "duration": 60,
+          "autoPlay": true,
+          "loop": true,
+          "children": {
+            "centerImage": {
+              "duration": 60,
+              "loop": true,
+              "timelines": [
+                {
+                  "type": "rotation",
+                  "loop": true,
+                  "frames": [
+                    {
+                      "frame": 0,
+                      "curve": [
+                        1
+                      ],
+                      "value": 0
+                    },
+                    {
+                      "frame": 60,
+                      "value": 360
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
       "actionList": [
         {
           "type": 13,
@@ -157,7 +190,7 @@
               "type": 42,
               "value": [
                 0,
-                1
+                33
               ],
               "times": [
                 0,
@@ -311,16 +344,6 @@
                         ]
                       ],
                       "execute": [
-                        {
-                          "type": 0,
-                          "value": [
-                            1,
-                            [
-                              -1
-                            ],
-                            "count"
-                          ]
-                        },
                         {
                           "type": 37,
                           "variableType": "array",
@@ -479,33 +502,8 @@
                     [
                       4,
                       [
-                        "centerImage"
-                      ],
-                      "style",
-                      "rotation"
-                    ],
-                    [
-                      5,
-                      "="
-                    ],
-                    [
-                      1,
-                      [
-                        -1
-                      ],
-                      "rotation"
-                    ]
-                  ]
-                },
-                {
-                  "type": 6,
-                  "express": [
-                    [
-                      4,
-                      [
                         "leftImage"
                       ],
-                      "style",
                       "rotation"
                     ],
                     [

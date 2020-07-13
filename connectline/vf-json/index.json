@@ -37,12 +37,12 @@
           "id": 4,
           "libId": 3,
           "sourcePostion": [
-            130,
-            210
+            370,
+            200
           ],
           "targetPostion": [
-            250,
-            210
+            520,
+            200
           ],
           "autoPlay": true,
           "style": {
@@ -53,11 +53,11 @@
           "id": 5,
           "libId": 3,
           "sourcePostion": [
-            130,
+            370,
             230
           ],
           "targetPostion": [
-            250,
+            520,
             230
           ],
           "autoPlay": false,
@@ -71,15 +71,15 @@
           "libId": 6,
           "style": {
             "top": 250,
-            "left": 20
+            "left": 200
           }
         },
         {
           "id": 8,
           "libId": 6,
           "style": {
-            "top": 400,
-            "right": 30
+            "top": 290,
+            "right": 200
           }
         },
         {
@@ -211,6 +211,10 @@
                   ]
                 },
                 {
+                  "type": 35,
+                  "value": "// 清除画线"
+                },
+                {
                   "type": 6,
                   "express": [
                     [
@@ -270,6 +274,10 @@
                   ]
                 },
                 {
+                  "type": 35,
+                  "value": "// 清除画线"
+                },
+                {
                   "type": 6,
                   "express": [
                     [
@@ -315,10 +323,7 @@
       "type": "ConnectLine",
       "isAnimation": true,
       "lineColor": 16777215,
-      "lineWidth": 2,
-      "style": {
-        "justifyContent": "center"
-      }
+      "lineWidth": 2
     },
     "6": {
       "type": "Rect",
@@ -334,8 +339,8 @@
     }
   },
   "name": "VFT2J",
-  "width": 405,
-  "height": 720,
+  "width": 890,
+  "height": 500,
   "version": "0.0.1",
   "baseUrl": "",
   "loadMode": "all",

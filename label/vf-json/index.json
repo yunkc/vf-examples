@@ -34,41 +34,31 @@
           }
         },
         {
-          "id": "label1",
-          "libId": 2,
-          "text": "Basic text in vf-gui",
-          "style": {
-            "top": 200,
-            "color": 16777215,
-            "fontSize": 32
-          }
-        },
-        {
           "id": "label2",
           "libId": 2,
           "text": "手动换行，\n文本！",
           "style": {
-            "top": 260,
+            "top": 200,
             "color": [
               16777215,
               16763904
             ],
-            "fontSize": 24
+            "fontSize": 32
           }
         },
         {
           "id": "label3",
           "libId": 2,
-          "text": "自动换行文本，我可以通过设置 wordWrap = true , wordWrapWidth = width 开启自动换行。",
+          "text": "自动换行文本设置 wordWrap = true , wordWrapWidth = width 开启自动换行。",
           "style": {
-            "top": 350,
+            "top": 290,
             "color": [
               16777215,
               65433
             ],
-            "fontSize": 24,
+            "fontSize": 32,
             "wordWrap": true,
-            "wordWrapWidth": 350
+            "wordWrapWidth": 500
           }
         },
         {
@@ -76,9 +66,7 @@
           "libId": 2,
           "text": "我是有滤镜的文字",
           "style": {
-            "top": 500,
-            "left": 80,
-            "justifyContent": "",
+            "top": 400,
             "color": [
               16777215,
               65433
@@ -95,14 +83,16 @@
         {
           "id": "label5",
           "libId": 2,
-          "text": "我限定了宽度与位置",
+          "text": "我设定了textAlign与verticalAlign",
           "style": {
-            "backgroundColor": 5658112,
-            "top": 570,
+            "top": 440,
             "left": 80,
             "color": 16777215,
-            "width": 300,
-            "textAlign": "right"
+            "width": 450,
+            "height": 50,
+            "verticalAlign": "middle",
+            "textAlign": "center",
+            "backgroundColor": 4095
           }
         }
       ]
@@ -125,8 +115,8 @@
     }
   },
   "name": "VFT2J",
-  "width": 405,
-  "height": 720,
+  "width": 890,
+  "height": 500,
   "version": "0.0.1",
   "baseUrl": "",
   "loadMode": "all",

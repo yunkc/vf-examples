@@ -25,13 +25,13 @@ const assets = {
     },
     [store_1.Ids.sound1]: {
         type: IVFTemplate_1.AssetType.SOUND,
-        url: 'https://s.vipkidstatic.com/vf/IC019/C019_selete1_sound.mp3',
-        name: store_1.Ids.sound1.toString()
+        url: 'https://s.vipkidstatic.com/vf/IC019/c019_turn.mp3',
+        name: store_1.Ids.sound2.toString()
     },
     [store_1.Ids.sound2]: {
         type: IVFTemplate_1.AssetType.SOUND,
-        url: 'https://s.vipkidstatic.com/vf/IC019/c019_turn.mp3',
-        name: store_1.Ids.sound2.toString()
+        url: 'https://s.vipkidstatic.com/vf/IC019/C019_selete1_sound.mp3',
+        name: store_1.Ids.sound1.toString()
     },
 };
 exports.default = assets;

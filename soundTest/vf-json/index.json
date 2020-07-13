@@ -7,13 +7,13 @@
     },
     "3": {
       "type": "sound",
-      "url": "https://s.vipkidstatic.com/vf/IC019/C019_selete1_sound.mp3",
-      "name": "3"
+      "url": "https://s.vipkidstatic.com/vf/IC019/c019_turn.mp3",
+      "name": "4"
     },
     "4": {
       "type": "sound",
-      "url": "https://s.vipkidstatic.com/vf/IC019/c019_turn.mp3",
-      "name": "4"
+      "url": "https://s.vipkidstatic.com/vf/IC019/C019_selete1_sound.mp3",
+      "name": "3"
     },
     "5": {
       "type": "image",
