@@ -89,6 +89,24 @@ const root: gui.Custom = {
         top: 290,
       }
     },
+    {
+      id: "horiz",
+      libId: Ids.title,
+      text: "h：",
+      style: {
+        top: 250,
+        color: 0xffff00,
+      }
+    },
+    {
+      id: "vertical",
+      libId: Ids.title,
+      text: "v：",
+      style: {
+        top: 330,
+        color: 0xffff00,
+      }
+    },
   ],
   actionList: `
     @this = {
@@ -98,11 +116,16 @@ const root: gui.Custom = {
               trace($curValue); // 鼠标弹起后触发
             };
             function onChangeing($thisObj,$curValue){
-              trace("onChangeing");
-              trace($curValue); // 滑动中连续触发
+              trace("onChangeing");// 滑动中连续触发
+              this#horiz.text = "h:" + $curValue;
+            };
+            function onChangeing2($thisObj,$curValue){
+              trace("onChangeing");// 滑动中连续触发
+              this#vertical.text = "v:" + $curValue;
             };
             this#${Ids.slider}.on('CHANGE',this.onChange);
             this#${Ids.slider}.on('CHANGEING',this.onChangeing);
+            this#${Ids.slider2}.on('CHANGEING',this.onChangeing2);
         });
     }
   `

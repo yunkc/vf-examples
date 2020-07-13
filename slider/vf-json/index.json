@@ -61,6 +61,24 @@
           "style": {
             "top": 290
           }
+        },
+        {
+          "id": "horiz",
+          "libId": 2,
+          "text": "h：",
+          "style": {
+            "top": 250,
+            "color": 16776960
+          }
+        },
+        {
+          "id": "vertical",
+          "libId": 2,
+          "text": "v：",
+          "style": {
+            "top": 330,
+            "color": 16776960
+          }
         }
       ],
       "actionList": [
@@ -105,11 +123,74 @@
                   ]
                 },
                 {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "horiz"
+                      ],
+                      "text"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      "h:"
+                    ],
+                    [
+                      5,
+                      "+"
+                    ],
+                    [
+                      9,
+                      1,
+                      "curValue"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 11,
+              "name": "onChangeing2",
+              "execute": [
+                {
                   "type": 0,
                   "value": [
-                    9,
-                    1,
-                    "curValue"
+                    0,
+                    "onChangeing"
+                  ]
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "vertical"
+                      ],
+                      "text"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      "v:"
+                    ],
+                    [
+                      5,
+                      "+"
+                    ],
+                    [
+                      9,
+                      1,
+                      "curValue"
+                    ]
                   ]
                 }
               ]
@@ -135,6 +216,17 @@
                 ]
               ],
               "funName": "onChangeing"
+            },
+            {
+              "type": 29,
+              "event": "CHANGEING",
+              "target": [
+                11,
+                [
+                  "7"
+                ]
+              ],
+              "funName": "onChangeing2"
             }
           ]
         }
