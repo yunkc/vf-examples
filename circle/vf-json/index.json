@@ -38,7 +38,8 @@
           "libId": 3,
           "color": 16777215,
           "style": {
-            "top": 250
+            "top": 250,
+            "left": 60
           }
         },
         {
@@ -46,7 +47,42 @@
           "libId": 3,
           "lineWidth": 5,
           "style": {
-            "top": 330
+            "top": 250,
+            "left": 180
+          }
+        },
+        {
+          "id": 3,
+          "libId": 3,
+          "color": 16777215,
+          "lineWidth": 5,
+          "startAngle": 0,
+          "endAngle": 180,
+          "style": {
+            "top": 400,
+            "left": 60
+          }
+        },
+        {
+          "id": 3,
+          "libId": 3,
+          "lineWidth": 5,
+          "startAngle": 180,
+          "endAngle": 260,
+          "style": {
+            "top": 400,
+            "left": 180
+          }
+        },
+        {
+          "id": "circleAni",
+          "libId": 3,
+          "lineWidth": 5,
+          "startAngle": 0,
+          "endAngle": 0,
+          "style": {
+            "top": 550,
+            "left": 180
           }
         }
       ],
@@ -58,7 +94,193 @@
             11,
             []
           ],
-          "execute": []
+          "execute": [
+            {
+              "type": 43,
+              "execute": [
+                {
+                  "type": 7,
+                  "execute": [
+                    {
+                      "type": 8,
+                      "condition": [
+                        [
+                          4,
+                          [
+                            "circleAni"
+                          ],
+                          "endAngle"
+                        ],
+                        [
+                          5,
+                          ">="
+                        ],
+                        [
+                          0,
+                          360
+                        ]
+                      ],
+                      "execute": [
+                        {
+                          "type": 6,
+                          "express": [
+                            [
+                              4,
+                              [
+                                "circleAni"
+                              ],
+                              "startAngle"
+                            ],
+                            [
+                              5,
+                              "="
+                            ],
+                            [
+                              4,
+                              [
+                                "circleAni"
+                              ],
+                              "startAngle"
+                            ],
+                            [
+                              5,
+                              "+"
+                            ],
+                            [
+                              0,
+                              1
+                            ]
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": 10,
+                      "execute": [
+                        {
+                          "type": 6,
+                          "express": [
+                            [
+                              4,
+                              [
+                                "circleAni"
+                              ],
+                              "endAngle"
+                            ],
+                            [
+                              5,
+                              "="
+                            ],
+                            [
+                              4,
+                              [
+                                "circleAni"
+                              ],
+                              "endAngle"
+                            ],
+                            [
+                              5,
+                              "+"
+                            ],
+                            [
+                              0,
+                              1
+                            ]
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": 7,
+                  "execute": [
+                    {
+                      "type": 8,
+                      "condition": [
+                        [
+                          4,
+                          [
+                            "circleAni"
+                          ],
+                          "endAngle"
+                        ],
+                        [
+                          5,
+                          ">="
+                        ],
+                        [
+                          0,
+                          360
+                        ],
+                        [
+                          5,
+                          "&&"
+                        ],
+                        [
+                          4,
+                          [
+                            "circleAni"
+                          ],
+                          "startAngle"
+                        ],
+                        [
+                          5,
+                          ">="
+                        ],
+                        [
+                          0,
+                          360
+                        ]
+                      ],
+                      "execute": [
+                        {
+                          "type": 6,
+                          "express": [
+                            [
+                              4,
+                              [
+                                "circleAni"
+                              ],
+                              "startAngle"
+                            ],
+                            [
+                              5,
+                              "="
+                            ],
+                            [
+                              0,
+                              0
+                            ]
+                          ]
+                        },
+                        {
+                          "type": 6,
+                          "express": [
+                            [
+                              4,
+                              [
+                                "circleAni"
+                              ],
+                              "endAngle"
+                            ],
+                            [
+                              5,
+                              "="
+                            ],
+                            [
+                              0,
+                              0
+                            ]
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -84,15 +306,12 @@
       "lineWidth": 1,
       "radius": 50,
       "width": 1,
-      "height": 1,
-      "style": {
-        "justifyContent": "center"
-      }
+      "height": 1
     }
   },
   "name": "VFT2J",
-  "width": 890,
-  "height": 500,
+  "width": 405,
+  "height": 720,
   "version": "0.0.1",
   "baseUrl": "",
   "loadMode": "all",

@@ -21,8 +21,8 @@ const title = {
 };
 const btn = {
     type: Component_1.guiType.Button,
-    width: 100,
-    height: 30,
+    width: 150,
+    height: 60,
     up: store_1.Ids.up,
     down: store_1.Ids.down,
     move: store_1.Ids.move,
@@ -38,7 +38,7 @@ const root = {
             id: store_1.Ids.dinoImage,
             libId: store_1.Ids.dinoImage,
             style: {
-                top: 0
+                top: 20
             }
         },
         {
@@ -62,7 +62,7 @@ const root = {
             libId: store_1.Ids.btn,
             text: "划过按钮",
             style: {
-                top: 260
+                top: 290
             }
         },
         {
@@ -71,7 +71,7 @@ const root = {
             text: "点击弹起",
             style: {
                 height: 60,
-                top: 300
+                top: 360
             }
         }
     ],

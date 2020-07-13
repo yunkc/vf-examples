@@ -82,15 +82,15 @@ const root = {
             libId: store_1.Ids.rect,
             style: {
                 top: 250,
-                left: 200
+                left: 20
             }
         },
         {
             id: store_1.Ids.rect2,
             libId: store_1.Ids.rect,
             style: {
-                top: 290,
-                right: 200
+                top: 400,
+                right: 30
             }
         },
         {

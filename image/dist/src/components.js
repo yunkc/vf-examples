@@ -69,8 +69,11 @@ const root = {
             libId: store_1.Ids.dinoImage,
             tint: 0xffcc00,
             style: {
-                top: 210,
-                justifyContent: "center",
+                top: 250,
+                left: 220,
+                scaleX: 0.5,
+                scaleY: 0.5,
+                justifyContent: "",
             }
         },
         {
@@ -89,7 +92,7 @@ const root = {
             libId: store_1.Ids.dinoImage,
             src: store_1.Ids.bg2.toString(),
             style: {
-                top: 350,
+                top: 400,
                 width: 340,
                 height: 160
             }
@@ -99,7 +102,7 @@ const root = {
             libId: store_1.Ids.dinoImage,
             src: store_1.Ids.bg1.toString(),
             style: {
-                top: 350,
+                top: 400,
                 width: 340,
                 height: 160,
                 maskImage: store_1.Ids.maskImage.toString(),

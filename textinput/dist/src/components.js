@@ -28,7 +28,7 @@ const textInput = {
     move: store_1.Ids.move,
     style: {
         width: 300,
-        height: 30,
+        height: 40,
         fontSize: 24,
         color: 0xffffff,
         fontFamily: "微软雅黑",

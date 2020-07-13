@@ -11,7 +11,7 @@ import {Components} from "../types/IVFTemplate";
 const dinoWidth = 83
 const dino: gui.Image = {
     type: guiType.IMAGE,
-    y: 140,
+    y: 50,
     width: dinoWidth,
     height: 138,
     src: Ids.dinoImage,
@@ -20,7 +20,7 @@ const dino: gui.Image = {
 
 const title: gui.Text = {
     type: guiType.TEXT,
-    width: 100,
+    width: 140,
     style: {
         color: '#000'
     }
@@ -28,8 +28,8 @@ const title: gui.Text = {
 
 const btn: gui.Button = {
     type: guiType.BUTTON,
-    width: 100,
-    height:30,
+    width: 150,
+    height:40,
     up: Ids.up,
     down: Ids.down,
     move: Ids.move,
@@ -62,21 +62,21 @@ const root: gui.Custom = {
             id: 'play2',
             libId: Ids.btn,
             text: '播放声音2',
-            y: dino.y! + 240,
+            y: dino.y! + 270,
             x: App.width / 2 - title.width! / 2
         },
         {
             id: 'pause1',
             libId: Ids.btn,
             text: '暂停声音1',
-            y: dino.y! + 280,
+            y: dino.y! + 340,
             x: App.width / 2 - title.width! / 2
         },
         {
             id: 'resume1',
             libId: Ids.btn,
             text: '恢复声音1',
-            y: dino.y! + 320,
+            y: dino.y! + 410,
             x: App.width / 2 - title.width! / 2
         }
     ],

@@ -9,7 +9,7 @@ const assets: Assets = {
     },
     [Ids.drag]: {
         type: AssetType.image,
-        url: './assets/mouse.png',
+        url: 'https://vipkid-edu.github.io/vf-gui/play/assets/mouse.png',
         name: Ids.dinoImage.toString()
     },
 }

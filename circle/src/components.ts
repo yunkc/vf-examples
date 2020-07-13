@@ -33,10 +33,7 @@ const circle: gui.Circle = {
   lineWidth: 1,
   radius: 50, //半径
   width:1,
-  height:1,
-  style: {
-    justifyContent: "center",
-  }
+  height:1
 }
 
 const root: gui.Custom = {
@@ -64,8 +61,8 @@ const root: gui.Custom = {
       color: 0xffffff,
       style: {
         top: 250,
+        left:60
       }
-      
     },
     {
       id: Ids.circle,
@@ -73,14 +70,63 @@ const root: gui.Custom = {
       color: undefined,
       lineWidth:5,
       style: {
-        top: 330,
+        top: 250,
+        left: 180
+      }
+    },
+    {
+      id: Ids.circle,
+      libId: Ids.circle,
+      color: 0xffffff,
+      lineWidth:5,
+      startAngle: 0,
+      endAngle: 180,
+      style: {
+        top: 400,
+        left: 60,
+      }
+    }
+    ,
+    {
+      id: Ids.circle,
+      libId: Ids.circle,
+      color: undefined,
+      lineWidth:5,
+      startAngle: 180,
+      endAngle: 260,
+      style: {
+        top: 400,
+        left: 180,
+      }
+    }
+    ,
+    {
+      id: "circleAni",
+      libId: Ids.circle,
+      // color: 0xffff00,
+      lineWidth:5,
+      startAngle: 0,
+      endAngle: 0,
+      style: {
+        top: 550,
+        left: 180,
       }
     }
   ],
   actionList:`
     @this = {
         this.on("Add", () => {
-
+          setEnterFrame(()=>{
+            if(this#circleAni.endAngle >= 360){
+              this#circleAni.startAngle = this#circleAni.startAngle + 1;
+            }else{
+              this#circleAni.endAngle = this#circleAni.endAngle + 1;
+            };
+            if(this#circleAni.endAngle >= 360 && this#circleAni.startAngle >= 360){
+              this#circleAni.startAngle = 0;
+              this#circleAni.endAngle = 0;
+            };
+        });
         });
     }
   `

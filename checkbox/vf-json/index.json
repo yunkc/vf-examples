@@ -62,7 +62,7 @@
           "id": 1,
           "libId": 1,
           "style": {
-            "top": 0
+            "top": 20
           }
         },
         {
@@ -70,51 +70,63 @@
           "libId": 2,
           "text": "单选与复选框接口示例",
           "style": {
-            "top": 160
+            "top": 180
           }
         },
         {
           "id": "checkbox1",
           "libId": 3,
-          "x": 400,
-          "y": 220,
+          "style": {
+            "left": 60,
+            "top": 250
+          },
           "value": "checkbox1"
         },
         {
           "id": "checkbox2",
           "libId": 3,
-          "x": 440,
-          "y": 220,
+          "style": {
+            "left": 180,
+            "top": 250
+          },
           "value": "checkbox2"
         },
         {
           "id": "checkbox3",
           "libId": 3,
-          "x": 480,
-          "y": 220,
+          "style": {
+            "left": 300,
+            "top": 250
+          },
           "value": "checkbox3"
         },
         {
           "id": "radio1",
           "libId": 8,
-          "x": 400,
-          "y": 280,
+          "style": {
+            "left": 60,
+            "top": 350
+          },
           "value": "radio1",
           "checkGroup": "radioGroup1"
         },
         {
           "id": "radio2",
           "libId": 8,
-          "x": 440,
-          "y": 280,
+          "style": {
+            "left": 180,
+            "top": 350
+          },
           "value": "radio2",
           "checkGroup": "radioGroup1"
         },
         {
           "id": "radio3",
           "libId": 8,
-          "x": 480,
-          "y": 280,
+          "style": {
+            "left": 300,
+            "top": 350
+          },
           "value": "radio3",
           "checkGroup": "radioGroup1"
         }
@@ -368,8 +380,8 @@
     }
   },
   "name": "VFT2J",
-  "width": 890,
-  "height": 500,
+  "width": 405,
+  "height": 720,
   "version": "0.0.1",
   "baseUrl": "",
   "loadMode": "all",

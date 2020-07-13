@@ -25,10 +25,7 @@ const circle = {
     lineWidth: 1,
     radius: 50,
     width: 1,
-    height: 1,
-    style: {
-        justifyContent: "center",
-    }
+    height: 1
 };
 const root = {
     type: Component_1.guiType.Custom,
@@ -55,6 +52,7 @@ const root = {
             color: 0xffffff,
             style: {
                 top: 250,
+                left: 60
             }
         },
         {
@@ -63,14 +61,60 @@ const root = {
             color: undefined,
             lineWidth: 5,
             style: {
-                top: 330,
+                top: 250,
+                left: 180
+            }
+        },
+        {
+            id: store_1.Ids.circle,
+            libId: store_1.Ids.circle,
+            color: 0xffffff,
+            lineWidth: 5,
+            startAngle: 0,
+            endAngle: 180,
+            style: {
+                top: 400,
+                left: 60,
+            }
+        },
+        {
+            id: store_1.Ids.circle,
+            libId: store_1.Ids.circle,
+            color: undefined,
+            lineWidth: 5,
+            startAngle: 180,
+            endAngle: 260,
+            style: {
+                top: 400,
+                left: 180,
+            }
+        },
+        {
+            id: "circleAni",
+            libId: store_1.Ids.circle,
+            lineWidth: 5,
+            startAngle: 0,
+            endAngle: 0,
+            style: {
+                top: 550,
+                left: 180,
             }
         }
     ],
     actionList: `
     @this = {
         this.on("Add", () => {
-
+          setEnterFrame(()=>{
+            if(this#circleAni.endAngle >= 360){
+              this#circleAni.startAngle = this#circleAni.startAngle + 1;
+            }else{
+              this#circleAni.endAngle = this#circleAni.endAngle + 1;
+            };
+            if(this#circleAni.endAngle >= 360 && this#circleAni.startAngle >= 360){
+              this#circleAni.startAngle = 0;
+              this#circleAni.endAngle = 0;
+            };
+        });
         });
     }
   `

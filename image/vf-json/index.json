@@ -72,8 +72,11 @@
           "libId": 1,
           "tint": 16763904,
           "style": {
-            "top": 210,
-            "justifyContent": "center"
+            "top": 250,
+            "left": 220,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "justifyContent": ""
           }
         },
         {
@@ -98,7 +101,7 @@
           "libId": 1,
           "src": "6",
           "style": {
-            "top": 350,
+            "top": 400,
             "width": 340,
             "height": 160
           }
@@ -108,7 +111,7 @@
           "libId": 1,
           "src": "5",
           "style": {
-            "top": 350,
+            "top": 400,
             "width": 340,
             "height": 160,
             "maskImage": "8",
@@ -552,8 +555,8 @@
     }
   },
   "name": "VFT2J",
-  "width": 890,
-  "height": 500,
+  "width": 405,
+  "height": 720,
   "version": "0.0.1",
   "baseUrl": "",
   "loadMode": "all",

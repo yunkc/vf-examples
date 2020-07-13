@@ -21,8 +21,8 @@ const title = {
 };
 const btn = {
     type: Component_1.guiType.Button,
-    width: 100,
-    height: 30,
+    width: 150,
+    height: 50,
     up: store_1.Ids.up,
     down: store_1.Ids.down,
     move: store_1.Ids.move,
@@ -34,7 +34,7 @@ const spriteAnimated = {
     type: Component_1.guiType.SpriteAnimated,
     animationSpeed: 0.1,
     loop: true,
-    loopCount: 20,
+    loopCount: 0,
     src: store_1.Ids.sheet,
     anchorX: 0.2,
     anchorY: 1,
@@ -68,7 +68,7 @@ const root = {
             libId: store_1.Ids.btn,
             text: "切换动画",
             style: {
-                top: 460
+                top: 500
             }
         },
     ],

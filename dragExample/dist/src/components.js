@@ -60,8 +60,8 @@ const root = {
             lineColor: 0x565680,
             lineWidth: 5,
             color: 0x565655,
-            width: 890,
-            height: 500,
+            width: store_1.App.width,
+            height: store_1.App.height,
             style: {
                 justifyContent: "center",
             }
@@ -89,8 +89,8 @@ const root = {
         {
             id: "3",
             libId: store_1.Ids.childContainer,
-            x: 15,
-            y: 130,
+            x: 285,
+            y: 15,
             dragOption: {
                 draggable: true,
                 dragRestrictAxis: "y"
@@ -99,7 +99,7 @@ const root = {
         {
             id: "4",
             libId: store_1.Ids.childContainer,
-            x: 150,
+            x: 15,
             y: 130,
             dragOption: {
                 draggable: true,
@@ -109,8 +109,8 @@ const root = {
         {
             id: "5",
             libId: store_1.Ids.childContainer,
-            x: 15,
-            y: 250,
+            x: 150,
+            y: 130,
             dragOption: {
                 draggable: true,
                 dragBounces: true,
@@ -119,16 +119,16 @@ const root = {
         {
             id: "6",
             libId: store_1.Ids.childContainer,
-            x: 150,
-            y: 250,
+            x: 285,
+            y: 130,
         },
         {
             id: "7",
             libId: store_1.Ids.childContainer,
-            x: 280,
-            y: 15,
-            width: 300,
-            height: 300,
+            x: 15,
+            y: 350,
+            width: 200,
+            height: 200,
             style: {
                 display: "grid",
                 gridTemplateColumns: ["repeat", 3, 30],
@@ -145,8 +145,8 @@ const root = {
         {
             id: "rect0",
             libId: store_1.Ids.rect,
-            x: 150,
-            y: 250,
+            x: 285,
+            y: 130,
             dragOption: {
                 draggable: true,
                 dragBounces: true,
@@ -157,8 +157,8 @@ const root = {
             id: "rect1",
             libId: store_1.Ids.rect,
             color: 0xff66,
-            x: 185,
-            y: 250,
+            x: 320,
+            y: 130,
             dragOption: {
                 draggable: true,
                 dragBounces: true,
@@ -169,8 +169,8 @@ const root = {
             id: "rect2",
             libId: store_1.Ids.rect,
             color: 0x66ffcc,
-            x: 220,
-            y: 250,
+            x: 355,
+            y: 130,
             dragOption: {
                 draggable: true,
                 dragBounces: true,

@@ -71,8 +71,8 @@ const root: gui.Custom = {
       lineColor: 0x565680,
       lineWidth: 5,
       color:0x565655,
-      width: 890,
-      height:500,
+      width: App.width,
+      height:App.height,
       style: {
           justifyContent: "center",
       }
@@ -100,8 +100,8 @@ const root: gui.Custom = {
     {
       id: "3",
       libId: Ids.childContainer,
-      x:15,
-      y:130,
+      x:285,
+      y:15,
       dragOption:{
         draggable:true,
         dragRestrictAxis:"y"
@@ -110,7 +110,7 @@ const root: gui.Custom = {
     {
       id: "4",
       libId: Ids.childContainer,
-      x:150,
+      x:15,
       y:130,
       dragOption:{
         draggable:true,
@@ -120,8 +120,8 @@ const root: gui.Custom = {
     {
       id: "5",
       libId: Ids.childContainer,
-      x:15,
-      y:250,
+      x:150,
+      y:130,
       dragOption:{
         draggable:true,
         dragBounces:true,
@@ -130,17 +130,17 @@ const root: gui.Custom = {
     {
       id: "6",
       libId: Ids.childContainer,
-      x:150,
-      y:250,
+      x:285,
+      y:130,
       
     },
     {
       id: "7",
       libId: Ids.childContainer,
-      x:280,
-      y:15,
-      width:300,
-      height:300,
+      x:15,
+      y:350,
+      width:200,
+      height:200,
       style:{
         display:"grid",
         gridTemplateColumns:["repeat", 3, 30],
@@ -157,8 +157,8 @@ const root: gui.Custom = {
     {
         id: "rect0",
         libId: Ids.rect,
-        x:150,
-        y:250,
+        x:285,
+        y:130,
         dragOption:{
             draggable:true,
             dragBounces:true,
@@ -169,8 +169,8 @@ const root: gui.Custom = {
         id: "rect1",
         libId: Ids.rect,
         color: 0xff66,
-        x:185,
-        y:250,
+        x:320,
+        y:130,
         dragOption:{
             draggable:true,
             dragBounces:true,
@@ -181,8 +181,8 @@ const root: gui.Custom = {
         id: "rect2",
         libId: Ids.rect,
         color: 0x66ffcc,
-        x:220,
-        y:250,
+        x:355,
+        y:130,
         dragOption:{
             draggable:true,
             dragBounces:true,

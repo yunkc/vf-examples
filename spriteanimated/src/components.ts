@@ -29,8 +29,8 @@ const title: gui.Text = {
 
 const btn: gui.Button = {
   type: guiType.Button,
-  width: 100,
-  height: 30,
+  width: 150,
+  height: 50,
   up: Ids.up,
   down: Ids.down,
   move: Ids.move,
@@ -43,7 +43,7 @@ const spriteAnimated: gui.SpriteAnimated = {
   type: guiType.SpriteAnimated,
   animationSpeed: 0.1,
   loop: true,
-  loopCount:20,//设置循环次数，0为不限制
+  loopCount:0,//设置循环次数，0为不限制
   src:Ids.sheet, //方式1，有可使用位图数组填充
   anchorX:0.2, // 设置脚底为中心点
   anchorY:1,
@@ -78,7 +78,7 @@ const root: gui.Custom = {
       libId: Ids.btn,
       text: "切换动画",
       style: {
-        top: 460
+        top: 500
       }
     },
   ],

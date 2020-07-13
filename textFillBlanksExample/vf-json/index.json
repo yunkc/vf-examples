@@ -1,0 +1,369 @@
+{
+  "assets": {
+    "2": {
+      "type": "js",
+      "url": "//s.vipkidstatic.com/vf/plugin/TextFillBlanks/0.0.12.js",
+      "name": "TextFillBlanks"
+    },
+    "5": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_up.png",
+      "name": "5"
+    },
+    "6": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_move.png",
+      "name": "6"
+    },
+    "7": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_down.png",
+      "name": "7"
+    }
+  },
+  "global": {},
+  "scenes": [
+    {
+      "id": 0,
+      "libId": "0"
+    }
+  ],
+  "components": {
+    "0": {
+      "type": "custom",
+      "interactabled": false,
+      "children": [
+        {
+          "id": "rect",
+          "libId": 1
+        },
+        {
+          "id": "textFillBlanks",
+          "libId": 2,
+          "y": 20
+        },
+        {
+          "id": "text0",
+          "libId": 3,
+          "text": "A: textFillBlanks",
+          "style": {
+            "width": 180,
+            "height": 50,
+            "left": 0,
+            "top": 300,
+            "textAlign": "left"
+          }
+        },
+        {
+          "id": "text1",
+          "libId": 3,
+          "text": "B: please",
+          "style": {
+            "width": 100,
+            "height": 50,
+            "left": 0,
+            "top": 350,
+            "textAlign": "left"
+          }
+        },
+        {
+          "id": "text2",
+          "libId": 3,
+          "text": "C: correct",
+          "style": {
+            "width": 100,
+            "height": 50,
+            "left": 0,
+            "top": 400,
+            "textAlign": "left"
+          }
+        },
+        {
+          "id": "button",
+          "libId": 4,
+          "text": "提交",
+          "style": {
+            "width": 150,
+            "height": 50,
+            "left": 30,
+            "bottom": 30
+          }
+        },
+        {
+          "id": "button1",
+          "libId": 4,
+          "text": "重置",
+          "style": {
+            "width": 150,
+            "height": 50,
+            "left": 220,
+            "bottom": 30
+          }
+        }
+      ],
+      "actionList": [
+        {
+          "type": 13,
+          "event": "Added",
+          "target": [
+            11,
+            []
+          ],
+          "execute": [
+            {
+              "type": 13,
+              "event": "OPTION_CHANGE",
+              "target": [
+                11,
+                [
+                  "textFillBlanks"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 0,
+                  "value": [
+                    0,
+                    "result0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "RESULT",
+              "target": [
+                11,
+                [
+                  "textFillBlanks"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 0,
+                  "value": [
+                    0,
+                    "result1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "click",
+              "target": [
+                11,
+                [
+                  "text0"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 12,
+                  "target": [
+                    11,
+                    [
+                      "textFillBlanks"
+                    ]
+                  ],
+                  "name": "setBlankValue",
+                  "params": [
+                    [
+                      0,
+                      "0"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "click",
+              "target": [
+                11,
+                [
+                  "text1"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 12,
+                  "target": [
+                    11,
+                    [
+                      "textFillBlanks"
+                    ]
+                  ],
+                  "name": "setBlankValue",
+                  "params": [
+                    [
+                      0,
+                      "1"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "click",
+              "target": [
+                11,
+                [
+                  "text2"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 12,
+                  "target": [
+                    11,
+                    [
+                      "textFillBlanks"
+                    ]
+                  ],
+                  "name": "setBlankValue",
+                  "params": [
+                    [
+                      0,
+                      "2"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "click",
+              "target": [
+                11,
+                [
+                  "button"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "textFillBlanks"
+                      ],
+                      "checkResult"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      true
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "click",
+              "target": [
+                11,
+                [
+                  "button1"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 12,
+                  "target": [
+                    11,
+                    [
+                      "textFillBlanks"
+                    ]
+                  ],
+                  "name": "restart"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "1": {
+      "type": "Rect",
+      "color": 16777215,
+      "style": {
+        "width": 405,
+        "height": 720
+      }
+    },
+    "2": {
+      "type": "TextFillBlanks",
+      "name": "textFillBlanks",
+      "config": {
+        "containerWidth": 400,
+        "labelStyle": {
+          "lineHeight": 60,
+          "fontSize": 30,
+          "color": 0,
+          "fontFamily": "Arial"
+        },
+        "textSelectedColor": 5333435,
+        "optionBackgroundColor": 15330558,
+        "optionBoardColor": 7636975,
+        "optionPaddingX": 0,
+        "optionPaddingY": 10,
+        "optionBoardLineWidth": 2,
+        "optionBlankLineWidth": 10,
+        "optionBackgroundRadius": 2,
+        "optionBlankMinSize": 100,
+        "optionRightColor": 65280,
+        "optionWrongColor": 16711680,
+        "optionType": "single",
+        "targetOption": {
+          "text": "This is a {} example, {} select the {} option.",
+          "key": "1,0,2"
+        },
+        "selectOption": [
+          {
+            "text": "textFillBlanks",
+            "key": "0"
+          },
+          {
+            "text": "please",
+            "key": "1"
+          },
+          {
+            "text": "correct",
+            "key": "2"
+          }
+        ]
+      }
+    },
+    "3": {
+      "type": "Label",
+      "interactabled": true,
+      "style": {
+        "fontSize": 24,
+        "color": 0,
+        "lineHeight": 29
+      }
+    },
+    "4": {
+      "type": "Button",
+      "up": 5,
+      "move": 6,
+      "down": 7
+    }
+  },
+  "name": "VFT2J",
+  "width": 405,
+  "height": 720,
+  "version": "0.0.1",
+  "baseUrl": "",
+  "loadMode": "all",
+  "conversion": "",
+  "scaleMode": "showAll",
+  "launcherVersion": "0.5.61"
+}

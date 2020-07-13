@@ -1,0 +1,637 @@
+{
+  "assets": {
+    "0": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_up.png",
+      "name": "0"
+    },
+    "1": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_move.png",
+      "name": "1"
+    },
+    "2": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_down.png",
+      "name": "2"
+    },
+    "3": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Slider/thumb.png",
+      "name": "3"
+    },
+    "4": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Slider/track.png",
+      "name": "4"
+    },
+    "5": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Slider/tracklight.png",
+      "name": "5"
+    }
+  },
+  "global": {},
+  "scenes": [
+    {
+      "id": 0,
+      "libId": "0"
+    }
+  ],
+  "components": {
+    "0": {
+      "type": "custom",
+      "interactabled": true,
+      "children": [
+        {
+          "id": "eraseBtn",
+          "libId": 2,
+          "x": 15,
+          "y": 15,
+          "text": "擦除 false"
+        },
+        {
+          "id": "restorBtn",
+          "libId": 2,
+          "x": 130,
+          "y": 15,
+          "text": "重置"
+        },
+        {
+          "id": "followLineTop",
+          "libId": 1,
+          "x": 15,
+          "y": 50,
+          "width": 340,
+          "height": 200,
+          "role": "T"
+        },
+        {
+          "id": "followLineDown",
+          "libId": 1,
+          "x": 15,
+          "y": 270,
+          "width": 340,
+          "height": 200,
+          "role": "S"
+        },
+        {
+          "id": "slider",
+          "libId": 3,
+          "width": 340,
+          "height": 10,
+          "x": 15,
+          "y": 480
+        }
+      ],
+      "actionList": [
+        {
+          "type": 13,
+          "event": "Added",
+          "target": [
+            11,
+            []
+          ],
+          "execute": [
+            {
+              "type": 29,
+              "event": "CHANGE",
+              "target": [
+                11,
+                [
+                  "slider"
+                ]
+              ],
+              "funName": "sliderChange"
+            },
+            {
+              "type": 29,
+              "event": "COMPLETE",
+              "target": [
+                11,
+                [
+                  "followLineTop"
+                ]
+              ],
+              "funName": "topComplete"
+            },
+            {
+              "type": 29,
+              "event": "COMPLETE",
+              "target": [
+                11,
+                [
+                  "followLineDown"
+                ]
+              ],
+              "funName": "downComplete"
+            },
+            {
+              "type": 13,
+              "event": "click",
+              "target": [
+                11,
+                [
+                  "eraseBtn"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "followLineTop"
+                      ],
+                      "isErasing"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      1,
+                      [],
+                      "isErasing"
+                    ]
+                  ]
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "followLineDown"
+                      ],
+                      "isErasing"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      1,
+                      [],
+                      "isErasing"
+                    ]
+                  ]
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "eraseBtn"
+                      ],
+                      "text"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      0,
+                      "擦除 "
+                    ],
+                    [
+                      5,
+                      "+"
+                    ],
+                    [
+                      1,
+                      [],
+                      "isErasing"
+                    ]
+                  ]
+                },
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      1,
+                      [],
+                      "isErasing"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      5,
+                      "!"
+                    ],
+                    [
+                      1,
+                      [],
+                      "isErasing"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "click",
+              "target": [
+                11,
+                [
+                  "restorBtn"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 12,
+                  "target": [
+                    11,
+                    [
+                      "followLineTop"
+                    ]
+                  ],
+                  "name": "reset"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": 37,
+          "variableType": "array",
+          "value": [],
+          "varId": "messageList"
+        },
+        {
+          "type": 6,
+          "express": [
+            [
+              4,
+              [
+                "slider"
+              ],
+              "value"
+            ],
+            [
+              5,
+              "="
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "type": 6,
+          "express": [
+            [
+              4,
+              [
+                "slider"
+              ],
+              "maxValue"
+            ],
+            [
+              5,
+              "="
+            ],
+            [
+              6,
+              [],
+              "messageList"
+            ]
+          ]
+        },
+        {
+          "type": 37,
+          "variableType": "string",
+          "value": "",
+          "varId": "d"
+        },
+        {
+          "type": 37,
+          "variableType": "number",
+          "value": 0,
+          "varId": "v"
+        },
+        {
+          "type": 37,
+          "variableType": "boolean",
+          "value": true,
+          "varId": "isErasing"
+        },
+        {
+          "type": 11,
+          "name": "sliderChange",
+          "execute": [
+            {
+              "type": 12,
+              "target": [
+                11,
+                [
+                  "followLineDown"
+                ]
+              ],
+              "name": "clear"
+            },
+            {
+              "type": 12,
+              "target": [
+                11,
+                [
+                  "followLineTop"
+                ]
+              ],
+              "name": "clear"
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  1,
+                  [],
+                  "v"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  9,
+                  1,
+                  "curValue"
+                ]
+              ]
+            },
+            {
+              "type": 38,
+              "forin": [
+                1,
+                [],
+                "v"
+              ],
+              "execute": [
+                {
+                  "type": 7,
+                  "execute": [
+                    {
+                      "type": 8,
+                      "condition": [
+                        [
+                          7,
+                          [],
+                          "messageList",
+                          [
+                            9,
+                            2,
+                            "i"
+                          ]
+                        ]
+                      ],
+                      "execute": [
+                        {
+                          "type": 12,
+                          "target": [
+                            11,
+                            [
+                              "followLineDown"
+                            ]
+                          ],
+                          "name": "setData",
+                          "params": [
+                            [
+                              7,
+                              [],
+                              "messageList",
+                              [
+                                9,
+                                2,
+                                "i"
+                              ]
+                            ]
+                          ]
+                        },
+                        {
+                          "type": 12,
+                          "target": [
+                            11,
+                            [
+                              "followLineTop"
+                            ]
+                          ],
+                          "name": "setData",
+                          "params": [
+                            [
+                              7,
+                              [],
+                              "messageList",
+                              [
+                                9,
+                                2,
+                                "i"
+                              ]
+                            ]
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": 11,
+          "name": "topComplete",
+          "execute": [
+            {
+              "type": 6,
+              "express": [
+                [
+                  1,
+                  [],
+                  "d"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  9,
+                  1,
+                  "data"
+                ]
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  10,
+                  [],
+                  "messageList",
+                  "push",
+                  [
+                    1,
+                    [],
+                    "d"
+                  ]
+                ]
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "slider"
+                  ],
+                  "maxValue"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  6,
+                  [],
+                  "messageList"
+                ]
+              ]
+            },
+            {
+              "type": 12,
+              "target": [
+                11,
+                [
+                  "followLineDown"
+                ]
+              ],
+              "name": "setData",
+              "params": [
+                [
+                  1,
+                  [],
+                  "d"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": 11,
+          "name": "downComplete",
+          "execute": [
+            {
+              "type": 6,
+              "express": [
+                [
+                  1,
+                  [],
+                  "d"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  9,
+                  1,
+                  "data"
+                ]
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  10,
+                  [],
+                  "messageList",
+                  "push",
+                  [
+                    1,
+                    [],
+                    "d"
+                  ]
+                ]
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "slider"
+                  ],
+                  "maxValue"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  6,
+                  [],
+                  "messageList"
+                ]
+              ]
+            },
+            {
+              "type": 12,
+              "target": [
+                11,
+                [
+                  "followLineTop"
+                ]
+              ],
+              "name": "setData",
+              "params": [
+                [
+                  1,
+                  [],
+                  "d"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "1": {
+      "type": "FollowLine",
+      "style": {
+        "backgroundColor": 16777215
+      }
+    },
+    "2": {
+      "type": "Button",
+      "up": 0,
+      "down": 2,
+      "move": 1,
+      "width": 100,
+      "height": 30
+    },
+    "3": {
+      "type": "Slider",
+      "thumb": 3,
+      "track": 4,
+      "tracklight": 5,
+      "value": 0,
+      "vertical": false
+    }
+  },
+  "name": "VFT2J",
+  "width": 405,
+  "height": 720,
+  "version": "0.0.1",
+  "baseUrl": "",
+  "loadMode": "all",
+  "conversion": "",
+  "scaleMode": "showAll",
+  "launcherVersion": "0.5.61"
+}

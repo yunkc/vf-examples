@@ -93,15 +93,15 @@ const root: gui.Custom = {
       libId: Ids.rect,
       style: {
         top: 250,
-        left: 200
+        left: 20
       }
     },
     {
       id: Ids.rect2,
       libId: Ids.rect,
       style: {
-        top: 290,
-        right: 200
+        top: 400,
+        right: 30
       }
     },
     {

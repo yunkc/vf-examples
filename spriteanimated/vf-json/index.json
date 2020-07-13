@@ -65,7 +65,7 @@
           "libId": 9,
           "text": "切换动画",
           "style": {
-            "top": 460
+            "top": 500
           }
         }
       ],
@@ -226,10 +226,6 @@
                     0,
                     "COMPLETE"
                   ]
-                },
-                {
-                  "type": 35,
-                  "value": "// loop = false 时，触发"
                 }
               ]
             }
@@ -257,7 +253,7 @@
       "type": "SpriteAnimated",
       "animationSpeed": 0.1,
       "loop": true,
-      "loopCount": 20,
+      "loopCount": 0,
       "src": 4,
       "anchorX": 0.2,
       "anchorY": 1,
@@ -267,8 +263,8 @@
     },
     "9": {
       "type": "Button",
-      "width": 100,
-      "height": 30,
+      "width": 150,
+      "height": 50,
       "up": 6,
       "down": 7,
       "move": 8,
@@ -278,8 +274,8 @@
     }
   },
   "name": "VFT2J",
-  "width": 890,
-  "height": 500,
+  "width": 405,
+  "height": 720,
   "version": "0.0.1",
   "baseUrl": "",
   "loadMode": "all",

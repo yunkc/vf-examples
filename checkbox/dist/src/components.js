@@ -53,7 +53,7 @@ const root = {
             id: store_1.Ids.dinoImage,
             libId: store_1.Ids.dinoImage,
             style: {
-                top: 0
+                top: 20
             }
         },
         {
@@ -61,51 +61,63 @@ const root = {
             libId: store_1.Ids.title,
             text: "单选与复选框接口示例",
             style: {
-                top: 160,
+                top: 180,
             }
         },
         {
             id: 'checkbox1',
             libId: store_1.Ids.checkbox,
-            x: 400,
-            y: 220,
+            style: {
+                left: 60,
+                top: 250
+            },
             value: "checkbox1",
         },
         {
             id: 'checkbox2',
             libId: store_1.Ids.checkbox,
-            x: 440,
-            y: 220,
+            style: {
+                left: 180,
+                top: 250
+            },
             value: "checkbox2",
         },
         {
             id: 'checkbox3',
             libId: store_1.Ids.checkbox,
-            x: 480,
-            y: 220,
+            style: {
+                left: 300,
+                top: 250
+            },
             value: "checkbox3",
         },
         {
             id: 'radio1',
             libId: store_1.Ids.radio,
-            x: 400,
-            y: 280,
+            style: {
+                left: 60,
+                top: 350
+            },
             value: "radio1",
             checkGroup: "radioGroup1"
         },
         {
             id: 'radio2',
             libId: store_1.Ids.radio,
-            x: 440,
-            y: 280,
+            style: {
+                left: 180,
+                top: 350
+            },
             value: "radio2",
             checkGroup: "radioGroup1"
         },
         {
             id: 'radio3',
             libId: store_1.Ids.radio,
-            x: 480,
-            y: 280,
+            style: {
+                left: 300,
+                top: 350
+            },
             value: "radio3",
             checkGroup: "radioGroup1"
         }

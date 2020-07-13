@@ -14,10 +14,10 @@ const textChoice = {
     type: 'TextChoice',
     name: 'TextChoice',
     config: {
-        containerWidth: 500,
+        containerWidth: 400,
         labelStyle: {
             lineHeight: 100,
-            fontSize: 30,
+            fontSize: 26,
             color: 0,
             fontFamily: 'Arial',
         },
@@ -84,9 +84,9 @@ const root = {
             libId: store_1.Ids.button,
             text: "提交",
             style: {
-                width: 100,
+                width: 150,
                 height: 50,
-                left: 120,
+                left: 30,
                 bottom: 30
             }
         },
@@ -95,7 +95,7 @@ const root = {
             libId: store_1.Ids.button,
             text: "重置",
             style: {
-                width: 100,
+                width: 150,
                 height: 50,
                 left: 220,
                 bottom: 30

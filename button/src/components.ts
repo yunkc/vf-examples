@@ -29,8 +29,8 @@ const title: gui.Text = {
 
 const btn: gui.Button = {
   type: guiType.Button,
-  width: 100,
-  height: 30,
+  width: 150,
+  height: 60,
   up: Ids.up,
   down: Ids.down,
   move: Ids.move,
@@ -47,7 +47,7 @@ const root: gui.Custom = {
       id: Ids.dinoImage,
       libId: Ids.dinoImage,
       style: {
-        top: 0
+        top: 20
       }
     },
     {
@@ -71,7 +71,7 @@ const root: gui.Custom = {
       libId: Ids.btn,
       text: "划过按钮",
       style: {
-        top: 260
+        top: 290
       }
     },
     {
@@ -80,7 +80,7 @@ const root: gui.Custom = {
       text: "点击弹起",
       style: {
         height:60,
-        top: 300
+        top: 360
       }
     }
   ],
