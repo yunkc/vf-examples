@@ -1,0 +1,298 @@
+{
+  "assets": {
+    "1": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/dino.png",
+      "name": "1"
+    },
+    "3": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_up.png",
+      "name": "3"
+    },
+    "4": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_move.png",
+      "name": "4"
+    },
+    "5": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_down.png",
+      "name": "5"
+    },
+    "Particles": {
+      "type": "js",
+      "url": "https://s.vipkidstatic.com/vf/plugin/Particles/4.2.8.js",
+      "name": "Particles"
+    },
+    "Particles_json": {
+      "type": "json",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/firecrackerCaidai.json",
+      "name": "Particles_json"
+    },
+    "Particles_png": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/firecrackerCaidai.png",
+      "name": "Particles_png"
+    }
+  },
+  "global": {},
+  "scenes": [
+    {
+      "id": 0,
+      "libId": "0"
+    }
+  ],
+  "components": {
+    "0": {
+      "type": "custom",
+      "interactabled": false,
+      "children": [
+        {
+          "id": 1,
+          "libId": 1,
+          "style": {
+            "top": 0
+          }
+        },
+        {
+          "id": 2,
+          "libId": 2,
+          "text": "粒子示例",
+          "style": {
+            "top": 160
+          }
+        },
+        {
+          "id": "particles1",
+          "libId": 7,
+          "sourceData": "Particles_json",
+          "sourceImage": "Particles_png",
+          "autoPlay": true
+        },
+        {
+          "id": "btn1",
+          "libId": 6,
+          "text": "播放",
+          "style": {
+            "top": 200
+          }
+        },
+        {
+          "id": "btn2",
+          "libId": 6,
+          "text": "播放5秒",
+          "style": {
+            "top": 260
+          }
+        },
+        {
+          "id": "btn3",
+          "libId": 6,
+          "text": "暂停",
+          "style": {
+            "top": 320
+          }
+        },
+        {
+          "id": "btn4",
+          "libId": 6,
+          "text": "停止",
+          "style": {
+            "top": 380
+          }
+        }
+      ],
+      "actionList": [
+        {
+          "type": 13,
+          "event": "Added",
+          "target": [
+            11,
+            []
+          ],
+          "execute": [
+            {
+              "type": 13,
+              "event": "click",
+              "target": [
+                11,
+                [
+                  "btn1"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 12,
+                  "target": [
+                    11,
+                    [
+                      "particles1"
+                    ]
+                  ],
+                  "name": "play"
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "click",
+              "target": [
+                11,
+                [
+                  "btn2"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 12,
+                  "target": [
+                    11,
+                    [
+                      "particles1"
+                    ]
+                  ],
+                  "name": "play",
+                  "params": [
+                    [
+                      0,
+                      5
+                    ]
+                  ]
+                },
+                {
+                  "type": 35,
+                  "value": "// -1 无限播放"
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "click",
+              "target": [
+                11,
+                [
+                  "btn3"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 12,
+                  "target": [
+                    11,
+                    [
+                      "particles1"
+                    ]
+                  ],
+                  "name": "pause"
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "click",
+              "target": [
+                11,
+                [
+                  "btn4"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 12,
+                  "target": [
+                    11,
+                    [
+                      "particles1"
+                    ]
+                  ],
+                  "name": "stop"
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "particles_start",
+              "target": [
+                11,
+                [
+                  "particles1"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 0,
+                  "value": [
+                    0,
+                    "particles_start"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "particles_complete",
+              "target": [
+                11,
+                [
+                  "particles1"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 0,
+                  "value": [
+                    0,
+                    "particles_complete"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "1": {
+      "type": "Image",
+      "width": 83,
+      "height": 138,
+      "src": 1,
+      "style": {
+        "justifyContent": "center"
+      }
+    },
+    "2": {
+      "type": "Label",
+      "width": 100,
+      "style": {
+        "justifyContent": "center"
+      }
+    },
+    "6": {
+      "type": "Button",
+      "width": 100,
+      "height": 50,
+      "up": 3,
+      "down": 5,
+      "move": 4,
+      "style": {
+        "justifyContent": "center"
+      }
+    },
+    "7": {
+      "type": "Particles",
+      "style": {
+        "left": 270,
+        "top": 300
+      }
+    }
+  },
+  "name": "VFT2J",
+  "width": 890,
+  "height": 500,
+  "version": "0.0.1",
+  "baseUrl": "",
+  "loadMode": "all",
+  "conversion": "",
+  "scaleMode": "showAll"
+}
