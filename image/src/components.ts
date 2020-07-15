@@ -158,7 +158,7 @@ const root: gui.Custom = {
 
           var global$count = 0;
           var global$rotation = 0;
-          setInterval(33, 10000, ()=>{
+          setEnterFrame(()=>{
             if(global$rotation >= 360){
               global$rotation = 0;
             };
