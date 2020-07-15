@@ -41,7 +41,7 @@ const root = {
             id: "video",
             libId: store_1.Ids.video,
             x: 20,
-            y: 50,
+            y: 10,
         },
         {
             id: "btn1",
