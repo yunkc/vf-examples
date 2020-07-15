@@ -24,7 +24,7 @@ const assets: Assets = {
     },
     'Particles': {
         type: AssetType.js,
-        url: 'https://s.vipkidstatic.com/vf/plugin/Particles/4.2.8.js',
+        url: 'https://s.vipkidstatic.com/vf/plugin/Particles/0.0.1.js',
         name: 'Particles'
     },
     'Particles_json': {
