@@ -100,6 +100,25 @@ const root: gui.Custom = {
         backgroundColor: 0xfff
       }
     }
+    ,
+    {
+      id: "label6",
+      libId: Ids.title,
+      text: "下划线示例\n我设定了textAlign与verticalAlign 换行换行、、、、。，，",
+      style: {
+        top: 500,
+        left: 10,
+        width:300,
+        color: 0xffffff,
+        textAlign: "center",
+        wordWrap:true,
+        wordWrapWidth:200,
+        backgroundColor: 0xfff,
+        textDecoration:"UnderLine",
+        textDecorationColor:0xff00aa,
+      },
+
+    }
   ]
 };
 

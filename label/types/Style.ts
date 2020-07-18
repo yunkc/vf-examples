@@ -55,6 +55,8 @@ export interface StyleSheet {
     letterSpacing? : number,
     wordWrap?: boolean,
     wordWrapWidth?: number,
+    textDecoration?:"None"|"Overline"|"LineThrough"|"UnderLine",
+    textDecorationColor?:number,
     textAlign?: Style.textAlign | string,
     lineHeight?: number,
     fontFamily?: string | string[],
