@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@vf.js/launcher": "^0.5.61",
+    "@vf.js/vf": "^5.2.4-v27",
     "@vf.js/vfx": "latest",
     "axios": "^0.19.2",
     "chokidar": "^3.3.0",

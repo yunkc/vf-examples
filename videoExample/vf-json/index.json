@@ -42,7 +42,7 @@
           "id": "video",
           "libId": 2,
           "x": 20,
-          "y": 50
+          "y": 10
         },
         {
           "id": "btn1",
@@ -643,5 +643,5 @@
   "loadMode": "all",
   "conversion": "",
   "scaleMode": "showAll",
-  "launcherVersion": "0.5.7"
+  "launcherVersion": "0.5.61"
 }

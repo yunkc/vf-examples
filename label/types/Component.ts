@@ -114,7 +114,7 @@ export namespace gui {
         isPlay?: boolean,
         lineColor?: number,
         lineWidth?: number,
-        radius?: number
+        radius?: number,
     }
 
     export interface Checkbox extends Base, DisplayComponent{

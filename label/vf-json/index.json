@@ -94,6 +94,23 @@
             "textAlign": "center",
             "backgroundColor": 4095
           }
+        },
+        {
+          "id": "label6",
+          "libId": 2,
+          "text": "下划线示例\n我设定了textAlign与verticalAlign 换行换行、、、、。，，",
+          "style": {
+            "top": 500,
+            "left": 10,
+            "width": 300,
+            "color": 16777215,
+            "textAlign": "center",
+            "wordWrap": true,
+            "wordWrapWidth": 200,
+            "backgroundColor": 4095,
+            "textDecoration": "UnderLine",
+            "textDecorationColor": 16711850
+          }
         }
       ]
     },
@@ -115,8 +132,8 @@
     }
   },
   "name": "VFT2J",
-  "width": 890,
-  "height": 500,
+  "width": 405,
+  "height": 720,
   "version": "0.0.1",
   "baseUrl": "",
   "loadMode": "all",

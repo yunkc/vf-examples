@@ -51,7 +51,7 @@ const root: gui.Custom = {
       id: "video",
       libId: Ids.video,
       x:20,
-      y:50,
+      y:10,
     },
     {
       id: "btn1",
