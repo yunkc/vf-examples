@@ -47,7 +47,7 @@ const root: gui.Custom = {
         {
             id: Ids.title,
             libId: Ids.title,
-            text: '声音接口',
+            text: '声音接口示例',
             y: dino.y! + 158,
             x: App.width / 2 - title.width! / 2
         },
