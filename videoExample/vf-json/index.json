@@ -41,8 +41,8 @@
         {
           "id": "video",
           "libId": 2,
-          "x": 20,
-          "y": 10
+          "x": 0,
+          "y": 0
         },
         {
           "id": "btn1",
@@ -59,15 +59,6 @@
           "text": "暂停",
           "style": {
             "left": 120,
-            "top": 300
-          }
-        },
-        {
-          "id": "btn3",
-          "libId": 3,
-          "text": "隐藏controls",
-          "style": {
-            "left": 240,
             "top": 300
           }
         },
@@ -92,7 +83,7 @@
         {
           "id": "btn6",
           "libId": 3,
-          "text": "到第3秒",
+          "text": "退出全屏",
           "style": {
             "left": 240,
             "top": 370
@@ -176,130 +167,6 @@
                     ]
                   ],
                   "name": "pause"
-                }
-              ]
-            },
-            {
-              "type": 13,
-              "event": "click",
-              "target": [
-                11,
-                [
-                  "btn3"
-                ]
-              ],
-              "execute": [
-                {
-                  "type": 7,
-                  "execute": [
-                    {
-                      "type": 8,
-                      "condition": [
-                        [
-                          4,
-                          [
-                            "video"
-                          ],
-                          "controls"
-                        ],
-                        [
-                          5,
-                          "=="
-                        ],
-                        [
-                          0,
-                          true
-                        ]
-                      ],
-                      "execute": [
-                        {
-                          "type": 6,
-                          "express": [
-                            [
-                              4,
-                              [
-                                "video"
-                              ],
-                              "controls"
-                            ],
-                            [
-                              5,
-                              "="
-                            ],
-                            [
-                              0,
-                              false
-                            ]
-                          ]
-                        },
-                        {
-                          "type": 6,
-                          "express": [
-                            [
-                              4,
-                              [
-                                "btn3"
-                              ],
-                              "text"
-                            ],
-                            [
-                              5,
-                              "="
-                            ],
-                            [
-                              0,
-                              "显示controls"
-                            ]
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": 10,
-                      "execute": [
-                        {
-                          "type": 6,
-                          "express": [
-                            [
-                              4,
-                              [
-                                "video"
-                              ],
-                              "controls"
-                            ],
-                            [
-                              5,
-                              "="
-                            ],
-                            [
-                              0,
-                              true
-                            ]
-                          ]
-                        },
-                        {
-                          "type": 6,
-                          "express": [
-                            [
-                              4,
-                              [
-                                "btn3"
-                              ],
-                              "text"
-                            ],
-                            [
-                              5,
-                              "="
-                            ],
-                            [
-                              0,
-                              "隐藏controls"
-                            ]
-                          ]
-                        }
-                      ]
-                    }
-                  ]
                 }
               ]
             },
@@ -460,24 +327,14 @@
               ],
               "execute": [
                 {
-                  "type": 6,
-                  "express": [
+                  "type": 12,
+                  "target": [
+                    11,
                     [
-                      4,
-                      [
-                        "video"
-                      ],
-                      "currentTime"
-                    ],
-                    [
-                      5,
-                      "="
-                    ],
-                    [
-                      0,
-                      3
+                      "video"
                     ]
-                  ]
+                  ],
+                  "name": "exitFullscreen"
                 }
               ]
             },
@@ -643,5 +500,5 @@
   "loadMode": "all",
   "conversion": "",
   "scaleMode": "showAll",
-  "launcherVersion": "0.5.61"
+  "launcherVersion": "0.5.74"
 }

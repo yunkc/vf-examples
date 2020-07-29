@@ -4,21 +4,21 @@
  *   VFX 使用文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/aciton.md
  * */
 
-import { App, Ids ,AssetId} from "./store";
+import { App, Ids, AssetId } from "./store";
 import { gui, guiType } from "../types/Component";
 import { Components } from "../types/IVFTemplate";
 
 
 const video: gui.Video = {
   type: guiType.Video,
-  src :AssetId.video,
-  controls:true,
-  width:300,
-  height:228,
-  loop:true,
-  poster:AssetId.poster,
-  muted:false,
-  volume:1
+  src: AssetId.video,
+  controls: true,
+  width: 300,
+  height: 228,
+  loop: true,
+  poster: AssetId.poster,
+  muted: false,
+  volume: 1,
 }
 
 const title: gui.Text = {
@@ -26,7 +26,7 @@ const title: gui.Text = {
   width: 100,
   style: {
     justifyContent: "center",
-    alignContent:"center",
+    alignContent: "center",
     color: 0x000000,
     fontSize: 24,
     wordWrap: true,
@@ -45,114 +45,96 @@ const button: gui.Button = {
 
 const root: gui.Custom = {
   type: guiType.Custom,
-  interactabled:true,// 容器默认为false
-  children:[
+  interactabled: true,// 容器默认为false
+  children: [
     {
       id: "video",
       libId: Ids.video,
-      x:20,
-      y:10,
+      x: 0,
+      y: 0,
     },
     {
       id: "btn1",
       libId: Ids.button,
-      text:"播放",
-      style:{
-        left:0,
-        top:300
+      text: "播放",
+      style: {
+        left: 0,
+        top: 300
       }
     },
     {
       id: "btn2",
       libId: Ids.button,
-      text:"暂停",
-      style:{
-        left:120,
-        top:300
-      }
-    },
-    {
-      id: "btn3",
-      libId: Ids.button,
-      text:"隐藏controls",
-      style:{
-        left:240,
-        top:300
+      text: "暂停",
+      style: {
+        left: 120,
+        top: 300
       }
     },
     {
       id: "btn4",
       libId: Ids.button,
-      text:"静音",
-      style:{
-        left:0,
-        top:370
+      text: "静音",
+      style: {
+        left: 0,
+        top: 370
       }
     },
     {
       id: "btn5",
       libId: Ids.button,
-      text:"全屏",
-      style:{
-        left:120,
-        top:370
+      text: "全屏",
+      style: {
+        left: 120,
+        top: 370
       }
     },
     {
       id: "btn6",
       libId: Ids.button,
-      text:"到第3秒",
-      style:{
-        left:240,
-        top:370
+      text: "退出全屏",
+      style: {
+        left: 240,
+        top: 370
       }
     },
     {
       id: "btn7",
       libId: Ids.button,
-      text:"到第0秒",
-      style:{
-        left:0,
-        top:440
+      text: "到第0秒",
+      style: {
+        left: 0,
+        top: 440
       }
     },
     {
       id: "btn8",
       libId: Ids.button,
-      text:"调大音量",
-      style:{
-        left:120,
-        top:440
+      text: "调大音量",
+      style: {
+        left: 120,
+        top: 440
       }
     },
     {
       id: "btn9",
       libId: Ids.button,
-      text:"减小音量",
-      style:{
-        left:240,
-        top:440
+      text: "减小音量",
+      style: {
+        left: 240,
+        top: 440
       }
     },
   ],
   actionList: `
   @this = {
       this.on("Added", () => {
-
+        
         this#btn1.on('click',() => {
             this#video.play();
         });
         this#btn2.on('click',() => {
             this#video.pause();
-        });
-        this#btn3.on('click',() => {
-          if(this#video.controls == true){
-              this#video.controls = false;
-              this#btn3.text = "显示controls";
-          }else{
-              this#video.controls = true;
-              this#btn3.text = "隐藏controls";
-          }
         });
         this#btn4.on('click',() => {
           if(this#video.muted == true){
@@ -167,7 +149,7 @@ const root: gui.Custom = {
             this#video.requestFullScreen();
         });
         this#btn6.on('click',() => {
-            this#video.currentTime = 3;
+            this#video.exitFullscreen();
         });
         this#btn7.on('click',() => {
             this#video.currentTime = 0;

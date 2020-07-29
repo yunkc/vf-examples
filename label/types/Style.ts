@@ -85,5 +85,7 @@ export interface StyleSheet {
     justifyContent?: string,
     alignContent?: string,
     visibility? : boolean,
+    linearGradientType:"vertical"|"horizontal",
+    linearGradientStops:number[],
     backgroundColor?: number
 }

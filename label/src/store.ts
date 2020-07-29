@@ -1,7 +1,12 @@
 export enum Ids {
     root,
     dinoImage,
-    title
+    title,
+    button,
+    up,
+    move,
+    down,
+    fontF
 }
 
 export namespace App {

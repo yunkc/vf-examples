@@ -11,7 +11,7 @@ const video = {
     loop: true,
     poster: store_1.AssetId.poster,
     muted: false,
-    volume: 1
+    volume: 1,
 };
 const title = {
     type: Component_1.guiType.Text,
@@ -40,8 +40,8 @@ const root = {
         {
             id: "video",
             libId: store_1.Ids.video,
-            x: 20,
-            y: 10,
+            x: 0,
+            y: 0,
         },
         {
             id: "btn1",
@@ -58,15 +58,6 @@ const root = {
             text: "暂停",
             style: {
                 left: 120,
-                top: 300
-            }
-        },
-        {
-            id: "btn3",
-            libId: store_1.Ids.button,
-            text: "隐藏controls",
-            style: {
-                left: 240,
                 top: 300
             }
         },
@@ -91,7 +82,7 @@ const root = {
         {
             id: "btn6",
             libId: store_1.Ids.button,
-            text: "到第3秒",
+            text: "退出全屏",
             style: {
                 left: 240,
                 top: 370
@@ -128,21 +119,12 @@ const root = {
     actionList: `
   @this = {
       this.on("Added", () => {
-
+        
         this#btn1.on('click',() => {
             this#video.play();
         });
         this#btn2.on('click',() => {
             this#video.pause();
-        });
-        this#btn3.on('click',() => {
-          if(this#video.controls == true){
-              this#video.controls = false;
-              this#btn3.text = "显示controls";
-          }else{
-              this#video.controls = true;
-              this#btn3.text = "隐藏controls";
-          }
         });
         this#btn4.on('click',() => {
           if(this#video.muted == true){
@@ -157,7 +139,7 @@ const root = {
             this#video.requestFullScreen();
         });
         this#btn6.on('click',() => {
-            this#video.currentTime = 3;
+            this#video.exitFullscreen();
         });
         this#btn7.on('click',() => {
             this#video.currentTime = 0;
