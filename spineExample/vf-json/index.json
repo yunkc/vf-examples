@@ -47,7 +47,7 @@
     },
     "13": {
       "type": "js",
-      "url": "https://s.vipkidstatic.com/vf/plugin/spine/0.0.2.js",
+      "url": "https://s.vipkidstatic.com/vf/plugin/spine/0.0.3.js",
       "name": "Spine"
     }
   },
@@ -495,9 +495,9 @@
     },
     "10": {
       "type": "Spine",
-      "ske_json": 7,
-      "ske_atlas": 8,
-      "ske_tex": 9,
+      "sourceSke": 7,
+      "sourceAtlas": 8,
+      "sourceTex": 9,
       "autoPlay": true,
       "animationName": "breathe",
       "loop": true,

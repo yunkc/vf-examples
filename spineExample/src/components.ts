@@ -8,9 +8,9 @@ import { Components } from "../types/IVFTemplate";
 
 const spine = {
   type: "Spine",
-  ske_json: Ids.ske_json,
-  ske_atlas: Ids.ske_atlas,
-  ske_tex: Ids.ske_tex,
+  sourceSke: Ids.ske_json,
+  sourceAtlas: Ids.ske_atlas,
+  sourceTex: Ids.ske_tex,
   autoPlay: true,
   animationName: "breathe",
   loop: true,
