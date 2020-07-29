@@ -1,0 +1,535 @@
+{
+  "assets": {
+    "1": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Slider/thumb.png",
+      "name": "1"
+    },
+    "2": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Slider/track.png",
+      "name": "2"
+    },
+    "3": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_up.png",
+      "name": "3"
+    },
+    "4": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_down.png",
+      "name": "4"
+    },
+    "5": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_move.png",
+      "name": "5"
+    },
+    "6": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Slider/tracklight.png",
+      "name": "6"
+    },
+    "7": {
+      "type": "other",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/spine/eddy.json",
+      "name": "7"
+    },
+    "8": {
+      "type": "other",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/spine/eddy.atlas",
+      "name": "8"
+    },
+    "9": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/spine/eddy.png",
+      "name": "9"
+    },
+    "13": {
+      "type": "js",
+      "url": "https://s.vipkidstatic.com/vf/plugin/spine/0.0.2.js",
+      "name": "Spine"
+    }
+  },
+  "global": {},
+  "scenes": [
+    {
+      "id": 0,
+      "libId": "0"
+    }
+  ],
+  "components": {
+    "0": {
+      "type": "custom",
+      "interactabled": false,
+      "children": [
+        {
+          "id": "eddy",
+          "libId": 10,
+          "x": 100,
+          "y": 200
+        },
+        {
+          "id": "slider",
+          "libId": 12,
+          "y": 60,
+          "x": 250
+        },
+        {
+          "id": "playBtn",
+          "libId": 11,
+          "text": "播放动画",
+          "x": 250,
+          "y": 100
+        },
+        {
+          "id": "playQueueBtn",
+          "libId": 11,
+          "text": "播放动画队列",
+          "x": 250,
+          "y": 140
+        },
+        {
+          "id": "stopBtn",
+          "libId": 11,
+          "text": "停止动画",
+          "x": 250,
+          "y": 180
+        },
+        {
+          "id": "pauseBtn",
+          "libId": 11,
+          "text": "暂停动画",
+          "x": 250,
+          "y": 220
+        },
+        {
+          "id": "resumeBtn",
+          "libId": 11,
+          "text": "恢复动画",
+          "x": 250,
+          "y": 260
+        },
+        {
+          "id": "gotoStopBtn",
+          "libId": 11,
+          "text": "跳转并停止到第几帧",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "gotoPlayBtn",
+          "libId": 11,
+          "text": "跳转到第几帧播放",
+          "x": 250,
+          "y": 340
+        }
+      ],
+      "actionList": [
+        {
+          "type": 13,
+          "event": "Added",
+          "target": [
+            11,
+            []
+          ],
+          "execute": [
+            {
+              "type": 12,
+              "target": [
+                11,
+                [
+                  "eddy"
+                ]
+              ],
+              "name": "play",
+              "params": [
+                [
+                  0,
+                  "breathe"
+                ],
+                [
+                  0,
+                  true
+                ]
+              ]
+            },
+            {
+              "type": 37,
+              "variableType": "array",
+              "value": [
+                {
+                  "name": "happyspeak",
+                  "loop": false
+                },
+                {
+                  "name": "sad-speak",
+                  "loop": false
+                },
+                {
+                  "name": "cheer",
+                  "loop": false
+                }
+              ],
+              "varId": "animations"
+            }
+          ]
+        },
+        {
+          "type": 13,
+          "event": "click",
+          "target": [
+            11,
+            [
+              "playBtn"
+            ]
+          ],
+          "execute": [
+            {
+              "type": 12,
+              "target": [
+                11,
+                [
+                  "eddy"
+                ]
+              ],
+              "name": "play",
+              "params": [
+                [
+                  0,
+                  "cheer"
+                ],
+                [
+                  0,
+                  false
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": 13,
+          "event": "click",
+          "target": [
+            11,
+            [
+              "playQueueBtn"
+            ]
+          ],
+          "execute": [
+            {
+              "type": 12,
+              "target": [
+                11,
+                [
+                  "eddy"
+                ]
+              ],
+              "name": "playQueue",
+              "params": [
+                [
+                  1,
+                  [],
+                  "animations"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": 13,
+          "event": "click",
+          "target": [
+            11,
+            [
+              "stopBtn"
+            ]
+          ],
+          "execute": [
+            {
+              "type": 12,
+              "target": [
+                11,
+                [
+                  "eddy"
+                ]
+              ],
+              "name": "stop"
+            }
+          ]
+        },
+        {
+          "type": 13,
+          "event": "click",
+          "target": [
+            11,
+            [
+              "pauseBtn"
+            ]
+          ],
+          "execute": [
+            {
+              "type": 12,
+              "target": [
+                11,
+                [
+                  "eddy"
+                ]
+              ],
+              "name": "pause"
+            }
+          ]
+        },
+        {
+          "type": 13,
+          "event": "click",
+          "target": [
+            11,
+            [
+              "resumeBtn"
+            ]
+          ],
+          "execute": [
+            {
+              "type": 12,
+              "target": [
+                11,
+                [
+                  "eddy"
+                ]
+              ],
+              "name": "resume"
+            }
+          ]
+        },
+        {
+          "type": 13,
+          "event": "click",
+          "target": [
+            11,
+            [
+              "gotoStopBtn"
+            ]
+          ],
+          "execute": [
+            {
+              "type": 12,
+              "target": [
+                11,
+                [
+                  "eddy"
+                ]
+              ],
+              "name": "gotoAndStopByFrame",
+              "params": [
+                [
+                  0,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": 13,
+          "event": "click",
+          "target": [
+            11,
+            [
+              "gotoPlayBtn"
+            ]
+          ],
+          "execute": [
+            {
+              "type": 12,
+              "target": [
+                11,
+                [
+                  "eddy"
+                ]
+              ],
+              "name": "gotoAndPlayByFrame",
+              "params": [
+                [
+                  0,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": 29,
+          "event": "CHANGE",
+          "target": [
+            11,
+            [
+              "slider"
+            ]
+          ],
+          "funName": "onChange"
+        },
+        {
+          "type": 11,
+          "name": "onChange",
+          "execute": [
+            {
+              "type": 37,
+              "variableType": "object",
+              "value": "",
+              "varId": "scale"
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  1,
+                  [],
+                  "scale"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  9,
+                  1,
+                  "value"
+                ],
+                [
+                  5,
+                  "/"
+                ],
+                [
+                  0,
+                  50
+                ]
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "eddy"
+                  ],
+                  "timeScale"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  1,
+                  [],
+                  "scale"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": 29,
+          "event": "SPINE_COMPLETE",
+          "target": [
+            11,
+            [
+              "eddy"
+            ]
+          ],
+          "funName": "animationComplete"
+        },
+        {
+          "type": 11,
+          "name": "animationComplete",
+          "execute": [
+            {
+              "type": 7,
+              "execute": [
+                {
+                  "type": 8,
+                  "condition": [
+                    [
+                      9,
+                      0,
+                      "animationName"
+                    ],
+                    [
+                      5,
+                      "=="
+                    ],
+                    [
+                      0,
+                      "cheer"
+                    ]
+                  ],
+                  "execute": [
+                    {
+                      "type": 12,
+                      "target": [
+                        11,
+                        [
+                          "eddy"
+                        ]
+                      ],
+                      "name": "play",
+                      "params": [
+                        [
+                          0,
+                          "breathe"
+                        ],
+                        [
+                          0,
+                          true
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "10": {
+      "type": "Spine",
+      "ske_json": 7,
+      "ske_atlas": 8,
+      "ske_tex": 9,
+      "autoPlay": true,
+      "animationName": "breathe",
+      "loop": true,
+      "timeScale": 1
+    },
+    "11": {
+      "type": "Button",
+      "width": 150,
+      "height": 30,
+      "up": 3,
+      "down": 4,
+      "move": 5
+    },
+    "12": {
+      "type": "Slider",
+      "vertical": false,
+      "thumb": 1,
+      "track": 2,
+      "tracklight": 6,
+      "value": 50,
+      "style": {
+        "width": 150,
+        "height": 10
+      }
+    }
+  },
+  "name": "VFT2J",
+  "width": 890,
+  "height": 500,
+  "version": "0.0.1",
+  "baseUrl": "",
+  "loadMode": "all",
+  "conversion": "",
+  "scaleMode": "showAll"
+}
