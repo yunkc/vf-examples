@@ -130,11 +130,13 @@ const root: gui.Custom = {
             this#${Ids.rect1}.on('click',()=>{
                 trace("rect1");
                 this#${Ids.connectLine3}.isClear = true; // 清除画线
+                this#${Ids.connectLine3}.lineColor = '0xffffff';
                 this#${Ids.connectLine3}.play = 2;
             });
             this#${Ids.rect2}.on('click',()=>{
               trace("rect2");
               this#${Ids.connectLine3}.isClear = true; // 清除画线
+              this#${Ids.connectLine3}.lineColor = '0xffffcc';
               this#${Ids.connectLine3}.play = 1;
           });
         });
