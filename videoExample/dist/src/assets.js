@@ -20,7 +20,7 @@ const assets = {
     },
     [store_1.AssetId.video]: {
         type: IVFTemplate_1.AssetType.video,
-        url: 'https://vipkid-edu.github.io/vf-gui/play/assets/video/friday.mp4',
+        url: 'https://s.vipkidstatic.com/vf/test/assets/friday.mp4',
         name: store_1.AssetId.video.toString()
     },
     [store_1.AssetId.poster]: {

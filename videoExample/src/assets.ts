@@ -1,5 +1,5 @@
-import {Ids,AssetId} from "./store";
-import {Assets, AssetType} from '../types/IVFTemplate'
+import { Ids, AssetId } from "./store";
+import { Assets, AssetType } from '../types/IVFTemplate'
 
 const assets: Assets = {
     [AssetId.up]: {
@@ -19,7 +19,7 @@ const assets: Assets = {
     },
     [AssetId.video]: {
         type: AssetType.video,
-        url: 'https://vipkid-edu.github.io/vf-gui/play/assets/video/friday.mp4',
+        url: 'https://s.vipkidstatic.com/vf/test/assets/friday.mp4',
         name: AssetId.video.toString()
     },
     [AssetId.poster]: {

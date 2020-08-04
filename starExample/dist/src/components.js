@@ -41,7 +41,7 @@ const root = {
         {
             id: store_1.Ids.title,
             libId: store_1.Ids.title,
-            text: "矢量矩形框接口示例",
+            text: "星形正多边形接口示例",
             style: {
                 top: 160,
             }
@@ -49,6 +49,8 @@ const root = {
         {
             id: store_1.Ids.star,
             libId: store_1.Ids.star,
+            color: 0x0000ff,
+            anchorX: -50,
             style: {
                 top: 500,
                 justifyContent: "center",

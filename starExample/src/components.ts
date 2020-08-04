@@ -58,6 +58,8 @@ const root: gui.Custom = {
     {
       id: Ids.star,
       libId: Ids.star,
+      color: 0x0000ff,
+      anchorX: -50,
       style: {
         top: 500,
         justifyContent: "center",
