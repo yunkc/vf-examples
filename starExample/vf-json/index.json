@@ -1,0 +1,477 @@
+{
+  "assets": {
+    "1": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/dino.png",
+      "name": "1"
+    }
+  },
+  "global": {},
+  "scenes": [
+    {
+      "id": 0,
+      "libId": "0"
+    }
+  ],
+  "components": {
+    "0": {
+      "type": "custom",
+      "interactabled": false,
+      "children": [
+        {
+          "id": 1,
+          "libId": 1,
+          "style": {
+            "top": 0
+          }
+        },
+        {
+          "id": 2,
+          "libId": 2,
+          "text": "矢量矩形框接口示例",
+          "style": {
+            "top": 160
+          }
+        },
+        {
+          "id": 3,
+          "libId": 3,
+          "style": {
+            "top": 500,
+            "justifyContent": "center"
+          }
+        },
+        {
+          "id": "ten",
+          "libId": 3,
+          "lineWidth": 1,
+          "triangleNum": 10,
+          "radius": 30,
+          "fillStar": false,
+          "style": {
+            "top": 300,
+            "left": 30
+          }
+        },
+        {
+          "id": "many",
+          "libId": 3,
+          "lineWidth": 1,
+          "triangleNum": 1,
+          "radius": 100,
+          "fillStar": false,
+          "style": {
+            "top": 300,
+            "left": 200
+          }
+        },
+        {
+          "id": "innerChange",
+          "libId": 3,
+          "lineWidth": 1,
+          "triangleNum": 5,
+          "innerRadius": 30,
+          "radius": 60,
+          "fillStar": false,
+          "style": {
+            "top": 410,
+            "left": 320
+          }
+        }
+      ],
+      "actionList": [
+        {
+          "type": 13,
+          "event": "Add",
+          "target": [
+            11,
+            []
+          ],
+          "execute": [
+            {
+              "type": 37,
+              "variableType": "boolean",
+              "value": true,
+              "varId": "boo1"
+            },
+            {
+              "type": 37,
+              "variableType": "boolean",
+              "value": true,
+              "varId": "boo2"
+            },
+            {
+              "type": 43,
+              "execute": [
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "ten"
+                      ],
+                      "rotation"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      4,
+                      [
+                        "ten"
+                      ],
+                      "rotation"
+                    ],
+                    [
+                      5,
+                      "+"
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                },
+                {
+                  "type": 7,
+                  "execute": [
+                    {
+                      "type": 8,
+                      "condition": [
+                        [
+                          1,
+                          [],
+                          "boo1"
+                        ]
+                      ],
+                      "execute": [
+                        {
+                          "type": 7,
+                          "execute": [
+                            {
+                              "type": 8,
+                              "condition": [
+                                [
+                                  4,
+                                  [
+                                    "many"
+                                  ],
+                                  "triangleNum"
+                                ],
+                                [
+                                  5,
+                                  "<="
+                                ],
+                                [
+                                  0,
+                                  100
+                                ]
+                              ],
+                              "execute": [
+                                {
+                                  "type": 6,
+                                  "express": [
+                                    [
+                                      4,
+                                      [
+                                        "many"
+                                      ],
+                                      "triangleNum"
+                                    ],
+                                    [
+                                      5,
+                                      "="
+                                    ],
+                                    [
+                                      4,
+                                      [
+                                        "many"
+                                      ],
+                                      "triangleNum"
+                                    ],
+                                    [
+                                      5,
+                                      "+"
+                                    ],
+                                    [
+                                      0,
+                                      1
+                                    ]
+                                  ]
+                                },
+                                {
+                                  "type": 7,
+                                  "execute": [
+                                    {
+                                      "type": 8,
+                                      "condition": [
+                                        [
+                                          4,
+                                          [
+                                            "innerChange"
+                                          ],
+                                          "innerRadius"
+                                        ],
+                                        [
+                                          5,
+                                          "<="
+                                        ],
+                                        [
+                                          0,
+                                          60
+                                        ]
+                                      ],
+                                      "execute": [
+                                        {
+                                          "type": 6,
+                                          "express": [
+                                            [
+                                              4,
+                                              [
+                                                "innerChange"
+                                              ],
+                                              "innerRadius"
+                                            ],
+                                            [
+                                              5,
+                                              "="
+                                            ],
+                                            [
+                                              4,
+                                              [
+                                                "innerChange"
+                                              ],
+                                              "innerRadius"
+                                            ],
+                                            [
+                                              5,
+                                              "+"
+                                            ],
+                                            [
+                                              0,
+                                              1
+                                            ]
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 10,
+                              "execute": [
+                                {
+                                  "type": 6,
+                                  "express": [
+                                    [
+                                      1,
+                                      [],
+                                      "boo1"
+                                    ],
+                                    [
+                                      5,
+                                      "="
+                                    ],
+                                    [
+                                      0,
+                                      false
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": 10,
+                      "execute": [
+                        {
+                          "type": 7,
+                          "execute": [
+                            {
+                              "type": 8,
+                              "condition": [
+                                [
+                                  4,
+                                  [
+                                    "many"
+                                  ],
+                                  "triangleNum"
+                                ],
+                                [
+                                  5,
+                                  ">="
+                                ],
+                                [
+                                  0,
+                                  2
+                                ]
+                              ],
+                              "execute": [
+                                {
+                                  "type": 6,
+                                  "express": [
+                                    [
+                                      4,
+                                      [
+                                        "many"
+                                      ],
+                                      "triangleNum"
+                                    ],
+                                    [
+                                      5,
+                                      "="
+                                    ],
+                                    [
+                                      4,
+                                      [
+                                        "many"
+                                      ],
+                                      "triangleNum"
+                                    ],
+                                    [
+                                      5,
+                                      "-"
+                                    ],
+                                    [
+                                      0,
+                                      1
+                                    ]
+                                  ]
+                                },
+                                {
+                                  "type": 7,
+                                  "execute": [
+                                    {
+                                      "type": 8,
+                                      "condition": [
+                                        [
+                                          4,
+                                          [
+                                            "innerChange"
+                                          ],
+                                          "innerRadius"
+                                        ],
+                                        [
+                                          5,
+                                          ">="
+                                        ],
+                                        [
+                                          0,
+                                          2
+                                        ]
+                                      ],
+                                      "execute": [
+                                        {
+                                          "type": 6,
+                                          "express": [
+                                            [
+                                              4,
+                                              [
+                                                "innerChange"
+                                              ],
+                                              "innerRadius"
+                                            ],
+                                            [
+                                              5,
+                                              "="
+                                            ],
+                                            [
+                                              4,
+                                              [
+                                                "innerChange"
+                                              ],
+                                              "innerRadius"
+                                            ],
+                                            [
+                                              5,
+                                              "-"
+                                            ],
+                                            [
+                                              0,
+                                              1
+                                            ]
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 10,
+                              "execute": [
+                                {
+                                  "type": 6,
+                                  "express": [
+                                    [
+                                      1,
+                                      [],
+                                      "boo1"
+                                    ],
+                                    [
+                                      5,
+                                      "="
+                                    ],
+                                    [
+                                      0,
+                                      true
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "1": {
+      "type": "Image",
+      "src": 1,
+      "style": {
+        "width": 83,
+        "height": 138,
+        "justifyContent": "center"
+      }
+    },
+    "2": {
+      "type": "Label",
+      "style": {
+        "width": 100,
+        "justifyContent": "center"
+      }
+    },
+    "3": {
+      "type": "Star",
+      "lineColor": 16711680,
+      "lineWidth": 1,
+      "triangleNum": 5,
+      "radius": 100,
+      "fillStar": true
+    }
+  },
+  "name": "VFT2J",
+  "width": 405,
+  "height": 720,
+  "version": "0.0.1",
+  "baseUrl": "",
+  "loadMode": "all",
+  "conversion": "",
+  "scaleMode": "showAll",
+  "launcherVersion": "0.5.74"
+}
