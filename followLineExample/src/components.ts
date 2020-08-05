@@ -1,8 +1,6 @@
 /*
- *   全部文档: https://code.vipkid.com.cn/xyz/docs
- *   动画文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/animation.md
- *   VFX 使用文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/aciton.md
- * */
+*   vf文档地址: https://vipkid-edu.github.io/vf-docs/
+* */
 
 import { App, Ids, AssetId } from "./store";
 import { gui, guiType } from "../types/Component";
@@ -12,72 +10,72 @@ import { Components } from "../types/IVFTemplate";
 
 const followLine: gui.FollowLine = {
   type: guiType.FollowLine,
-  style:{
-    backgroundColor:0xffffff
+  style: {
+    backgroundColor: 0xffffff
   }
 }
 
-const button:gui.Button = {
+const button: gui.Button = {
   type: guiType.Button,
   up: AssetId.up,
   down: AssetId.down,
-  move : AssetId.move,
+  move: AssetId.move,
   width: 100,
-  height :30
+  height: 30
 }
 
-const slider:gui.Slider = {
+const slider: gui.Slider = {
   type: guiType.Slider,
   thumb: AssetId.thumb,
   track: AssetId.track,
   tracklight: AssetId.tracklight,
-  value:0,
-  vertical:false,
+  value: 0,
+  vertical: false,
 }
 
 
 const root: gui.Custom = {
   type: guiType.Custom,
-  interactabled:true,// 容器默认为false
-  children:[
+  interactabled: true,// 容器默认为false
+  children: [
     {
-      id:"eraseBtn",
-      libId:Ids.button,
-      x:15,
-      y:15,
-      text:'擦除 false'
+      id: "eraseBtn",
+      libId: Ids.button,
+      x: 15,
+      y: 15,
+      text: '擦除 false'
     },
     {
-      id:"restorBtn",
-      libId:Ids.button,
-      x:130,
-      y:15,
-      text:'重置'
+      id: "restorBtn",
+      libId: Ids.button,
+      x: 130,
+      y: 15,
+      text: '重置'
     },
     {
-      id:"followLineTop",
-      libId:Ids.followLine,
-      x:15,
-      y:50,
-      width:340,
-      height:200,
-      role:"T",
+      id: "followLineTop",
+      libId: Ids.followLine,
+      x: 15,
+      y: 50,
+      width: 340,
+      height: 200,
+      role: "T",
     {
-      id:"followLineDown",
-      libId:Ids.followLine,
-      x:15,
-      y:270,
-      width:340,
-      height:200,
-      role:"S"
+      id: "followLineDown",
+      libId: Ids.followLine,
+      x: 15,
+      y: 270,
+      width: 340,
+      height: 200,
+      role: "S"
     },
     {
-      id:"slider",
-      libId:Ids.slider,
-      width:340,
-      height:10,
-      x:15,
-      y:480,
+      id: "slider",
+      libId: Ids.slider,
+      width: 340,
+      height: 10,
+      x: 15,
+      y: 480,
     }
   ],
   actionList: `
@@ -140,7 +138,7 @@ const allComponents: Components = {
   [Ids.root]: root,
   [Ids.followLine]: followLine,
   [Ids.button]: button,
-  [Ids.slider] : slider
+  [Ids.slider]: slider
 };
 
 export default allComponents;

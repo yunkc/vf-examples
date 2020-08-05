@@ -1,8 +1,6 @@
 /*
- *   全部文档: https://code.vipkid.com.cn/xyz/docs
- *   动画文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/animation.md
- *   VFX 使用文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/aciton.md
- * */
+*   VF文档地址: https://vipkid-edu.github.io/vf-docs/
+* */
 
 import { App, Ids } from "./store";
 import { gui, guiType } from "../types/Component";
@@ -11,7 +9,7 @@ import { Components, Assets } from "../types/IVFTemplate";
 
 const rect: gui.Rect = {
     type: guiType.Rect,
-    color : 0xffffff,
+    color: 0xffffff,
     style: {
         width: 500,
         height: 1000,
@@ -48,39 +46,39 @@ const textChoice = {
         },                   //目标属性
         selectOption: [
             {
-              text: "textChoice",
-              key: "0"
+                text: "textChoice",
+                key: "0"
             },
             {
-              text: "wrongOpt1",
-              key: "1"
+                text: "wrongOpt1",
+                key: "1"
             },
             {
-              text: "please",
-              key: "2"
+                text: "please",
+                key: "2"
             },
             {
-              text: "wrongOpt2",
-              key: "3"
+                text: "wrongOpt2",
+                key: "3"
             },
             {
-              text: "wrongOpt3",
-              key: "4"
+                text: "wrongOpt3",
+                key: "4"
             },
             {
-              text: "correct",
-              key: "5"
+                text: "correct",
+                key: "5"
             }
-        ]    
-            //选项属性
+        ]
+        //选项属性
     }
 
 }
 
 const root: gui.Custom = {
     type: guiType.Custom,
-    interactabled:true,// 容器默认为false
-    children:[
+    interactabled: true,// 容器默认为false
+    children: [
         {
             id: "rect",
             libId: Ids.rect,
@@ -88,7 +86,7 @@ const root: gui.Custom = {
         {
             id: "textChoice",
             libId: Ids.textChoice,
-            y:20
+            y: 20
         },
         {
             id: "button",
@@ -97,8 +95,8 @@ const root: gui.Custom = {
             style: {
                 width: 150,
                 height: 50,
-                left:30,
-                bottom:30
+                left: 30,
+                bottom: 30
             }
         }
         ,
@@ -109,12 +107,12 @@ const root: gui.Custom = {
             style: {
                 width: 150,
                 height: 50,
-                left:220,
-                bottom:30
+                left: 220,
+                bottom: 30
             }
         }
     ],
-    actionList : `@this = {
+    actionList: `@this = {
         // 这里是第一层，也叫顶层。
         this.on("Added", () => {
             
@@ -138,16 +136,16 @@ const root: gui.Custom = {
 
 const button: gui.Button = {
     type: guiType.Button,
-    up:Ids.up,
-    move:Ids.move,
-    down:Ids.down
+    up: Ids.up,
+    move: Ids.move,
+    down: Ids.down
 }
 
 const allComponents: Components = {
-    [Ids.root] : root,
-    [Ids.rect] : rect,
-    [Ids.button] : button,
-    [Ids.textChoice] : textChoice as gui.AllGUI,
+    [Ids.root]: root,
+    [Ids.rect]: rect,
+    [Ids.button]: button,
+    [Ids.textChoice]: textChoice as gui.AllGUI,
 };
 
 export default allComponents;

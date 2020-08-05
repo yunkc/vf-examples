@@ -1,9 +1,6 @@
 /*
- *   全部文档: https://code.vipkid.com.cn/xyz/docs
- *   动画文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/animation.md
- *   VFX 使用文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/aciton.md
- * */
-
+*   VF文档地址: https://vipkid-edu.github.io/vf-docs/
+* */
 import { App, Ids } from "./store";
 import { gui, guiType } from "../types/Component";
 import { Components } from "../types/IVFTemplate";
@@ -32,8 +29,8 @@ const circle: gui.Circle = {
   lineColor: 0xff00cc,
   lineWidth: 1,
   radius: 50, //半径
-  width:1,
-  height:1
+  width: 1,
+  height: 1
 }
 
 const root: gui.Custom = {
@@ -60,15 +57,15 @@ const root: gui.Custom = {
       libId: Ids.circle,
       color: 0xffffff,
       style: {
-        top: 250,
-        left:60
+        top: 0,
+        left: 0,
       }
     },
     {
       id: Ids.circle,
       libId: Ids.circle,
       color: undefined,
-      lineWidth:5,
+      lineWidth: 5,
       style: {
         top: 250,
         left: 180
@@ -78,7 +75,7 @@ const root: gui.Custom = {
       id: Ids.circle,
       libId: Ids.circle,
       color: 0xffffff,
-      lineWidth:5,
+      lineWidth: 5,
       startAngle: 0,
       endAngle: 180,
       style: {
@@ -91,7 +88,7 @@ const root: gui.Custom = {
       id: Ids.circle,
       libId: Ids.circle,
       color: undefined,
-      lineWidth:5,
+      lineWidth: 5,
       startAngle: 180,
       endAngle: 260,
       style: {
@@ -104,7 +101,7 @@ const root: gui.Custom = {
       id: "circleAni",
       libId: Ids.circle,
       // color: 0xffff00,
-      lineWidth:5,
+      lineWidth: 5,
       startAngle: 0,
       endAngle: 0,
       style: {
@@ -113,7 +110,7 @@ const root: gui.Custom = {
       }
     }
   ],
-  actionList:`
+  actionList: `
     @this = {
         this.on("Add", () => {
           setEnterFrame(()=>{

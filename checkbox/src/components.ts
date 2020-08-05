@@ -1,8 +1,6 @@
 /*
- *   全部文档: https://code.vipkid.com.cn/xyz/docs
- *   动画文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/animation.md
- *   VFX 使用文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/aciton.md
- * */
+*   VF文档地址: https://vipkid-edu.github.io/vf-docs/
+* */
 
 import { App, Ids } from "./store";
 import { gui, guiType } from "../types/Component";
@@ -77,64 +75,64 @@ const root: gui.Custom = {
     {
       id: 'checkbox1',
       libId: Ids.checkbox,
-      style:{
+      style: {
         left: 60,
         top: 250
       },
-      value:"checkbox1",
+      value: "checkbox1",
     },
     {
       id: 'checkbox2',
       libId: Ids.checkbox,
-      style:{
+      style: {
         left: 180,
         top: 250
       },
-      value:"checkbox2",
+      value: "checkbox2",
     },
     {
       id: 'checkbox3',
       libId: Ids.checkbox,
-      style:{
+      style: {
         left: 300,
         top: 250
       },
-      value:"checkbox3",
+      value: "checkbox3",
     },
 
     // radio
     {
       id: 'radio1',
       libId: Ids.radio,
-      style:{
+      style: {
         left: 60,
         top: 350
       },
-      value:"radio1",
-      checkGroup:"radioGroup1" // checkbox与radio区别
+      value: "radio1",
+      checkGroup: "radioGroup1" // checkbox与radio区别
     },
     {
       id: 'radio2',
       libId: Ids.radio,
-      style:{
+      style: {
         left: 180,
         top: 350
       },
-      value:"radio2",
-      checkGroup:"radioGroup1" // checkbox与radio区别
+      value: "radio2",
+      checkGroup: "radioGroup1" // checkbox与radio区别
     },
     {
       id: 'radio3',
       libId: Ids.radio,
-      style:{
+      style: {
         left: 300,
         top: 350
       },
-      value:"radio3",
-      checkGroup:"radioGroup1" // checkbox与radio区别
+      value: "radio3",
+      checkGroup: "radioGroup1" // checkbox与radio区别
     }
   ],
-  actionList:`
+  actionList: `
     @this = {
         this.on("Add", () => {
 
@@ -173,7 +171,7 @@ const allComponents: Components = {
   [Ids.title]: title,
   [Ids.dinoImage]: dino,
   [Ids.checkbox]: checkbox,
-  [Ids.radio]:radio,
+  [Ids.radio]: radio,
 };
 
 export default allComponents;

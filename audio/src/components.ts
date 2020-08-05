@@ -1,12 +1,10 @@
 /*
-*   全部文档: https://code.vipkid.com.cn/xyz/docs
-*   动画文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/animation.md
-*   VFX 使用文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/aciton.md
+*   VF文档地址: https://vipkid-edu.github.io/vf-docs/
 * */
 
-import {App, Ids} from "./store";
-import {gui, guiType} from "../types/Component";
-import {Components} from "../types/IVFTemplate";
+import { App, Ids } from "./store";
+import { gui, guiType } from "../types/Component";
+import { Components } from "../types/IVFTemplate";
 
 const dinoWidth = 83
 const dino: gui.Image = {
@@ -15,7 +13,7 @@ const dino: gui.Image = {
     width: dinoWidth,
     height: 138,
     src: Ids.dinoImage,
-    x: App.width / 2 -  dinoWidth / 2,
+    x: App.width / 2 - dinoWidth / 2,
 };
 
 const title: gui.Text = {
@@ -29,7 +27,7 @@ const title: gui.Text = {
 const btn: gui.Button = {
     type: guiType.BUTTON,
     width: 150,
-    height:40,
+    height: 40,
     up: Ids.up,
     down: Ids.down,
     move: Ids.move,
@@ -80,7 +78,6 @@ const root: gui.Custom = {
             x: App.width / 2 - title.width! / 2
         }
     ],
-    // 用 VFX 编写的可执行逻辑，文档请见 https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/aciton.md
     actionList: `
         @this = {
             this.on("Add", () => {

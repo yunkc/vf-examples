@@ -1,8 +1,6 @@
 /*
- *   全部文档: https://code.vipkid.com.cn/xyz/docs
- *   动画文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/animation.md
- *   VFX 使用文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/aciton.md
- * */
+*   VF文档地址: https://vipkid-edu.github.io/vf-docs/
+* */
 
 import { App, Ids } from "./store";
 import { gui, guiType } from "../types/Component";
@@ -32,7 +30,7 @@ const rect: gui.Rect = {
   lineColor: 0xff00cc,
   lineWidth: 1,
   radius: 5, //圆角
-  color:0xffffff,
+  color: 0xffffff,
   interactabled: true, // 开启交互
   style: {
     width: 30,
@@ -70,8 +68,8 @@ const root: gui.Custom = {
     {
       id: Ids.connectLine1, //自动画线
       libId: Ids.connectLine,
-      sourcePostion: [370,200], // 设置源坐标
-      targetPostion: [520,200],// 设置目标坐标
+      sourcePostion: [370, 200], // 设置源坐标
+      targetPostion: [520, 200],// 设置目标坐标
       autoPlay: true, // 是否自动播放 ，默认自动播放true
       style: {
         top: 210,
@@ -80,8 +78,8 @@ const root: gui.Custom = {
     {
       id: Ids.connectLine2, //3秒后触发画线
       libId: Ids.connectLine,
-      sourcePostion: [370,230], // 设置源坐标
-      targetPostion: [520,230],// 设置目标坐标
+      sourcePostion: [370, 230], // 设置源坐标
+      targetPostion: [520, 230],// 设置目标坐标
       autoPlay: false, // 是否自动播放 ，默认自动播放
       lineColor: 0xffcc00,
       style: {

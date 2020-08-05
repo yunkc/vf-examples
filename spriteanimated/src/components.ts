@@ -1,8 +1,6 @@
 /*
- *   全部文档: https://code.vipkid.com.cn/xyz/docs
- *   动画文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/animation.md
- *   VFX 使用文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/aciton.md
- * */
+*   VF文档地址: https://vipkid-edu.github.io/vf-docs/
+* */
 
 import { App, Ids } from "./store";
 import { gui, guiType } from "../types/Component";
@@ -43,10 +41,10 @@ const spriteAnimated: gui.SpriteAnimated = {
   type: guiType.SpriteAnimated,
   animationSpeed: 0.1,
   loop: true,
-  loopCount:0,//设置循环次数，0为不限制
-  src:Ids.sheet, //方式1，有可使用位图数组填充
-  anchorX:0.2, // 设置脚底为中心点
-  anchorY:1,
+  loopCount: 0,//设置循环次数，0为不限制
+  src: Ids.sheet, //方式1，有可使用位图数组填充
+  anchorX: 0.2, // 设置脚底为中心点
+  anchorY: 1,
   style: {
     justifyContent: "center",
   }
@@ -65,9 +63,9 @@ const root: gui.Custom = {
       }
     },
     {
-      id: Ids.spriteAnimated, 
+      id: Ids.spriteAnimated,
       libId: Ids.spriteAnimated,
-      autoPlay: true, 
+      autoPlay: true,
       animationName: "1",
       style: {
         top: 450,

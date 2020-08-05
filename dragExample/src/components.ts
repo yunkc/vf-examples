@@ -1,8 +1,6 @@
 /*
- *   全部文档: https://code.vipkid.com.cn/xyz/docs
- *   动画文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/animation.md
- *   VFX 使用文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/aciton.md
- * */
+*   vf文档地址: https://vipkid-edu.github.io/vf-docs/
+* */
 
 import { App, Ids } from "./store";
 import { gui, guiType } from "../types/Component";
@@ -34,7 +32,7 @@ const title: gui.Text = {
   width: 100,
   style: {
     justifyContent: "center",
-    alignContent:"center",
+    alignContent: "center",
     color: 0x000000,
     fontSize: 24,
     wordWrap: true,
@@ -44,13 +42,13 @@ const title: gui.Text = {
 
 const childContainer: gui.Custom = {
   type: guiType.Custom,
-  interactabled:true,
-  style:{
+  interactabled: true,
+  style: {
     backgroundColor: 0xffffff,
-    width:100,
-    height:100,
+    width: 100,
+    height: 100,
   },
-  children:[
+  children: [
     {
       id: "title",
       libId: Ids.title,
@@ -63,132 +61,132 @@ const childContainer: gui.Custom = {
 
 const root: gui.Custom = {
   type: guiType.Custom,
-  interactabled:true,// 容器默认为false
-  children:[
+  interactabled: true,// 容器默认为false
+  children: [
     {
       id: "rectLine",
       libId: Ids.rect,
       lineColor: 0x565680,
       lineWidth: 5,
-      color:0x565655,
+      color: 0x565655,
       width: App.width,
-      height:App.height,
+      height: App.height,
       style: {
-          justifyContent: "center",
+        justifyContent: "center",
       }
     },
     {
       id: "1",
       libId: Ids.childContainer,
-      x:15,
-      y:15,
-      dragOption:{
-        draggable:true,
-        dragContainer:"this",//拖拽区域
+      x: 15,
+      y: 15,
+      dragOption: {
+        draggable: true,
+        dragContainer: "this",//拖拽区域
       },
     },
     {
       id: "2",
       libId: Ids.childContainer,
-      x:150,
-      y:15,
-      dragOption:{
-        draggable:true,
-        dragRestrictAxis:"x"
+      x: 150,
+      y: 15,
+      dragOption: {
+        draggable: true,
+        dragRestrictAxis: "x"
       },
     },
     {
       id: "3",
       libId: Ids.childContainer,
-      x:285,
-      y:15,
-      dragOption:{
-        draggable:true,
-        dragRestrictAxis:"y"
+      x: 285,
+      y: 15,
+      dragOption: {
+        draggable: true,
+        dragRestrictAxis: "y"
       },
     },
     {
       id: "4",
       libId: Ids.childContainer,
-      x:15,
-      y:130,
-      dragOption:{
-        draggable:true,
-        dragBoundary:true//限定边界(this)
+      x: 15,
+      y: 130,
+      dragOption: {
+        draggable: true,
+        dragBoundary: true//限定边界(this)
       },
     },
     {
       id: "5",
       libId: Ids.childContainer,
-      x:150,
-      y:130,
-      dragOption:{
-        draggable:true,
-        dragBounces:true,
+      x: 150,
+      y: 130,
+      dragOption: {
+        draggable: true,
+        dragBounces: true,
       },
     },
     {
       id: "6",
       libId: Ids.childContainer,
-      x:285,
-      y:130,
-      
+      x: 285,
+      y: 130,
+
     },
     {
       id: "7",
       libId: Ids.childContainer,
-      x:15,
-      y:350,
-      width:200,
-      height:200,
-      style:{
-        display:"grid",
-        gridTemplateColumns:["repeat", 3, 30],
-        gridTemplateRows:["repeat", 3, 30],
-        gridColumnGap:10,
-        gridRowGap:10,
+      x: 15,
+      y: 350,
+      width: 200,
+      height: 200,
+      style: {
+        display: "grid",
+        gridTemplateColumns: ["repeat", 3, 30],
+        gridTemplateRows: ["repeat", 3, 30],
+        gridColumnGap: 10,
+        gridRowGap: 10,
       },
-      dragOption:{
-        draggable:true,
-        droppable:true,
-        dropGroup:"group1"
+      dragOption: {
+        draggable: true,
+        droppable: true,
+        dropGroup: "group1"
       },
     },
     {
-        id: "rect0",
-        libId: Ids.rect,
-        x:285,
-        y:130,
-        dragOption:{
-            draggable:true,
-            dragBounces:true,
-            dragGroup:"group1"
-        }
-      },
-      {
-        id: "rect1",
-        libId: Ids.rect,
-        color: 0xff66,
-        x:320,
-        y:130,
-        dragOption:{
-            draggable:true,
-            dragBounces:true,
-            dragGroup:"group1"
-        }
-      },
-      {
-        id: "rect2",
-        libId: Ids.rect,
-        color: 0x66ffcc,
-        x:355,
-        y:130,
-        dragOption:{
-            draggable:true,
-            dragBounces:true,
-            dragGroup:"group1"
-        }
+      id: "rect0",
+      libId: Ids.rect,
+      x: 285,
+      y: 130,
+      dragOption: {
+        draggable: true,
+        dragBounces: true,
+        dragGroup: "group1"
       }
+    },
+    {
+      id: "rect1",
+      libId: Ids.rect,
+      color: 0xff66,
+      x: 320,
+      y: 130,
+      dragOption: {
+        draggable: true,
+        dragBounces: true,
+        dragGroup: "group1"
+      }
+    },
+    {
+      id: "rect2",
+      libId: Ids.rect,
+      color: 0x66ffcc,
+      x: 355,
+      y: 130,
+      dragOption: {
+        draggable: true,
+        dragBounces: true,
+        dragGroup: "group1"
+      }
+    }
   ],
   actionList: `
   @this = {

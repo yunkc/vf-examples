@@ -1,6 +1,6 @@
 /*
- *   全部文档: https://vipkid-edu.github.io/vf-docs/  
- * */
+*   VF文档地址: https://vipkid-edu.github.io/vf-docs/
+* */
 
 import { Ids } from "./store";
 import { gui, guiType } from "../types/Component";

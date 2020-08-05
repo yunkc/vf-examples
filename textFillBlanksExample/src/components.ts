@@ -1,8 +1,6 @@
 /*
- *   全部文档: https://code.vipkid.com.cn/xyz/docs
- *   动画文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/animation.md
- *   VFX 使用文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/aciton.md
- * */
+*   VF文档地址: https://vipkid-edu.github.io/vf-docs/
+* */
 
 import { App, Ids } from "./store";
 import { gui, guiType } from "../types/Component";
@@ -11,7 +9,7 @@ import { Components, Assets } from "../types/IVFTemplate";
 
 const rect: gui.Rect = {
     type: guiType.Rect,
-    color : 0xffffff,
+    color: 0xffffff,
     style: {
         width: 405,
         height: 720
@@ -19,7 +17,7 @@ const rect: gui.Rect = {
 };
 const text: gui.Text = {
     type: guiType.Text,
-    interactabled:true,
+    interactabled: true,
     style: {
         fontSize: 24,
         color: 0x000000,
@@ -28,9 +26,9 @@ const text: gui.Text = {
 };
 const button: gui.Button = {
     type: guiType.Button,
-    up:Ids.up,
-    move:Ids.move,
-    down:Ids.down
+    up: Ids.up,
+    move: Ids.move,
+    down: Ids.down
 };
 
 const textFillBlanks = {
@@ -77,16 +75,16 @@ const textFillBlanks = {
                 text: "correct",
                 key: "2"
             }
-        ]                  
-            //选项属性
+        ]
+        //选项属性
     }
 
 }
 
 const root: gui.Custom = {
     type: guiType.Custom,
-    interactabled:false,// 容器默认为false
-    children:[
+    interactabled: false,// 容器默认为false
+    children: [
         {
             id: "rect",
             libId: Ids.rect,
@@ -94,7 +92,7 @@ const root: gui.Custom = {
         {
             id: "textFillBlanks",
             libId: Ids.textFillBlanks,
-            y:20
+            y: 20
         },
         {
             id: "text0",
@@ -103,9 +101,9 @@ const root: gui.Custom = {
             style: {
                 width: 180,
                 height: 50,
-                left:0,
-                top:300,
-                textAlign:"left"
+                left: 0,
+                top: 300,
+                textAlign: "left"
             }
         }
         ,
@@ -116,9 +114,9 @@ const root: gui.Custom = {
             style: {
                 width: 100,
                 height: 50,
-                left:0,
-                top:350,
-                textAlign:"left"
+                left: 0,
+                top: 350,
+                textAlign: "left"
             }
         }
         ,
@@ -129,9 +127,9 @@ const root: gui.Custom = {
             style: {
                 width: 100,
                 height: 50,
-                left:0,
-                top:400,
-                textAlign:"left"
+                left: 0,
+                top: 400,
+                textAlign: "left"
             }
         },
         {
@@ -141,8 +139,8 @@ const root: gui.Custom = {
             style: {
                 width: 150,
                 height: 50,
-                left:30,
-                bottom:30
+                left: 30,
+                bottom: 30
             }
         }
         ,
@@ -153,12 +151,12 @@ const root: gui.Custom = {
             style: {
                 width: 150,
                 height: 50,
-                left:220,
-                bottom:30
+                left: 220,
+                bottom: 30
             }
         }
     ],
-    actionList : `@this = {
+    actionList: `@this = {
         // 这里是第一层，也叫顶层。
         this.on("Added", () => {
             
@@ -195,11 +193,11 @@ const root: gui.Custom = {
 };
 
 const allComponents: Components = {
-    [Ids.root] : root,
-    [Ids.rect] : rect,
-    [Ids.text] : text,
-    [Ids.button] : button,
-    [Ids.textFillBlanks] : textFillBlanks as gui.AllGUI,
+    [Ids.root]: root,
+    [Ids.rect]: rect,
+    [Ids.text]: text,
+    [Ids.button]: button,
+    [Ids.textFillBlanks]: textFillBlanks as gui.AllGUI,
 };
 
 export default allComponents;

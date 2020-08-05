@@ -1,8 +1,6 @@
 /*
- *   全部文档: https://code.vipkid.com.cn/xyz/docs
- *   动画文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/animation.md
- *   VFX 使用文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/aciton.md
- * */
+*   VF文档地址: https://vipkid-edu.github.io/vf-docs/
+* */
 
 import { App, Ids } from "./store";
 import { gui, guiType } from "../types/Component";
@@ -41,8 +39,8 @@ const scrollBar: gui.ScrollBar = {
 const root: gui.Custom = {
   type: guiType.Custom,
   interactabled: false,
-  style:{
-    height:50
+  style: {
+    height: 50
   },
   children: [
     {
@@ -86,9 +84,9 @@ const root: gui.Custom = {
       libId: Ids.scrollBar,
       text: "滑动条接口示例",
       style: {
-        top:0,
+        top: 0,
         right: 10,
-        width:10
+        width: 10
       }
     },
   ],

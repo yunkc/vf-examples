@@ -1,8 +1,6 @@
 /*
- *   全部文档: https://code.vipkid.com.cn/xyz/docs
- *   动画文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/animation.md
- *   VFX 使用文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/aciton.md
- * */
+*   VF文档地址: https://vipkid-edu.github.io/vf-docs/
+* */
 
 import { App, Ids } from "./store";
 import { gui, guiType } from "../types/Component";
@@ -42,8 +40,8 @@ const button: gui.Button = {
 const ParticlesStyle: gui.Particles = {
   type: 'Particles',
   style: {
-    left:270,
-    top:300
+    left: 270,
+    top: 300
   }
 };
 
@@ -76,33 +74,33 @@ const root: gui.Custom = {
     {
       id: "btn1",
       libId: Ids.button,
-      text:"播放",
-      style:{
-        top:200
+      text: "播放",
+      style: {
+        top: 200
       }
     },
     {
       id: "btn2",
       libId: Ids.button,
-      text:"播放5秒",
-      style:{
-        top:260
+      text: "播放5秒",
+      style: {
+        top: 260
       }
     },
     {
       id: "btn3",
       libId: Ids.button,
-      text:"暂停",
-      style:{
-        top:320
+      text: "暂停",
+      style: {
+        top: 320
       }
     },
     {
       id: "btn4",
       libId: Ids.button,
-      text:"停止",
-      style:{
-        top:380
+      text: "停止",
+      style: {
+        top: 380
       }
     }
   ],

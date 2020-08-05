@@ -1,12 +1,10 @@
-/*
-*  开发文档: https://code.vipkid.com.cn/xyz/docs
-* */
-import {App} from './store'
+
+import { App } from './store'
 import scenes from './scene'
 import assets from './assets'
 import global from './global'
 import components from './components'
-import {IVFTemplate, LoadMode, ScaleMode} from "../types/IVFTemplate";
+import { IVFTemplate, LoadMode, ScaleMode } from "../types/IVFTemplate";
 
 const Main: IVFTemplate = {
     assets,

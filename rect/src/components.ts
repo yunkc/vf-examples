@@ -1,8 +1,6 @@
 /*
- *   全部文档: https://code.vipkid.com.cn/xyz/docs
- *   动画文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/animation.md
- *   VFX 使用文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/aciton.md
- * */
+*   VF文档地址: https://vipkid-edu.github.io/vf-docs/
+* */
 
 import { App, Ids } from "./store";
 import { gui, guiType } from "../types/Component";
@@ -35,7 +33,7 @@ const rect: gui.Rect = {
   style: {
     justifyContent: "center",
     width: 100,
-    height:100,
+    height: 100,
   }
 }
 
@@ -70,13 +68,13 @@ const root: gui.Custom = {
       id: Ids.rect,
       libId: Ids.rect,
       color: undefined,
-      lineWidth:5,
+      lineWidth: 5,
       style: {
         top: 330,
       }
     }
   ],
-  actionList:`
+  actionList: `
     @this = {
         this.on("Add", () => {
 

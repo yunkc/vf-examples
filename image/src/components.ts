@@ -1,8 +1,6 @@
 /*
- *   全部文档: https://code.vipkid.com.cn/xyz/docs
- *   动画文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/animation.md
- *   VFX 使用文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/aciton.md
- * */
+*   VF文档地址: https://vipkid-edu.github.io/vf-docs/
+* */
 
 import { App, Ids } from "./store";
 import { gui, guiType } from "../types/Component";
@@ -63,15 +61,15 @@ const root: gui.Custom = {
     {
       id: 'leftImage',
       libId: Ids.dinoImage,
-      src:Ids.pcImage.toString(), //设置新的图片
-      anchorX:0.5, //调整描点，这是中心旋转
-      anchorY:0.5, //调整描点，这是中心旋转
+      src: Ids.pcImage.toString(), //设置新的图片
+      anchorX: 0.5, //调整描点，这是中心旋转
+      anchorY: 0.5, //调整描点，这是中心旋转
       style: {
         top: 230,
-        left:80
-        justifyContent:"",
-        width:85,
-        height:71,
+        left: 80
+        justifyContent: "",
+        width: 85,
+        height: 71,
       }
     },
     {
@@ -80,10 +78,10 @@ const root: gui.Custom = {
       tint: 0xffcc00,//填充颜色
       style: {
         top: 250,
-        left:220,
-        scaleX:0.5,
-        scaleY:0.5,
-        justifyContent:"",
+        left: 220,
+        scaleX: 0.5,
+        scaleY: 0.5,
+        justifyContent: "",
       }
     },
     {
@@ -91,7 +89,7 @@ const root: gui.Custom = {
       libId: Ids.dinoImage,
       style: {
         top: 230,
-        justifyContent:"flex-end",
+        justifyContent: "flex-end",
         maskImage: Ids.rect.toString(), //设置遮罩
         maskSize: [80, 40],
         maskPosition: [0, 20],
@@ -100,59 +98,59 @@ const root: gui.Custom = {
     {
       id: 'bg2',
       libId: Ids.dinoImage,
-      src:Ids.bg2.toString(), //设置新的图片
+      src: Ids.bg2.toString(), //设置新的图片
       style: {
         top: 400,
-        width:340,
-        height:160
+        width: 340,
+        height: 160
       }
     },
     {
       id: 'bg',
       libId: Ids.dinoImage,
-      src:Ids.bg1.toString(), //设置新的图片
+      src: Ids.bg1.toString(), //设置新的图片
       style: {
         top: 400,
-        width:340,
-        height:160,
+        width: 340,
+        height: 160,
         maskImage: Ids.maskImage.toString(),
         maskSize: [100, 100],
         maskPosition: [-70, -70]
       }
     }
   ],
-  animations:[
+  animations: [
     {
-        name: "default",
-        duration: 60,
-        autoPlay: true,
-        loop: true,
-        children: {
-            centerImage: {
-                duration: 60,
-                loop: true,
-                timelines: [
-                    {
-                        type: "rotation",
-                        loop: true,
-                        frames: [
-                            {
-                                frame: 0,
-                                curve: [1],
-                                value: 0
-                            },
-                            {
-                              frame: 60,
-                              value: 360
-                            }
-                        ]
-                    }
-                ]
+      name: "default",
+      duration: 60,
+      autoPlay: true,
+      loop: true,
+      children: {
+        centerImage: {
+          duration: 60,
+          loop: true,
+          timelines: [
+            {
+              type: "rotation",
+              loop: true,
+              frames: [
+                {
+                  frame: 0,
+                  curve: [1],
+                  value: 0
+                },
+                {
+                  frame: 60,
+                  value: 360
+                }
+              ]
             }
+          ]
         }
+      }
     }
   ],
-  actionList:`
+  actionList: `
     @this = {
         this.on("Add", () => {
 
@@ -189,7 +187,7 @@ const allComponents: Components = {
   [Ids.title]: title,
   [Ids.dinoImage]: dino,
   [Ids.rect]: rect,
-  [Ids.maskImage]:maskImage
+  [Ids.maskImage]: maskImage
 };
 
 export default allComponents;

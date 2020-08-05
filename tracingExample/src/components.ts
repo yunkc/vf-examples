@@ -1,8 +1,6 @@
 /*
- *   全部文档: https://code.vipkid.com.cn/xyz/docs
- *   动画文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/animation.md
- *   VFX 使用文档: https://code.vipkid.com.cn/xyz/docs/blob/master/docs/handbook/aciton.md
- * */
+*   VF文档地址: https://vipkid-edu.github.io/vf-docs/
+* */
 
 import { App, Ids, AssetId } from "./store";
 import { gui, guiType } from "../types/Component";
@@ -51,7 +49,7 @@ const radioText: gui.Text = {
   style: {
     color: 0xffffff,
     top: 30,
-    fontSize:22
+    fontSize: 22
   }
 };
 
