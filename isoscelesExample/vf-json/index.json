@@ -1,0 +1,181 @@
+{
+  "assets": {
+    "1": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/dino.png",
+      "name": "1"
+    }
+  },
+  "global": {},
+  "scenes": [
+    {
+      "id": 0,
+      "libId": "0"
+    }
+  ],
+  "components": {
+    "0": {
+      "type": "custom",
+      "interactabled": false,
+      "children": [
+        {
+          "id": 1,
+          "libId": 1,
+          "style": {
+            "top": 0
+          }
+        },
+        {
+          "id": 2,
+          "libId": 2,
+          "text": "等腰三角形梯形接口示例",
+          "style": {
+            "top": 160
+          }
+        },
+        {
+          "id": 3,
+          "libId": 3,
+          "width": 200,
+          "height": 50,
+          "lineType": "dash",
+          "style": {
+            "top": 500,
+            "justifyContent": "center"
+          }
+        },
+        {
+          "id": "ten",
+          "libId": 3,
+          "lineWidth": 2,
+          "radius": 30,
+          "width": 120,
+          "height": 150,
+          "upLine": 0,
+          "anchorY": 0.5,
+          "anchorX": 0.5,
+          "style": {
+            "top": 300,
+            "left": 200
+          }
+        },
+        {
+          "id": "many",
+          "libId": 3,
+          "lineWidth": 1,
+          "width": 200,
+          "height": 50,
+          "style": {
+            "top": 400,
+            "justifyContent": "center"
+          }
+        },
+        {
+          "id": "many",
+          "libId": 3,
+          "lineWidth": 1,
+          "color": 65280,
+          "width": 50,
+          "height": 40,
+          "style": {
+            "top": 400,
+            "justifyContent": "left"
+          }
+        }
+      ],
+      "actionList": [
+        {
+          "type": 13,
+          "event": "Add",
+          "target": [
+            11,
+            []
+          ],
+          "execute": [
+            {
+              "type": 37,
+              "variableType": "boolean",
+              "value": true,
+              "varId": "boo1"
+            },
+            {
+              "type": 37,
+              "variableType": "boolean",
+              "value": true,
+              "varId": "boo2"
+            },
+            {
+              "type": 43,
+              "execute": [
+                {
+                  "type": 6,
+                  "express": [
+                    [
+                      4,
+                      [
+                        "ten"
+                      ],
+                      "rotation"
+                    ],
+                    [
+                      5,
+                      "="
+                    ],
+                    [
+                      4,
+                      [
+                        "ten"
+                      ],
+                      "rotation"
+                    ],
+                    [
+                      5,
+                      "+"
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "1": {
+      "type": "Image",
+      "src": 1,
+      "style": {
+        "width": 83,
+        "height": 138,
+        "justifyContent": "center"
+      }
+    },
+    "2": {
+      "type": "Label",
+      "style": {
+        "width": 100,
+        "justifyContent": "center"
+      }
+    },
+    "3": {
+      "type": "Isosceles",
+      "lineColor": 16711680,
+      "lineWidth": 1,
+      "upLine": 50,
+      "downLine": 100,
+      "radius": 100
+    }
+  },
+  "name": "VFT2J",
+  "width": 405,
+  "height": 720,
+  "version": "0.0.1",
+  "baseUrl": "",
+  "loadMode": "all",
+  "conversion": "",
+  "scaleMode": "showAll",
+  "launcherVersion": "0.5.74"
+}
