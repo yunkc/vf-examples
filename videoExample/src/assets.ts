@@ -4,17 +4,17 @@ import { Assets, AssetType } from '../types/IVFTemplate'
 const assets: Assets = {
     [AssetId.up]: {
         type: AssetType.image,
-        url: 'https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_up.png',
+        url: 'https://vipkid-edu.github.io/vf-examples/assets/skin/Button/button_up.png',
         name: AssetId.up.toString()
     },
     [AssetId.move]: {
         type: AssetType.image,
-        url: 'https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_move.png',
+        url: 'https://vipkid-edu.github.io/vf-examples/assets/skin/Button/button_move.png',
         name: AssetId.move.toString()
     },
     [AssetId.down]: {
         type: AssetType.image,
-        url: 'https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_down.png',
+        url: 'https://vipkid-edu.github.io/vf-examples/assets/skin/Button/button_down.png',
         name: AssetId.down.toString()
     },
     [AssetId.video]: {
@@ -24,7 +24,7 @@ const assets: Assets = {
     },
     [AssetId.poster]: {
         type: AssetType.image,
-        url: 'https://vipkid-edu.github.io/vf-gui/play/assets/video/friday.png',
+        url: 'https://vipkid-edu.github.io/vf-examples/assets/video/friday.png',
         name: AssetId.poster.toString()
     },
 }
