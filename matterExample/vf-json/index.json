@@ -1,0 +1,518 @@
+{
+  "assets": {
+    "0": {
+      "type": "js",
+      "url": "//s.vipkidstatic.com/vf/plugin/Matter/0.0.1.js?555",
+      "name": "Matter"
+    },
+    "2": {
+      "type": "image",
+      "url": "//vipkid-edu.github.io/vf-examples/assets/matter/cloth.png",
+      "name": "2"
+    },
+    "3": {
+      "type": "image",
+      "url": "//vipkid-edu.github.io/vf-examples/assets/matter/bird.png",
+      "name": "3"
+    },
+    "4": {
+      "type": "image",
+      "url": "//vipkid-edu.github.io/vf-examples/assets/matter/pig.png",
+      "name": "4"
+    },
+    "5": {
+      "type": "image",
+      "url": "//vipkid-edu.github.io/vf-examples/assets/matter//wood.png",
+      "name": "5"
+    }
+  },
+  "global": {},
+  "scenes": [
+    {
+      "id": 1,
+      "libId": "1"
+    }
+  ],
+  "components": {
+    "0": {
+      "type": "Matter",
+      "options": {
+        "mouseConstraint": true
+      }
+    },
+    "1": {
+      "type": "custom",
+      "interactabled": false,
+      "children": [
+        {
+          "id": "matter",
+          "libId": 0,
+          "bodies": [
+            {
+              "id": 1,
+              "shape": "rectangle",
+              "width": 100,
+              "height": 32,
+              "displayObject": "this#container#ceil",
+              "x": 200,
+              "y": 200,
+              "isStatic": true,
+              "group": -1
+            },
+            {
+              "id": 2,
+              "shape": "rectangle",
+              "width": 400,
+              "height": 20,
+              "displayObject": "this#container#left",
+              "isStatic": true,
+              "angle": 1.5707963267948966,
+              "x": 50,
+              "y": 400,
+              "group": -1
+            },
+            {
+              "id": 10000,
+              "shape": "rectangle",
+              "width": 400,
+              "height": 20,
+              "displayObject": "this#container#right",
+              "isStatic": true,
+              "angle": 1.5707963267948966,
+              "x": 350,
+              "y": 350,
+              "group": -1
+            },
+            {
+              "id": 3,
+              "shape": "rectangle",
+              "width": 400,
+              "height": 20,
+              "displayObject": "this#container#floor",
+              "isStatic": true,
+              "angle": 0.1,
+              "x": 150,
+              "y": 600,
+              "group": -1
+            },
+            {
+              "id": 4,
+              "shape": "circle",
+              "radius": 20,
+              "displayObject": "this#container#bird1",
+              "x": 200,
+              "y": 0,
+              "restitution": 0.5
+            },
+            {
+              "id": 5,
+              "shape": "circle",
+              "radius": 20,
+              "displayObject": "this#container#bird2",
+              "x": 200,
+              "y": 0,
+              "restitution": 0.5
+            },
+            {
+              "id": 6,
+              "shape": "circle",
+              "radius": 20,
+              "displayObject": "this#container#bird3",
+              "x": 200,
+              "y": -30,
+              "restitution": 0.2
+            },
+            {
+              "id": 7,
+              "shape": "circle",
+              "radius": 20,
+              "displayObject": "this#container#bird4",
+              "x": 180,
+              "y": -60,
+              "restitution": 0.7
+            },
+            {
+              "id": 8,
+              "shape": "rectangle",
+              "width": 50,
+              "height": 20,
+              "displayObject": "this#container#wheel1",
+              "x": 200,
+              "y": 500,
+              "isStatic": true,
+              "angle": 1.5707963267948966,
+              "group": -1
+            },
+            {
+              "id": 9,
+              "shape": "rectangle",
+              "width": 200,
+              "height": 20,
+              "displayObject": "this#container#wheel2",
+              "x": 200,
+              "y": 300,
+              "group": -1
+            },
+            {
+              "id": 10,
+              "shape": "rectangle",
+              "width": 200,
+              "height": 20,
+              "displayObject": "this#container#wheel3",
+              "x": 200,
+              "y": 300,
+              "angle": 1.5707963267948966,
+              "group": -1
+            }
+          ],
+          "constraints": [
+            {
+              "ids": [
+                1
+              ],
+              "bodies": [
+                8,
+                9
+              ],
+              "pointAX": 0,
+              "pointAY": -25,
+              "pointBX": 0,
+              "pointBY": 0,
+              "stiffness": 1,
+              "length": 0
+            },
+            {
+              "ids": [
+                1
+              ],
+              "bodies": [
+                8,
+                10
+              ],
+              "pointAX": 0,
+              "pointAY": -25,
+              "pointBX": 0,
+              "pointBY": 0,
+              "stiffness": 1,
+              "length": 0
+            },
+            {
+              "ids": [
+                2
+              ],
+              "bodies": [
+                9,
+                10
+              ],
+              "pointAX": 100,
+              "pointAY": 0,
+              "pointBX": 100,
+              "pointBY": 0,
+              "stiffness": 1,
+              "length": 0
+            }
+          ]
+        },
+        {
+          "id": "container",
+          "libId": 9
+        }
+      ],
+      "actionList": [
+        {
+          "type": 13,
+          "event": "Added",
+          "target": [
+            11,
+            []
+          ],
+          "execute": [
+            {
+              "type": 37,
+              "variableType": "object",
+              "value": "",
+              "varId": "matter"
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  1,
+                  [],
+                  "matter"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  11,
+                  [
+                    "matter"
+                  ]
+                ]
+              ]
+            },
+            {
+              "type": 12,
+              "target": [
+                1,
+                [],
+                "matter"
+              ],
+              "name": "emitBodies",
+              "params": [
+                [
+                  0,
+                  200
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  50
+                ],
+                [
+                  0,
+                  5
+                ],
+                [
+                  0,
+                  {
+                    "shape": "circle",
+                    "radius": 20,
+                    "displayObject": "",
+                    "density": 0.01,
+                    "restitution": 0.2
+                  }
+                ],
+                [
+                  0,
+                  200
+                ],
+                [
+                  0,
+                  3
+                ]
+              ]
+            },
+            {
+              "type": 12,
+              "target": [
+                1,
+                [],
+                "matter"
+              ],
+              "name": "emitBodies",
+              "params": [
+                [
+                  0,
+                  200
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  10
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  {
+                    "shape": "rectangle",
+                    "width": 40,
+                    "height": 40,
+                    "displayObject": "",
+                    "density": 0.01,
+                    "restitution": 0.2
+                  }
+                ],
+                [
+                  0,
+                  16776960
+                ]
+              ]
+            },
+            {
+              "type": 12,
+              "target": [
+                1,
+                [],
+                "matter"
+              ],
+              "name": "cloth",
+              "params": [
+                [
+                  0,
+                  155
+                ],
+                [
+                  0,
+                  200
+                ],
+                [
+                  0,
+                  100
+                ],
+                [
+                  0,
+                  200
+                ],
+                [
+                  0,
+                  0.6
+                ],
+                [
+                  0,
+                  2
+                ]
+              ]
+            },
+            {
+              "type": 12,
+              "target": [
+                1,
+                [],
+                "matter"
+              ],
+              "name": "stack",
+              "params": [
+                [
+                  0,
+                  150
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  0,
+                  {
+                    "shape": "circle",
+                    "radius": 20,
+                    "displayObject": "",
+                    "density": 0.01,
+                    "restitution": 0.2
+                  }
+                ],
+                [
+                  0,
+                  200
+                ],
+                [
+                  0,
+                  4
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "6": {
+      "type": "Label",
+      "text": "Matter physics test",
+      "pivotX": 50,
+      "pivotY": 15,
+      "style": {
+        "backgroundColor": 65535,
+        "color": 16711680,
+        "fontSize": 12
+      }
+    },
+    "7": {
+      "type": "Rect",
+      "color": 16711935,
+      "width": 400,
+      "height": 20,
+      "anchorX": 0.5,
+      "anchorY": 0.5
+    },
+    "8": {
+      "type": "Image",
+      "anchorX": 0.5,
+      "anchorY": 0.5
+    },
+    "9": {
+      "type": "custom",
+      "children": [
+        {
+          "id": "ceil",
+          "libId": 6
+        },
+        {
+          "id": "floor",
+          "libId": 7
+        },
+        {
+          "id": "left",
+          "libId": 7
+        },
+        {
+          "id": "right",
+          "libId": 7
+        },
+        {
+          "id": "bird1",
+          "libId": 8,
+          "src": 3
+        },
+        {
+          "id": "bird2",
+          "libId": 8,
+          "src": 3
+        },
+        {
+          "id": "bird3",
+          "libId": 8,
+          "src": 3
+        },
+        {
+          "id": "bird4",
+          "libId": 8,
+          "src": 3
+        },
+        {
+          "id": "wheel1",
+          "libId": 8,
+          "src": 5,
+          "width": 50
+        },
+        {
+          "id": "wheel2",
+          "libId": 8,
+          "src": 5
+        },
+        {
+          "id": "wheel3",
+          "libId": 8,
+          "src": 5
+        }
+      ]
+    }
+  },
+  "name": "VFT2J",
+  "width": 405,
+  "height": 720,
+  "version": "0.0.1",
+  "baseUrl": "",
+  "loadMode": "all",
+  "conversion": "",
+  "scaleMode": "showAll",
+  "launcherVersion": "0.6.28"
+}
