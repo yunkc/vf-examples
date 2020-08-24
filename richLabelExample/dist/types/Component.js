@@ -1,0 +1,22 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.guiType = void 0;
+var guiType;
+(function (guiType) {
+    guiType["Rect"] = "Rect";
+    guiType["Text"] = "Label";
+    guiType["Image"] = "Image";
+    guiType["Custom"] = "custom";
+    guiType["Slider"] = "Slider";
+    guiType["Circle"] = "Circle";
+    guiType["Button"] = "Button";
+    guiType["CheckBox"] = "CheckBox";
+    guiType["TextInput"] = "TextInput";
+    guiType["Evaluater"] = "Evaluater";
+    guiType["FollowLine"] = "FollowLine";
+    guiType["ConnectLine"] = "ConnectLine";
+    guiType["SpriteAnimated"] = "SpriteAnimated";
+    guiType["Audio"] = "Audio";
+    guiType["Star"] = "Star";
+    guiType["Arrow"] = "Arrow";
+})(guiType = exports.guiType || (exports.guiType = {}));

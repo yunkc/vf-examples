@@ -4,6 +4,11 @@
       "type": "image",
       "url": "https://vipkid-edu.github.io/vf-examples/assets/dino.png",
       "name": "1"
+    },
+    "3": {
+      "type": "js",
+      "url": "//s.vipkidstatic.com/vf/plugin/RichLabel/0.0.3.js",
+      "name": "RichLabel"
     }
   },
   "global": {},
@@ -28,58 +33,16 @@
         {
           "id": 2,
           "libId": 2,
-          "text": "等腰三角形梯形接口示例",
+          "text": "箭头接口示例",
           "style": {
             "top": 160
           }
         },
         {
-          "id": 3,
+          "id": "RichLabel",
           "libId": 3,
-          "width": 200,
-          "height": 50,
-          "lineType": "dash",
           "style": {
-            "top": 500,
-            "justifyContent": "center"
-          }
-        },
-        {
-          "id": "ten",
-          "libId": 3,
-          "lineWidth": 2,
-          "radius": 30,
-          "width": 120,
-          "height": 150,
-          "upLine": 0,
-          "anchorY": 0.5,
-          "anchorX": 0.5,
-          "style": {
-            "top": 300,
-            "left": 200
-          }
-        },
-        {
-          "id": "many",
-          "libId": 3,
-          "lineWidth": 1,
-          "width": 200,
-          "height": 50,
-          "style": {
-            "top": 400,
-            "justifyContent": "center"
-          }
-        },
-        {
-          "id": "many",
-          "libId": 3,
-          "lineWidth": 1,
-          "color": 65280,
-          "width": 50,
-          "height": 40,
-          "style": {
-            "top": 400,
-            "justifyContent": "left"
+            "top": 160
           }
         }
       ],
@@ -92,6 +55,18 @@
             []
           ],
           "execute": [
+            {
+              "type": 37,
+              "variableType": "boolean",
+              "value": true,
+              "varId": "boo1"
+            },
+            {
+              "type": 37,
+              "variableType": "boolean",
+              "value": true,
+              "varId": "boo2"
+            },
             {
               "type": 43,
               "execute": [
@@ -149,12 +124,9 @@
       }
     },
     "3": {
-      "type": "Isosceles",
-      "lineColor": 16711680,
-      "lineWidth": 1,
-      "upLine": 50,
-      "downLine": 100,
-      "radius": 100
+      "type": "RichLabel",
+      "name": "RichLabel",
+      "textFlow": "<label color=0xff0000,0x00ff00 size=20 letterSpacing=10 >富文本组件</label><label color=0x336699 size=60 stroke=0x00ff00 strokeThickness=2>RichLabel</label><label fontfamily=\"楷体\" href=\"https://vipkid-edu.github.io/vf-docs/\" textdecoration=\"UnderLine\" textDecorationColor=\"#00ff99\">https://vipkid-edu.github.io/vf-docs/</label><label fontfamily=\"楷体\"><u>各种</u></label><label color=0xff0000>五</label><label color=0x00ff00>彩</label><label color=0xf000f0>缤</label><label color=0x00ffff>纷</label><label>、\n1</label><label size=56 fontStyle=\"italic\" fontWeight=\"bold\">大</label><label size=16 sup=false>小</label><label size=16>不</label><label size=34>一</label><label>、</label><label fontWeight=\"bold\">粗</label><label fontWeight=\"lighter\">细</label><label fontWeight=\"normal\">不</label><label fontWeight=\"900\">同</label><label size=30 color=0xf000f0 href=\"event:testClick\">（带有点击事件的）</label><label color=0x00ff00 href=\"event:testClick1\"><i>（格）</i></label><label size=26 color=0xf000f0>式</label><label color=0xf06f00><i>各</i></label><label fontfamily=\"KaiTi\">样的文字</label><label dropShadow=true dropShadowColor=0x00ff00>了！</label>"
     }
   },
   "name": "VFT2J",

@@ -99,11 +99,8 @@ const root = {
     actionList: `
     @this = {
         this.on("Add", () => {
-          var $boo1 = true;
-          var $boo2 = true;
           setEnterFrame(()=>{
-            this#ten.rotation = this#ten.rotation +1;
-          
+            this#ten.rotation = this#ten.rotation +1; 
           });
         });
     }
