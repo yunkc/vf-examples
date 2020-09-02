@@ -1,0 +1,156 @@
+{
+  "assets": {
+    "1": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/dino.png",
+      "name": "1"
+    },
+    "Deviceorientation": {
+      "type": "js",
+      "url": "https://s.vipkidstatic.com/vf/plugin/device/0.0.3.js",
+      "name": "Deviceorientation"
+    }
+  },
+  "global": {},
+  "scenes": [
+    {
+      "id": 0,
+      "libId": "0"
+    }
+  ],
+  "components": {
+    "0": {
+      "type": "custom",
+      "interactabled": false,
+      "children": [
+        {
+          "id": 1,
+          "libId": 1,
+          "style": {
+            "top": 0
+          }
+        },
+        {
+          "id": 2,
+          "libId": 2,
+          "text": "获取设备动作与方向示例",
+          "style": {
+            "top": 160
+          }
+        },
+        {
+          "id": "device",
+          "libId": "3"
+        },
+        {
+          "id": 2,
+          "libId": 2,
+          "text": "请使用移动设备",
+          "style": {
+            "top": 190
+          }
+        },
+        {
+          "id": "deviceInfo",
+          "libId": 2,
+          "text": "参数",
+          "x": 200,
+          "style": {
+            "lineHeight": 45,
+            "top": 220,
+            "justifyContent": "flex-start"
+          }
+        }
+      ],
+      "actionList": [
+        {
+          "type": 11,
+          "name": "onDeviceorientation",
+          "execute": [
+            {
+              "type": 0,
+              "value": [
+                4,
+                [
+                  "device"
+                ],
+                "toString"
+              ]
+            },
+            {
+              "type": 6,
+              "express": [
+                [
+                  4,
+                  [
+                    "deviceInfo"
+                  ],
+                  "text"
+                ],
+                [
+                  5,
+                  "="
+                ],
+                [
+                  4,
+                  [
+                    "device"
+                  ],
+                  "toString"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": 13,
+          "event": "Added",
+          "target": [
+            11,
+            []
+          ],
+          "execute": [
+            {
+              "type": 29,
+              "event": "deviceorientation",
+              "target": [
+                11,
+                [
+                  "device"
+                ]
+              ],
+              "funName": "onDeviceorientation"
+            }
+          ]
+        }
+      ]
+    },
+    "1": {
+      "type": "Image",
+      "width": 83,
+      "height": 138,
+      "src": 1,
+      "style": {
+        "justifyContent": "center"
+      }
+    },
+    "2": {
+      "type": "Label",
+      "width": 100,
+      "style": {
+        "justifyContent": "center"
+      }
+    },
+    "3": {
+      "type": "Deviceorientation"
+    }
+  },
+  "name": "VFT2J",
+  "width": 405,
+  "height": 720,
+  "version": "0.0.1",
+  "baseUrl": "",
+  "loadMode": "all",
+  "conversion": "",
+  "scaleMode": "showAll"
+}
