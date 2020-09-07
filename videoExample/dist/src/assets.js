@@ -5,17 +5,17 @@ const IVFTemplate_1 = require("../types/IVFTemplate");
 const assets = {
     [store_1.AssetId.up]: {
         type: IVFTemplate_1.AssetType.image,
-        url: 'https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_up.png',
+        url: 'https://vipkid-edu.github.io/vf-examples/assets/skin/Button/button_up.png',
         name: store_1.AssetId.up.toString()
     },
     [store_1.AssetId.move]: {
         type: IVFTemplate_1.AssetType.image,
-        url: 'https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_move.png',
+        url: 'https://vipkid-edu.github.io/vf-examples/assets/skin/Button/button_move.png',
         name: store_1.AssetId.move.toString()
     },
     [store_1.AssetId.down]: {
         type: IVFTemplate_1.AssetType.image,
-        url: 'https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_down.png',
+        url: 'https://vipkid-edu.github.io/vf-examples/assets/skin/Button/button_down.png',
         name: store_1.AssetId.down.toString()
     },
     [store_1.AssetId.video]: {
@@ -25,7 +25,7 @@ const assets = {
     },
     [store_1.AssetId.poster]: {
         type: IVFTemplate_1.AssetType.image,
-        url: 'https://vipkid-edu.github.io/vf-gui/play/assets/video/friday.png',
+        url: 'https://vipkid-edu.github.io/vf-examples/assets/video/friday.png',
         name: store_1.AssetId.poster.toString()
     },
 };
