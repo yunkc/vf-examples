@@ -55,7 +55,7 @@ const assets: Assets = {
   },
   [Ids.spineComp]: {
     type: AssetType.js,
-    url: "https://s.vipkidstatic.com/vf/plugin/spine/0.0.3.js",
+    url: "https://s.vipkidstatic.com/vf/plugin/spine/0.0.5.js",
     name: "Spine"
   }
 };
