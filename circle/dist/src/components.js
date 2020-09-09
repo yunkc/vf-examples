@@ -23,9 +23,8 @@ const circle = {
     type: Component_1.guiType.Circle,
     lineColor: 0xff00cc,
     lineWidth: 1,
-    radius: 50,
-    width: 1,
-    height: 1
+    width: 100,
+    height: 100
 };
 const root = {
     type: Component_1.guiType.Custom,
@@ -51,8 +50,8 @@ const root = {
             libId: store_1.Ids.circle,
             color: 0xffffff,
             style: {
-                top: 250,
-                left: 60
+                top: 0,
+                left: 0,
             }
         },
         {

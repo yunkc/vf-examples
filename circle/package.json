@@ -8,7 +8,7 @@
     "start": "tsc -w & node build/t2j.core.js"
   },
   "dependencies": {
-    "@vf.js/launcher": "^0.5.61",
+    "@vf.js/launcher": "^0.7.2",
     "@vf.js/vfx": "latest",
     "axios": "^0.19.2",
     "chokidar": "^3.3.0",

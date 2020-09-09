@@ -9,7 +9,7 @@ const assets: Assets = {
     },
     [Ids.richLabel]: {
         type: AssetType.js,
-        url: "//s.vipkidstatic.com/vf/plugin/RichLabel/0.0.3.js",
+        url: "//s.vipkidstatic.com/vf/plugin/RichLabel/0.0.4.js",
         name: "RichLabel",
     }
 }

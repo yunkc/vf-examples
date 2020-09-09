@@ -25,7 +25,6 @@ const richLabel = {
     style: {
         width: 300,
         justifyContent: "center",
-        color: 0xffffff
     },
     textFlow: '<label color=0xff0000,0x00ff00 fontSize=20 letterSpacing=10 >富文本组件</label>'
         + '<label color=0x336699 fontSize=60 stroke=0x00ff00 strokeThickness=2>RichLabel</label>'

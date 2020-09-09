@@ -2,7 +2,7 @@
   "assets": {
     "1": {
       "type": "image",
-      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/dino.png",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/dino.png",
       "name": "1"
     }
   },
@@ -38,8 +38,8 @@
           "libId": 3,
           "color": 16777215,
           "style": {
-            "top": 250,
-            "left": 60
+            "top": 0,
+            "left": 0
           }
         },
         {
@@ -304,9 +304,8 @@
       "type": "Circle",
       "lineColor": 16711884,
       "lineWidth": 1,
-      "radius": 50,
-      "width": 1,
-      "height": 1
+      "width": 100,
+      "height": 100
     }
   },
   "name": "VFT2J",

@@ -28,9 +28,9 @@ const circle: gui.Circle = {
   type: guiType.Circle,
   lineColor: 0xff00cc,
   lineWidth: 1,
-  radius: 50, //半径
-  width: 1,
-  height: 1
+  // radius: 50, //半径
+  width: 100,
+  height: 100
 }
 
 const root: gui.Custom = {

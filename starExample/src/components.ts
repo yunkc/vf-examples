@@ -30,7 +30,8 @@ const star: gui.Star = {
   lineColor: 0xff0000,
   lineWidth: 1,
   triangleNum: 5,
-  radius: 100,
+  width: 200,
+  height: 200,
   fillStar: true,
 }
 
@@ -57,7 +58,7 @@ const root: gui.Custom = {
       id: Ids.star,
       libId: Ids.star,
       color: 0x0000ff,
-      anchorX: -50,
+      // anchorX: -50,
       style: {
         top: 500,
         justifyContent: "center",
@@ -68,8 +69,8 @@ const root: gui.Custom = {
       libId: Ids.star,
       lineWidth: 1,
       triangleNum: 10,
-      radius: 30,
-      fillStar: false,
+      width: 60,
+      height: 60,
       style: {
         top: 300,
         left: 30,
@@ -80,8 +81,8 @@ const root: gui.Custom = {
       libId: Ids.star,
       lineWidth: 1,
       triangleNum: 1,
-      radius: 100,
-      fillStar: false,
+      width: 200,
+      height: 200,
       style: {
         top: 300,
         left: 200,
@@ -92,12 +93,12 @@ const root: gui.Custom = {
       libId: Ids.star,
       lineWidth: 1,
       triangleNum: 5,
-      innerRadius: 30,
-      radius: 60,
-      fillStar: false,
+      innerRadius: 0.5,
+      width: 120,
+      height: 120,
       style: {
         top: 410,
-        left: 320,
+        left: 20,
       }
     }
 
@@ -112,8 +113,8 @@ const root: gui.Custom = {
             if($boo1){
               if(this#many.triangleNum <= 100){
                 this#many.triangleNum = this#many.triangleNum +1;
-                if(this#innerChange.innerRadius <= 60){
-                  this#innerChange.innerRadius = this#innerChange.innerRadius +1;
+                if(this#innerChange.innerRadius < 0.8){
+                  this#innerChange.innerRadius = this#innerChange.innerRadius +0.1;
                 }
               }else{
                 $boo1 = false
@@ -121,8 +122,8 @@ const root: gui.Custom = {
             }else{
               if(this#many.triangleNum >=2){
                 this#many.triangleNum = this#many.triangleNum -1;
-                if(this#innerChange.innerRadius >=2){
-                  this#innerChange.innerRadius = this#innerChange.innerRadius -1;
+                if(this#innerChange.innerRadius >0.1){
+                  this#innerChange.innerRadius = this#innerChange.innerRadius -0.1;
                 }
               }else{
                 $boo1 = true

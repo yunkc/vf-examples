@@ -2,59 +2,61 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="full-screen" content="true" />
-    <meta name="screen-orientation" content="portrait" />
-    <meta name="x5-fullscreen" content="true" />
-    <meta name="360-fullscreen" content="true" />
-    <title>vf</title>
-    <style>
-        html,
-        body {
-            padding: 0;
-            border: 0;
-            margin: 0;
-            height: 100%;
-            background:rgb(56, 56, 55);
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="full-screen" content="true" />
+  <meta name="screen-orientation" content="portrait" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="360-fullscreen" content="true" />
+  <title>vf</title>
+  <style>
+    html,
+    body {
+      padding: 0;
+      border: 0;
+      margin: 0;
+      height: 100%;
+      background: rgb(56, 56, 55);
+    }
+  </style>
 </head>
 
 <body>
-    <div id="vf-container"></div>
-    <script src="node_modules/@vf.js/launcher/dist/launcher.min.js"></script>
-    <script>
-      const VF_CONFIG = {
-        debug: true,
-        container: document.querySelector('#vf-container')
+  <div id="vf-container"></div>
+  <script src="node_modules/@vf.js/launcher/dist/launcher.min.js"></script>
+  <script>
+    const VF_CONFIG = {
+      debug: true,
+      container: document.querySelector('#vf-container'),
+      // debugGuiPath: 'http://172.24.80.77:8080/dist/gui.js',
+    }
+
+    createVF(VF_CONFIG, function (player) {
+      player.onReady = function () {
+        console.log("onReady"); //初始化完成
       }
 
-      createVF(VF_CONFIG, function (player) {
-          player.onReady = function() {
-            console.log("onReady"); //初始化完成
-          }
+      player.onSceneCreate = function () {
+        console.log("onSceneCreate"); //资源加载完成
+      }
 
-          player.onSceneCreate = function() {
-            console.log("onSceneCreate"); //资源加载完成
-          }
+      player.onMessage = function (msg) {
+        console.log("onMessage ==>", msg);
+      }
 
-          player.onMessage = function(msg) {
-            console.log("onMessage ==>", msg);
-          }
+      player.onError = function (evt) {
+        console.log("onError ==>", evt);
+      }
 
-          player.onError = function(evt) {
-            console.log("onError ==>", evt);
-          }
+      player.onDispose = function () {
+        console.log("onDispose");
+      }
 
-          player.onDispose = function() {
-            console.log("onDispose");
-          }
-
-          player.play('./vf-json/index.json')
-        });
-    </script>
+      player.play('./vf-json/index.json')
+    });
+  </script>
 </body>
 
 </html>

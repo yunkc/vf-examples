@@ -2,7 +2,7 @@
   "assets": {
     "1": {
       "type": "image",
-      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/dino.png",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/dino.png",
       "name": "1"
     }
   },
@@ -37,7 +37,6 @@
           "id": 3,
           "libId": 3,
           "color": 255,
-          "anchorX": -50,
           "style": {
             "top": 500,
             "justifyContent": "center"
@@ -48,8 +47,8 @@
           "libId": 3,
           "lineWidth": 1,
           "triangleNum": 10,
-          "radius": 30,
-          "fillStar": false,
+          "width": 60,
+          "height": 60,
           "style": {
             "top": 300,
             "left": 30
@@ -60,8 +59,8 @@
           "libId": 3,
           "lineWidth": 1,
           "triangleNum": 1,
-          "radius": 100,
-          "fillStar": false,
+          "width": 200,
+          "height": 200,
           "style": {
             "top": 300,
             "left": 200
@@ -72,12 +71,12 @@
           "libId": 3,
           "lineWidth": 1,
           "triangleNum": 5,
-          "innerRadius": 30,
-          "radius": 60,
-          "fillStar": false,
+          "innerRadius": 0.5,
+          "width": 120,
+          "height": 120,
           "style": {
             "top": 410,
-            "left": 320
+            "left": 20
           }
         }
       ],
@@ -218,11 +217,11 @@
                                         ],
                                         [
                                           5,
-                                          "<="
+                                          "<"
                                         ],
                                         [
                                           0,
-                                          60
+                                          0.8
                                         ]
                                       ],
                                       "execute": [
@@ -253,7 +252,7 @@
                                             ],
                                             [
                                               0,
-                                              1
+                                              0.1
                                             ]
                                           ]
                                         }
@@ -362,11 +361,11 @@
                                         ],
                                         [
                                           5,
-                                          ">="
+                                          ">"
                                         ],
                                         [
                                           0,
-                                          2
+                                          0.1
                                         ]
                                       ],
                                       "execute": [
@@ -397,7 +396,7 @@
                                             ],
                                             [
                                               0,
-                                              1
+                                              0.1
                                             ]
                                           ]
                                         }
@@ -463,7 +462,8 @@
       "lineColor": 16711680,
       "lineWidth": 1,
       "triangleNum": 5,
-      "radius": 100,
+      "width": 200,
+      "height": 200,
       "fillStar": true
     }
   },
@@ -475,5 +475,5 @@
   "loadMode": "all",
   "conversion": "",
   "scaleMode": "showAll",
-  "launcherVersion": "0.5.74"
+  "launcherVersion": "0.7.2"
 }
