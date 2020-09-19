@@ -2,52 +2,42 @@
   "assets": {
     "1": {
       "type": "image",
-      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Slider/thumb.png",
+      "url": "",
       "name": "1"
     },
     "2": {
       "type": "image",
-      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Slider/track.png",
+      "url": "",
       "name": "2"
     },
     "3": {
       "type": "image",
-      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_up.png",
+      "url": "",
       "name": "3"
     },
     "4": {
       "type": "image",
-      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_down.png",
+      "url": "",
       "name": "4"
     },
     "5": {
       "type": "image",
-      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Button/button_move.png",
+      "url": "",
       "name": "5"
     },
     "6": {
       "type": "image",
-      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Slider/tracklight.png",
+      "url": "",
       "name": "6"
     },
     "7": {
       "type": "other",
-      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/spine/eddy.json",
+      "url": "./assets/g1lv3_sp2.json",
       "name": "7"
-    },
-    "8": {
-      "type": "other",
-      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/spine/eddy.atlas",
-      "name": "8"
-    },
-    "9": {
-      "type": "image",
-      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/spine/eddy.png",
-      "name": "9"
     },
     "13": {
       "type": "js",
-      "url": "https://s.vipkidstatic.com/vf/plugin/spine/0.0.3.js",
+      "url": "https://s.vipkidstatic.com/vf/plugin/spine/0.0.5.js",
       "name": "Spine"
     }
   },
@@ -120,7 +110,7 @@
         {
           "id": "gotoPlayBtn",
           "libId": 11,
-          "text": "跳转到第几帧播放",
+          "text": "设置皮肤",
           "x": 250,
           "y": 340
         }
@@ -348,11 +338,11 @@
                   "eddy"
                 ]
               ],
-              "name": "gotoAndPlayByFrame",
+              "name": "setSkinByName",
               "params": [
                 [
                   0,
-                  2
+                  "g1lv3_1"
                 ]
               ]
             }
@@ -495,11 +485,9 @@
     },
     "10": {
       "type": "Spine",
-      "sourceSke": 7,
-      "sourceAtlas": 8,
-      "sourceTex": 9,
+      "source": 7,
       "autoPlay": true,
-      "animationName": "breathe",
+      "animationName": "idle",
       "loop": true,
       "timeScale": 1
     },

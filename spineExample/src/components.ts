@@ -8,11 +8,9 @@ import { Components } from "../types/IVFTemplate";
 
 const spine = {
   type: "Spine",
-  sourceSke: Ids.ske_json,
-  sourceAtlas: Ids.ske_atlas,
-  sourceTex: Ids.ske_tex,
+  source: Ids.ske_json,
   autoPlay: true,
-  animationName: "breathe",
+  animationName: "idle",
   loop: true,
   timeScale: 1
 };
@@ -100,7 +98,7 @@ const root: gui.Custom = {
     {
       id: "gotoPlayBtn",
       libId: Ids.btn,
-      text: "跳转到第几帧播放",
+      text: "设置皮肤",
       x: 250,
       y: 340
     }
@@ -146,7 +144,7 @@ const root: gui.Custom = {
         this#eddy.gotoAndStopByFrame(2);
       });
       this#gotoPlayBtn.on("click", () => {
-        this#eddy.gotoAndPlayByFrame(2);
+        this#eddy.setSkinByName('g1lv3_1');
       });
       this#slider.on('CHANGE',this.onChange);
       function onChange($target, $value){

@@ -4,11 +4,9 @@ const store_1 = require("./store");
 const Component_1 = require("../types/Component");
 const spine = {
     type: "Spine",
-    ske_json: store_1.Ids.ske_json,
-    ske_atlas: store_1.Ids.ske_atlas,
-    ske_tex: store_1.Ids.ske_tex,
+    source: store_1.Ids.ske_json,
     autoPlay: true,
-    animationName: "breathe",
+    animationName: "idle",
     loop: true,
     timeScale: 1
 };
@@ -93,7 +91,7 @@ const root = {
         {
             id: "gotoPlayBtn",
             libId: store_1.Ids.btn,
-            text: "跳转到第几帧播放",
+            text: "设置皮肤",
             x: 250,
             y: 340
         }
@@ -139,7 +137,7 @@ const root = {
         this#eddy.gotoAndStopByFrame(2);
       });
       this#gotoPlayBtn.on("click", () => {
-        this#eddy.gotoAndPlayByFrame(2);
+        this#eddy.setSkinByName('g1lv3_1');
       });
       this#slider.on('CHANGE',this.onChange);
       function onChange($target, $value){
