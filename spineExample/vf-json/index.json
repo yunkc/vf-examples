@@ -2,42 +2,42 @@
   "assets": {
     "1": {
       "type": "image",
-      "url": "",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/skin/Slider/thumb.png",
       "name": "1"
     },
     "2": {
       "type": "image",
-      "url": "",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/skin/Slider/track.png",
       "name": "2"
     },
     "3": {
       "type": "image",
-      "url": "",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/skin/Button/button_up.png",
       "name": "3"
     },
     "4": {
       "type": "image",
-      "url": "",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/skin/Button/button_down.png",
       "name": "4"
     },
     "5": {
       "type": "image",
-      "url": "",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/skin/Button/button_move.png",
       "name": "5"
     },
     "6": {
       "type": "image",
-      "url": "",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/skin/Slider/tracklight.png",
       "name": "6"
     },
     "7": {
       "type": "other",
-      "url": "./assets/g1lv3_sp2.json",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/spine/g1lv1_sp1.json",
       "name": "7"
     },
     "13": {
       "type": "js",
-      "url": "https://s.vipkidstatic.com/vf/plugin/spine/0.0.5.js",
+      "url": "https://s.vipkidstatic.com/vf/plugin/spine/0.0.10.js",
       "name": "Spine"
     }
   },
@@ -57,7 +57,7 @@
           "id": "eddy",
           "libId": 10,
           "x": 100,
-          "y": 200
+          "y": 250
         },
         {
           "id": "slider",
@@ -108,11 +108,18 @@
           "y": 300
         },
         {
-          "id": "gotoPlayBtn",
+          "id": "setSkinBtn1",
           "libId": 11,
-          "text": "设置皮肤",
+          "text": "设置皮肤1",
           "x": 250,
           "y": 340
+        },
+        {
+          "id": "setSkinBtn2",
+          "libId": 11,
+          "text": "设置皮肤2",
+          "x": 250,
+          "y": 380
         }
       ],
       "actionList": [
@@ -149,15 +156,15 @@
               "variableType": "array",
               "value": [
                 {
-                  "name": "happyspeak",
+                  "name": "happy",
                   "loop": false
                 },
                 {
-                  "name": "sad-speak",
+                  "name": "pose",
                   "loop": false
                 },
                 {
-                  "name": "cheer",
+                  "name": "wrong",
                   "loop": false
                 }
               ],
@@ -187,7 +194,7 @@
               "params": [
                 [
                   0,
-                  "cheer"
+                  "happy"
                 ],
                 [
                   0,
@@ -326,7 +333,7 @@
           "target": [
             11,
             [
-              "gotoPlayBtn"
+              "setSkinBtn1"
             ]
           ],
           "execute": [
@@ -342,7 +349,35 @@
               "params": [
                 [
                   0,
-                  "g1lv3_1"
+                  "g1lv1_1"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": 13,
+          "event": "click",
+          "target": [
+            11,
+            [
+              "setSkinBtn2"
+            ]
+          ],
+          "execute": [
+            {
+              "type": 12,
+              "target": [
+                11,
+                [
+                  "eddy"
+                ]
+              ],
+              "name": "setSkinByName",
+              "params": [
+                [
+                  0,
+                  "g1lv1_2"
                 ]
               ]
             }
@@ -451,28 +486,15 @@
                     ],
                     [
                       0,
-                      "cheer"
+                      "happy"
                     ]
                   ],
                   "execute": [
                     {
-                      "type": 12,
-                      "target": [
-                        11,
-                        [
-                          "eddy"
-                        ]
-                      ],
-                      "name": "play",
-                      "params": [
-                        [
-                          0,
-                          "breathe"
-                        ],
-                        [
-                          0,
-                          true
-                        ]
+                      "type": 0,
+                      "value": [
+                        0,
+                        "播放完成"
                       ]
                     }
                   ]
@@ -493,7 +515,7 @@
     },
     "11": {
       "type": "Button",
-      "width": 150,
+      "width": 180,
       "height": 30,
       "up": 3,
       "down": 4,

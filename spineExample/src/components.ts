@@ -17,7 +17,7 @@ const spine = {
 
 const button: gui.Button = {
   type: guiType.Button,
-  width: 150,
+  width: 180,
   height: 30,
   up: Ids.up,
   down: Ids.down,
@@ -45,7 +45,7 @@ const root: gui.Custom = {
       id: "eddy",
       libId: Ids.Spine,
       x: 100,
-      y: 200
+      y: 250
     },
     {
       id: "slider",
@@ -96,11 +96,18 @@ const root: gui.Custom = {
       y: 300
     },
     {
-      id: "gotoPlayBtn",
+      id: "setSkinBtn1",
       libId: Ids.btn,
-      text: "设置皮肤",
+      text: "设置皮肤1",
       x: 250,
       y: 340
+    },
+    {
+      id: "setSkinBtn2",
+      libId: Ids.btn,
+      text: "设置皮肤2",
+      x: 250,
+      y: 380
     }
   ],
   actionList: `
@@ -109,24 +116,24 @@ const root: gui.Custom = {
         this#eddy.play('breathe', true);
         var $animations = [
                 {
-                    name: 'happyspeak',
+                    name: 'happy',
                     loop: false
                 }
                 {
-                    name: 'sad-breath',
+                    name: 'idle',
                     loop: false
                 },
                 {
-                    name: 'sad-speak',
+                    name: 'pose',
                     loop: false
                 },
                 {
-                    name: 'cheer',
+                    name: 'wrong',
                     loop: false
                 }];
       });
       this#playBtn.on("click", () => {
-        this#eddy.play('cheer', false);
+        this#eddy.play('happy', false);
       });
       this#playQueueBtn.on("click", () => {
         this#eddy.playQueue($animations);
@@ -143,8 +150,11 @@ const root: gui.Custom = {
       this#gotoStopBtn.on("click", () => {
         this#eddy.gotoAndStopByFrame(2);
       });
-      this#gotoPlayBtn.on("click", () => {
-        this#eddy.setSkinByName('g1lv3_1');
+      this#setSkinBtn1.on("click", () => {
+        this#eddy.setSkinByName('g1lv1_1');
+      });
+      this#setSkinBtn2.on("click", () => {
+        this#eddy.setSkinByName('g1lv1_2');
       });
       this#slider.on('CHANGE',this.onChange);
       function onChange($target, $value){
@@ -153,8 +163,8 @@ const root: gui.Custom = {
       };
       this#eddy.on("SPINE_COMPLETE", this.animationComplete);
       function animationComplete($animationName){
-        if($animationName == 'cheer'){
-          this#eddy.play('breathe', true);
+        if($animationName == 'happy'){
+          trace('播放完成');
         };
       };
   }

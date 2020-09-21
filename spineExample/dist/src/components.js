@@ -12,7 +12,7 @@ const spine = {
 };
 const button = {
     type: Component_1.guiType.Button,
-    width: 150,
+    width: 180,
     height: 30,
     up: store_1.Ids.up,
     down: store_1.Ids.down,
@@ -38,7 +38,7 @@ const root = {
             id: "eddy",
             libId: store_1.Ids.Spine,
             x: 100,
-            y: 200
+            y: 250
         },
         {
             id: "slider",
@@ -89,11 +89,18 @@ const root = {
             y: 300
         },
         {
-            id: "gotoPlayBtn",
+            id: "setSkinBtn1",
             libId: store_1.Ids.btn,
-            text: "设置皮肤",
+            text: "设置皮肤1",
             x: 250,
             y: 340
+        },
+        {
+            id: "setSkinBtn2",
+            libId: store_1.Ids.btn,
+            text: "设置皮肤2",
+            x: 250,
+            y: 380
         }
     ],
     actionList: `
@@ -102,24 +109,24 @@ const root = {
         this#eddy.play('breathe', true);
         var $animations = [
                 {
-                    name: 'happyspeak',
+                    name: 'happy',
                     loop: false
                 }
                 {
-                    name: 'sad-breath',
+                    name: 'idle',
                     loop: false
                 },
                 {
-                    name: 'sad-speak',
+                    name: 'pose',
                     loop: false
                 },
                 {
-                    name: 'cheer',
+                    name: 'wrong',
                     loop: false
                 }];
       });
       this#playBtn.on("click", () => {
-        this#eddy.play('cheer', false);
+        this#eddy.play('happy', false);
       });
       this#playQueueBtn.on("click", () => {
         this#eddy.playQueue($animations);
@@ -136,8 +143,11 @@ const root = {
       this#gotoStopBtn.on("click", () => {
         this#eddy.gotoAndStopByFrame(2);
       });
-      this#gotoPlayBtn.on("click", () => {
-        this#eddy.setSkinByName('g1lv3_1');
+      this#setSkinBtn1.on("click", () => {
+        this#eddy.setSkinByName('g1lv1_1');
+      });
+      this#setSkinBtn2.on("click", () => {
+        this#eddy.setSkinByName('g1lv1_2');
       });
       this#slider.on('CHANGE',this.onChange);
       function onChange($target, $value){
@@ -146,8 +156,8 @@ const root = {
       };
       this#eddy.on("SPINE_COMPLETE", this.animationComplete);
       function animationComplete($animationName){
-        if($animationName == 'cheer'){
-          this#eddy.play('breathe', true);
+        if($animationName == 'happy'){
+          trace('播放完成');
         };
       };
   }
