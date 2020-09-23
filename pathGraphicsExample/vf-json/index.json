@@ -1,0 +1,130 @@
+{
+  "assets": {
+    "1": {
+      "type": "image",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/dino.png",
+      "name": "1"
+    }
+  },
+  "global": {},
+  "scenes": [
+    {
+      "id": 0,
+      "libId": "0"
+    }
+  ],
+  "components": {
+    "0": {
+      "type": "custom",
+      "interactabled": false,
+      "children": [
+        {
+          "id": 1,
+          "libId": 1,
+          "style": {
+            "top": 0
+          }
+        },
+        {
+          "id": 2,
+          "libId": 2,
+          "text": "路径绘制接口示例",
+          "style": {
+            "top": 160
+          }
+        },
+        {
+          "id": "gggg",
+          "libId": 3,
+          "lineColor": 255,
+          "lineWidth": 3,
+          "beginPort": 2,
+          "lineType": "dash",
+          "endPort": 3,
+          "style": {
+            "top": 200,
+            "left": 100
+          }
+        },
+        {
+          "id": "gggg1",
+          "libId": 3,
+          "lineColor": 65535,
+          "lineWidth": 2,
+          "beginPort": 4,
+          "endPort": 5,
+          "style": {
+            "top": 400,
+            "left": 100
+          }
+        },
+        {
+          "id": "gggg2",
+          "libId": 3,
+          "lineColor": 65280,
+          "path": "M30 630L250 630",
+          "lineWidth": 2,
+          "beginPort": 6,
+          "endPort": 7,
+          "style": {
+            "top": 0,
+            "left": 50
+          }
+        },
+        {
+          "id": "gggg3",
+          "libId": 3,
+          "lineColor": 65280,
+          "path": "M30 670L250 670",
+          "lineWidth": 2,
+          "beginPort": 1,
+          "endPort": 1,
+          "style": {
+            "top": 0,
+            "left": 50
+          }
+        }
+      ],
+      "actionList": [
+        {
+          "type": 13,
+          "event": "Added",
+          "target": [
+            11,
+            []
+          ],
+          "execute": []
+        }
+      ]
+    },
+    "1": {
+      "type": "Image",
+      "src": 1,
+      "style": {
+        "width": 83,
+        "height": 138,
+        "justifyContent": "center"
+      }
+    },
+    "2": {
+      "type": "Label",
+      "style": {
+        "width": 100,
+        "justifyContent": "center"
+      }
+    },
+    "3": {
+      "type": "PathGraphics",
+      "path": "M8.28848143,125.452231 C-1.42949381,88.9336908 -1.42949381,63.8698887 8.28848143,50.2608244 C25.6179011,25.9926842 94.9837512,2.34036367 97.51743,1.82723067 C163.131617,-11.4612749 206.846203,139.596449 222.241606,149.999106 C274.639593,185.404365 182.249419,194.299348 182.249419,204.319418 C182.249419,207.681836 100.183139,112.156907 97.51743,117.495199 C91.4157075,129.714381 61.6727247,158.655787 8.28848143,204.319418"
+    }
+  },
+  "name": "VFT2J",
+  "width": 405,
+  "height": 720,
+  "version": "0.0.1",
+  "baseUrl": "",
+  "loadMode": "all",
+  "conversion": "",
+  "scaleMode": "showAll",
+  "launcherVersion": "0.7.2"
+}
