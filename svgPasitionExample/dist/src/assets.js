@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const store_1 = require("./store");
+const IVFTemplate_1 = require("../types/IVFTemplate");
+const assets = {
+    [store_1.Ids.dinoImage]: {
+        type: IVFTemplate_1.AssetType.image,
+        url: "https://vipkid-edu.github.io/vf-examples/assets/dino.png",
+        name: store_1.Ids.dinoImage.toString()
+    },
+    [store_1.Ids.svgPasition]: {
+        type: IVFTemplate_1.AssetType.js,
+        url: "./src/0.0.1.js",
+        name: "SVGPasition",
+    }
+};
+exports.default = assets;
