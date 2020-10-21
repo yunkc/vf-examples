@@ -9,7 +9,7 @@ const assets: Assets = {
     },
     [Ids.svgPasition]: {
         type: AssetType.js,
-        url: "./src/0.0.1.js",
+        url: "https://s.vipkidstatic.com/vf/plugin/SVGPasition/0.0.1.js",
         name: "SVGPasition",
     }
 }
