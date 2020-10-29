@@ -2,47 +2,47 @@
   "assets": {
     "1": {
       "type": "image",
-      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/dino.png",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/dino.png",
       "name": "1"
     },
     "4": {
       "type": "image",
-      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/CheckBox/unselect.png",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/skin/CheckBox/unselect.png",
       "name": "4"
     },
     "5": {
       "type": "image",
-      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/CheckBox/select_up.png",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/skin/CheckBox/select_up.png",
       "name": "5"
     },
     "6": {
       "type": "image",
-      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/CheckBox/select_down.png",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/skin/CheckBox/select_down.png",
       "name": "6"
     },
     "7": {
       "type": "image",
-      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/CheckBox/select_disabled.png",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/skin/CheckBox/select_disabled.png",
       "name": "7"
     },
     "9": {
       "type": "image",
-      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Radio/unselect.png",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/skin/Radio/unselect.png",
       "name": "9"
     },
     "10": {
       "type": "image",
-      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Radio/select_up.png",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/skin/Radio/select_up.png",
       "name": "10"
     },
     "11": {
       "type": "image",
-      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Radio/select_down.png",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/skin/Radio/select_down.png",
       "name": "11"
     },
     "12": {
       "type": "image",
-      "url": "https://vipkid-edu.github.io/vf-gui/play/assets/skin/Radio/select_disabled.png",
+      "url": "https://vipkid-edu.github.io/vf-examples/assets/skin/Radio/select_disabled.png",
       "name": "12"
     }
   },
